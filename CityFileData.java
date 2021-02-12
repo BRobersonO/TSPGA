@@ -20,7 +20,7 @@ public class CityFileData
         //Scanner to read in the file
         Scanner scanner = new Scanner(new File(filename));
 
-        //Loops threw each line in the scanner until the end of the file
+        //Loops through each line in the scanner until the end of the file
         while (scanner.hasNextLine()) 
         {
            String line = scanner.nextLine();
