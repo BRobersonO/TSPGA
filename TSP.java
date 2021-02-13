@@ -9,7 +9,7 @@ public class TSP extends FitnessFunction
     //Constructor to automatically call the file input methods using the filename given by the parameter file
     public TSP() throws java.io.IOException
     {
-		name = "Traveling Salesman Problem";
+        name = "Traveling Salesman Problem";
 
         CityFileData tspFileData = new CityFileData(Parameters.dataInputFileName);
 
