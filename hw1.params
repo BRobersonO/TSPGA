@@ -1,5 +1,5 @@
 Experiment ID                :onemax
-Problem Type                 :OM
+Problem Type                 :TSP
 Data Input File Name         :berlin52.tsp
 Number of Runs               :50
 Generations per Run          :100
