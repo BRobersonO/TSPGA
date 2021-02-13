@@ -12,6 +12,7 @@ public class Position
         this.Y = y_cord;
     }
 
+    //Calculate the distance from the current position to any given position object
     public double GetDistance(Position otherPos)
     {
         return Math.sqrt((otherPos.X - this.X) * (otherPos.X - this.X) + (otherPos.Y - this.Y) * (otherPos.Y - this.Y));
