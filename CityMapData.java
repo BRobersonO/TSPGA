@@ -11,7 +11,7 @@ public class CityMapData
     public static String EDGE_WEIGHT_TYPE;
 
     //Collection of cities needed for the GA's
-    public HashMap<Position, Integer> map = new HashMap<Position, Integer>();
+    public Map<Integer, Position> citiesMap = new HashMap<Integer, Position>();
 
     //Constructor that will bring in the data file needed for the variables
     //Note: This will need to be called in another class like NumberMatch.java is doing
@@ -52,7 +52,7 @@ public class CityMapData
                float cityY = Float.parseFloat(cityVars[2]);
 
                //Creating and adding in new city as they are read in from the file
-               map.put(new Position(cityX, cityY), cityID);
+               citiesMap.put(cityID, new Position(cityX, cityY));
            }
         }
 	}
