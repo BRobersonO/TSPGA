@@ -15,6 +15,6 @@ public class Position
     //Calculate the distance from the current position to any given position object
     public double GetDistance(Position otherPos)
     {
-        return Math.sqrt((otherPos.X - this.X) * (otherPos.X - this.X) + (otherPos.Y - this.Y) * (otherPos.Y - this.Y));
+        return Math.sqrt(Math.pow((otherPos.X - this.X), 2) + Math.pow((otherPos.Y - this.Y), 2));
     }
 }
