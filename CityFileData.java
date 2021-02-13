@@ -11,7 +11,7 @@ public class CityFileData
     public static String EDGE_WEIGHT_TYPE;
 
     //Collection of cities needed for the GA's
-    public static List<City> cities = new ArrayList<City>();
+    public List<City> cities = new ArrayList<City>();
 
     //Constructor that will bring in the data file needed for the variables
     //Note: This will need to be called in another class like NumberMatch.java is doing
