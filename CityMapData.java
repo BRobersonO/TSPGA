@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 //Main class to read in the city data
-public class CityFileData 
+public class CityMapData 
 {
     //File information for displaying purposes
     public static String Name;
@@ -11,11 +11,11 @@ public class CityFileData
     public static String EDGE_WEIGHT_TYPE;
 
     //Collection of cities needed for the GA's
-    public List<City> cities = new ArrayList<City>();
+    public HashMap<Position, Integer> map = new HashMap<Position, Integer>();
 
     //Constructor that will bring in the data file needed for the variables
     //Note: This will need to be called in another class like NumberMatch.java is doing
-    public CityFileData(String filename) throws java.io.IOException
+    public CityMapData(String filename) throws java.io.IOException
     {
         //Scanner to read in the file
         Scanner scanner = new Scanner(new File(filename));
@@ -52,7 +52,7 @@ public class CityFileData
                float cityY = Float.parseFloat(cityVars[2]);
 
                //Creating and adding in new city as they are read in from the file
-               cities.add(new City(cityID, cityX, cityY));
+               map.put(new Position(cityX, cityY), cityID);
            }
         }
 	}

@@ -120,8 +120,8 @@ public class Search {
 		else if (Parameters.problemType.equals("OM")){
 				problem = new OneMax();
 		}
-		else if (Parameters.problemType.equals("TSP")){
-				problem = new TSP();
+		else if (Parameters.problemType.equals("TSPMap")){
+				problem = new TSPMap();
 		}
 		else System.out.println("Invalid Problem Type");
 
