@@ -6,6 +6,7 @@ public class CityMapData
 {
     //File information for displaying purposes
     public static String Name;
+    public static String FileType;
     public static String Comment;
     public static int Dimension;
     public static String EDGE_WEIGHT_TYPE;
@@ -29,6 +30,10 @@ public class CityMapData
            {
                Name = line.substring(6);
            }
+           else if (line.contains("TYPE:"))
+           {
+               FileType = line.substring(9);
+           }
            else if (line.contains("COMMENT:"))
            {
                Comment = line.substring(9);
@@ -41,7 +46,7 @@ public class CityMapData
            {
                EDGE_WEIGHT_TYPE = line.substring(18);
            }
-           else 
+           else if (!line.contains("NODE_COORD_SECTION"))
            {
                //Splitting on whitespace characters
                String[] cityVars = line.split("\\s");
@@ -61,6 +66,7 @@ public class CityMapData
     public static void outputCityFileData(FileWriter output) throws java.io.IOException
     {
         output.write("Name                   :  " + Name + "\n");
+        output.write("Type                   :  " + FileType + "\n");
         output.write("Comment                :  " + Comment + "\n");
         output.write("Dimension              :  " + Dimension + "\n");
         output.write("EDGE_WEIGHT_TYPE       :  " + EDGE_WEIGHT_TYPE + "\n");
