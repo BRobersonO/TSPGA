@@ -32,7 +32,7 @@ public class CityMapData
            }
            else if (line.contains("TYPE:"))
            {
-               FileType = line.substring(9);
+               FileType = line.substring(6);
            }
            else if (line.contains("COMMENT:"))
            {
