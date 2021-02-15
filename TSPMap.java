@@ -22,7 +22,7 @@ public class TSPMap extends FitnessFunction
 
 	}
 
-	public void doPrintGenes() throws java.io.IOException
+	public void doPrintGenes(ChromoMap chromo, FileFilter outputFile) throws java.io.IOException
     {
 
 	}
