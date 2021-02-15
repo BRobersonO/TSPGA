@@ -44,7 +44,7 @@ public class CityMapData
            else 
            {
                //Splitting on whitespace characters
-               String[] cityVars = line.split("\s");
+               String[] cityVars = line.split("\\s");
 
                //Assigning the proper data
                int cityID = Integer.parseInt(cityVars[0]);
