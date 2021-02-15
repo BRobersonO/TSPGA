@@ -126,6 +126,7 @@ public class Search {
 		else if (Parameters.problemType.equals("TSPMap")) 
 		{
 			problem = new TSPMap();
+			Parameters.numGenes = TSPMap.citiesMap.size();
 			RunMapSolution(summaryOutput);
 		} 
 		else System.out.println("Invalid Problem Type");

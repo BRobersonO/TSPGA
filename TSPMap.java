@@ -17,13 +17,40 @@ public class TSPMap extends FitnessFunction
         citiesMap = mapData.citiesMap;
     }
 
-	public void doRawFitness()
+    //RawFitness scoreing method
+	public void doRawFitness(ChromoMap x)
     {
+        Position prevChromo = null;
 
+        for (Object o : x.chromo) 
+        {
+            if(prevChromo != null)
+            {
+                x.rawFitness = x.rawFitness + prevChromo.GetDistance(citiesMap.get(o));
+            }
+
+            prevChromo = citiesMap.get(o);
+        }
 	}
 
-	public void doPrintGenes(ChromoMap chromo, FileFilter outputFile) throws java.io.IOException
+    //Prints a single chromos genes
+	public void doPrintGenes(ChromoMap chromo, FileWriter output) throws java.io.IOException
     {
+		for (int i = 0; i < Parameters.numGenes; i++)
+        {
+			Hwrite.right(chromo.chromo.get(i).toString(), 11, output);
+		}
 
+		output.write("   RawFitness");
+		output.write("\n        ");
+
+		for (int i = 0; i < Parameters.numGenes; i++)
+        {
+			Hwrite.right(chromo.chromo.get(i), 11, output);
+		}
+
+		Hwrite.right((int) chromo.rawFitness, 13, output);
+		output.write("\n\n");
+		return;
 	}
 }
