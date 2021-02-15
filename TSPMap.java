@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 //Class to handle all the TSPMap calculations
@@ -16,5 +17,13 @@ public class TSPMap extends FitnessFunction
         citiesMap = mapData.citiesMap;
     }
 
-    //Note: TSP solutions here just like OneMax.java
+	public void doRawFitness()
+    {
+
+	}
+
+	public void doPrintGenes() throws java.io.IOException
+    {
+
+	}
 }

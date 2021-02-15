@@ -108,8 +108,6 @@ public class Search {
 			fitnessStats[3][i] = 0;
 		}
 
-
-
 	//	Problem Specific Setup - For new fitness function problems, create
 	//	the appropriate class file (extending FitnessFunction.java) and add
 	//	an else_if block below to instantiate the problem.
