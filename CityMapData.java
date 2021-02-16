@@ -20,6 +20,10 @@ public class CityMapData
     {
         //Scanner to read in the file
         Scanner scanner = new Scanner(new File(filename));
+	//checks if the line just read in is the EOF line all the tsp files have.
+	if(line.equals("EOF")) {
+             break;
+        }
 
         //Loops through each line in the scanner until the end of the file
         while (scanner.hasNextLine()) 
