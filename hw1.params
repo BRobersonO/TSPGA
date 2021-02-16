@@ -1,4 +1,4 @@
-Experiment ID                :onemax
+Experiment ID                :tsp
 Problem Type                 :TSPMap
 Data Input File Name         :berlin52.tsp
 Number of Runs               :50
