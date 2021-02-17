@@ -20,6 +20,7 @@ public class CityMapData
     {
         //Scanner to read in the file
         Scanner scanner = new Scanner(new File(filename));
+        boolean dataSection = false;
 
         //Loops through each line in the scanner until the end of the file
         while (scanner.hasNextLine()) 
@@ -27,32 +28,18 @@ public class CityMapData
             String line = scanner.nextLine();
 
             //checks if the line just read in is the EOF line all the tsp files have.
-            if(line.equals("EOF")) {
+            if (line.equals("EOF")) {
                 break;
             }
 
-            if(line.contains("NAME:"))
+            if (line.contains("NODE_COORD_SECTION") || dataSection)
             {
-                Name = line.substring(6);
-            }
-            else if (line.contains("TYPE:"))
-            {
-                FileType = line.substring(6);
-            }
-            else if (line.contains("COMMENT:"))
-            {
-                Comment = line.substring(9);
-            }
-            else if (line.contains("DIMENSION:")) 
-            {
-                Dimension = Integer.parseInt(line.substring(11));
-            }
-            else if (line.contains("EDGE_WEIGHT_TYPE:")) 
-            {
-                EDGE_WEIGHT_TYPE = line.substring(18);
-            }
-            else if (!line.contains("NODE_COORD_SECTION"))
-            {
+                if (!dataSection) 
+                {
+                    line = scanner.nextLine();
+                    dataSection = true;
+                }
+
                 //Splitting on whitespace characters
                 String[] cityVars = line.split("\\s");
 
