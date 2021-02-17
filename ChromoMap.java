@@ -2,10 +2,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ChromoMap extends Chromo
+public class ChromoMap
 {
 	public List<Integer> chromo;
 	public double rawFitness;
+	public double sclFitness;
+	public double proFitness;
 
     private static double randnum;
 
@@ -18,6 +20,8 @@ public class ChromoMap extends Chromo
         Collections.shuffle(chromo);
 
 		this.rawFitness = -1;   //  Fitness not yet evaluated
+		this.sclFitness = -1;   //  Fitness not yet scaled
+		this.proFitness = -1;   //  Fitness not yet proportionalized
 	}
 
     
@@ -80,7 +84,7 @@ public class ChromoMap extends Chromo
 	}
 
 	//Creates a new child from two selected chromos from the population - Still needs work
-	public static void mateParents(Chromo parent1, Chromo parent2, Chromo child1, Chromo child2)
+	public static void mateParents(ChromoMap parent1, ChromoMap parent2, ChromoMap child1, ChromoMap child2)
     {
 		int xoverPoint1;
 		int xoverPoint2;
@@ -99,24 +103,33 @@ public class ChromoMap extends Chromo
 
 		//  Set fitness values back to zero
 		child1.rawFitness = -1;   //  Fitness not yet evaluated
+		child1.sclFitness = -1;   //  Fitness not yet scaled
+		child1.proFitness = -1;   //  Fitness not yet proportionalized
 		child2.rawFitness = -1;   //  Fitness not yet evaluated
+		child2.sclFitness = -1;   //  Fitness not yet scaled
+		child2.proFitness = -1;   //  Fitness not yet proportionalized
 	}
 
 	//Creates a child from a single chromo from the population
-	public static void mateParents(Chromo parent, Chromo child)
+	public static void mateParents(ChromoMap parent, ChromoMap child)
     {
 		//  Create child chromosome from parental material
 		child.chromo = parent.chromo;
 
 		//  Set fitness values back to zero
 		child.rawFitness = -1;   //  Fitness not yet evaluated
+		child.sclFitness = -1;   //  Fitness not yet scaled
+		child.proFitness = -1;   //  Fitness not yet proportionalized
 	}
 
 	//Copies one chromosome to another
 	public static void copyB2A (ChromoMap targetA, ChromoMap sourceB)
     {
 		targetA.chromo = sourceB.chromo;
+
 		targetA.rawFitness = sourceB.rawFitness;
+		targetA.sclFitness = sourceB.sclFitness;
+		targetA.proFitness = sourceB.proFitness;
 		return;
 	}
 }

@@ -39,10 +39,18 @@ class FitnessFunction{
 		System.out.println("Executing FF Raw Fitness");
 	}
 
+	public void doRawFitness(ChromoMap X){
+		System.out.println("Executing FF Raw Fitness Map");
+	}
+
 //  PRINT OUT AN INDIVIDUAL GENE TO THE SUMMARY FILE *********************************
 
 	public void doPrintGenes(Chromo X, FileWriter output) throws java.io.IOException{
 		System.out.println("Executing FF Gene Output");
+	}
+
+	public void doPrintGenes(ChromoMap X, FileWriter output) throws java.io.IOException{
+		System.out.println("Executing FF Gene Output Map");
 	}
 
 

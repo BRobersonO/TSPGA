@@ -26,7 +26,7 @@ public class TSPMap extends FitnessFunction
         {
             if(prevChromo != null)
             {
-                x.rawFitness = x.rawFitness + prevChromo.GetDistance(citiesMap.get(o));
+                x.rawFitness += prevChromo.GetDistance(citiesMap.get(o));
             }
 
             prevChromo = citiesMap.get(o);
