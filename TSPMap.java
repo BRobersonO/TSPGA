@@ -31,6 +31,8 @@ public class TSPMap extends FitnessFunction
 
             prevChromo = citiesMap.get(o);
         }
+
+        x.rawFitness += prevChromo.GetDistance(citiesMap.get(1));
 	}
 
     //Prints a single chromos genes

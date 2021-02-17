@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class ChromoMap
 {
@@ -28,16 +29,22 @@ public class ChromoMap
 	//Mutate a Chromosome Based on Mutation Type - Still needs work
 	public void doMutation()
     {
-		List<Integer> mutChromo;
-		Integer x;
+		switch (Parameters.mutationType)
+		{
+			case 1:     //  Replace with new random number
+				Random rand = new Random();
+				//System.out.println(this.chromo.size());
+				int x = rand.nextInt(this.chromo.size());
+				
+				int temp = this.chromo.get(x);
+				
+				int next = (x + 1) % this.chromo.size();
+				this.chromo.set(x, this.chromo.get(next));
+				this.chromo.set(next, temp);
+				break;
 
-		switch (Parameters.mutationType){
-
-		case 1:     //  Replace with new random number
-			break;
-
-		default:
-			System.out.println("ERROR - No mutation method selected");
+			default:
+				System.out.println("ERROR - No mutation method selected");
 		}
 	}
 
@@ -86,8 +93,7 @@ public class ChromoMap
 	//Creates a new child from two selected chromos from the population - Still needs work
 	public static void mateParents(ChromoMap parent1, ChromoMap parent2, ChromoMap child1, ChromoMap child2)
     {
-		int xoverPoint1;
-		int xoverPoint2;
+		int i, j;
 
 		switch (Parameters.xoverType){
 
@@ -96,6 +102,30 @@ public class ChromoMap
 		case 2:     //  Two Point Crossover
 
 		case 3:     //  Uniform Crossover
+			int half = parent1.chromo.size() / 2;
+			ChromoMap.copyB2A(child1, parent1);
+			
+			List<Integer> compareTo = new ArrayList<Integer>(half);
+
+			for(i = 0; i < half; i++) 
+			{
+				compareTo.add(i);
+			}
+
+			for(j = 0; j < parent2.chromo.size(); j++) 
+			{
+				if(compareTo.contains(parent2.chromo.get(j))) 
+				{
+					continue;
+				}
+				else if(i < child1.chromo.size())
+				{
+					child1.chromo.set(i, parent2.chromo.get(j)); 
+					i++;
+				}
+				else break;
+			}
+			break;
 
 		default:
 			System.out.println("ERROR - Bad crossover method selected");

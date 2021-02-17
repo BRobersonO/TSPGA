@@ -1,0 +1,1239 @@
+Experiment ID                :  tsp
+Problem Type                 :  TSPMap
+Data Input File Name         :  berlin52.tsp
+Number of Runs               :  5
+Generations per Run          :  200
+Population Size              :  100
+Selection Method             :  3
+Fitness Scaling Type         :  1
+Min or Max Fitness           :  min
+Crossover Type               :  1
+Crossover Rate               :  1.0
+Mutation Type                :  1
+Mutation Rate                :  1.0E-4
+Random Number Seed           :  75982
+Number of Genes/Points       :  1
+Size of Genes                :  100
+
+
+ R   1		 G   0		 BestInG   26347		 AvgOfG   29817.804		 StDv    1547.802		 95% ConfInt   29508.243  30127.364
+ R   1		 G   1		 BestInG   24321		 AvgOfG   29443.705		 StDv    1904.767		 95% ConfInt   29062.752  29824.659
+ R   1		 G   2		 BestInG   24942		 AvgOfG   28966.689		 StDv    1994.423		 95% ConfInt   28567.804  29365.573
+ R   1		 G   3		 BestInG   24736		 AvgOfG   29025.364		 StDv     1856.58		 95% ConfInt   28654.048   29396.68
+ R   1		 G   4		 BestInG   25325		 AvgOfG   28829.006		 StDv    1834.168		 95% ConfInt   28462.172  29195.839
+ R   1		 G   5		 BestInG   24600		 AvgOfG   28639.409		 StDv    1821.839		 95% ConfInt   28275.042  29003.777
+ R   1		 G   6		 BestInG   24684		 AvgOfG   28894.595		 StDv    2215.157		 95% ConfInt   28451.564  29337.627
+ R   1		 G   7		 BestInG   21033		 AvgOfG   28304.871		 StDv    2960.116		 95% ConfInt   27712.848  28896.895
+ R   1		 G   8		 BestInG   21589		 AvgOfG   27549.987		 StDv    2530.294		 95% ConfInt   27043.928  28056.046
+ R   1		 G   9		 BestInG   19275		 AvgOfG   27578.829		 StDv    3096.703		 95% ConfInt   26959.488   28198.17
+ R   1		 G  10		 BestInG   22221		 AvgOfG   27709.374		 StDv    2310.293		 95% ConfInt   27247.315  28171.432
+ R   1		 G  11		 BestInG   22204		 AvgOfG   28022.252		 StDv    2497.924		 95% ConfInt   27522.667  28521.837
+ R   1		 G  12		 BestInG   22080		 AvgOfG   28066.412		 StDv    2257.646		 95% ConfInt   27614.883  28517.941
+ R   1		 G  13		 BestInG   21197		 AvgOfG   28137.924		 StDv    2804.396		 95% ConfInt   27577.045  28698.803
+ R   1		 G  14		 BestInG   21186		 AvgOfG   27656.437		 StDv    2681.912		 95% ConfInt   27120.055   28192.82
+ R   1		 G  15		 BestInG   21159		 AvgOfG   27670.752		 StDv    2724.058		 95% ConfInt   27125.941  28215.564
+ R   1		 G  16		 BestInG   21162		 AvgOfG   27578.023		 StDv    2569.436		 95% ConfInt   27064.136  28091.911
+ R   1		 G  17		 BestInG   22595		 AvgOfG    28542.95		 StDv    2152.439		 95% ConfInt   28112.462  28973.437
+ R   1		 G  18		 BestInG   22695		 AvgOfG   28626.823		 StDv    2261.066		 95% ConfInt   28174.609  29079.036
+ R   1		 G  19		 BestInG   22772		 AvgOfG   28390.648		 StDv    2368.309		 95% ConfInt   27916.986   28864.31
+ R   1		 G  20		 BestInG   22936		 AvgOfG   27919.062		 StDv    2276.508		 95% ConfInt    27463.76  28374.364
+ R   1		 G  21		 BestInG   23130		 AvgOfG   28570.394		 StDv    2499.897		 95% ConfInt   28070.414  29070.373
+ R   1		 G  22		 BestInG   23142		 AvgOfG   28754.117		 StDv    2240.532		 95% ConfInt   28306.011  29202.224
+ R   1		 G  23		 BestInG   23200		 AvgOfG   28504.116		 StDv     2516.69		 95% ConfInt   28000.778  29007.454
+ R   1		 G  24		 BestInG   23307		 AvgOfG   28684.367		 StDv    2478.901		 95% ConfInt   28188.587  29180.147
+ R   1		 G  25		 BestInG   23259		 AvgOfG    28532.12		 StDv    1921.027		 95% ConfInt   28147.915  28916.326
+ R   1		 G  26		 BestInG   23162		 AvgOfG   28499.478		 StDv    2215.542		 95% ConfInt    28056.37  28942.587
+ R   1		 G  27		 BestInG   22776		 AvgOfG   28017.896		 StDv    2051.532		 95% ConfInt    27607.59  28428.203
+ R   1		 G  28		 BestInG   22464		 AvgOfG   27882.214		 StDv    2123.936		 95% ConfInt   27457.427  28307.001
+ R   1		 G  29		 BestInG   22920		 AvgOfG   28206.022		 StDv    2059.819		 95% ConfInt   27794.058  28617.986
+ R   1		 G  30		 BestInG   22918		 AvgOfG   28216.982		 StDv    2226.836		 95% ConfInt   27771.614  28662.349
+ R   1		 G  31		 BestInG   22377		 AvgOfG   27781.183		 StDv    2607.803		 95% ConfInt   27259.622  28302.744
+ R   1		 G  32		 BestInG   22683		 AvgOfG    28567.67		 StDv    2791.263		 95% ConfInt   28009.418  29125.923
+ R   1		 G  33		 BestInG   22878		 AvgOfG   28584.074		 StDv     2182.71		 95% ConfInt   28147.532  29020.616
+ R   1		 G  34		 BestInG   22683		 AvgOfG   28461.722		 StDv    2334.807		 95% ConfInt   27994.761  28928.683
+ R   1		 G  35		 BestInG   22685		 AvgOfG   28172.395		 StDv    2495.839		 95% ConfInt   27673.228  28671.563
+ R   1		 G  36		 BestInG   22105		 AvgOfG   27493.574		 StDv    2502.682		 95% ConfInt   26993.037   27994.11
+ R   1		 G  37		 BestInG   21011		 AvgOfG   27596.378		 StDv     2534.27		 95% ConfInt   27089.524  28103.232
+ R   1		 G  38		 BestInG   21142		 AvgOfG   27875.002		 StDv    2435.662		 95% ConfInt    27387.87  28362.135
+ R   1		 G  39		 BestInG   19690		 AvgOfG   28068.752		 StDv    2224.495		 95% ConfInt   27623.853  28513.651
+ R   1		 G  40		 BestInG   22589		 AvgOfG   28096.039		 StDv    2783.663		 95% ConfInt   27539.306  28652.771
+ R   1		 G  41		 BestInG   22184		 AvgOfG   28001.559		 StDv    2665.846		 95% ConfInt    27468.39  28534.728
+ R   1		 G  42		 BestInG   22204		 AvgOfG   28987.841		 StDv    2712.998		 95% ConfInt   28445.241   29530.44
+ R   1		 G  43		 BestInG   22277		 AvgOfG    28800.95		 StDv    2638.632		 95% ConfInt   28273.223  29328.676
+ R   1		 G  44		 BestInG   21995		 AvgOfG   27699.022		 StDv    2755.248		 95% ConfInt   27147.973  28250.072
+ R   1		 G  45		 BestInG   22675		 AvgOfG   28799.717		 StDv    2713.853		 95% ConfInt   28256.946  29342.487
+ R   1		 G  46		 BestInG   23563		 AvgOfG   28615.272		 StDv    2406.086		 95% ConfInt   28134.055  29096.489
+ R   1		 G  47		 BestInG   22711		 AvgOfG   28408.554		 StDv    2297.149		 95% ConfInt   27949.124  28867.984
+ R   1		 G  48		 BestInG   21344		 AvgOfG   28089.824		 StDv     2226.23		 95% ConfInt   27644.578   28535.07
+ R   1		 G  49		 BestInG   21179		 AvgOfG   27435.895		 StDv    2744.893		 95% ConfInt   26886.917  27984.874
+ R   1		 G  50		 BestInG   21197		 AvgOfG   27471.906		 StDv    2652.686		 95% ConfInt   26941.369  28002.443
+ R   1		 G  51		 BestInG   22739		 AvgOfG   28292.059		 StDv    2899.205		 95% ConfInt   27712.218    28871.9
+ R   1		 G  52		 BestInG   24378		 AvgOfG   27784.642		 StDv    2014.852		 95% ConfInt   27381.671  28187.612
+ R   1		 G  53		 BestInG   22691		 AvgOfG   28650.272		 StDv    2712.828		 95% ConfInt   28107.706  29192.838
+ R   1		 G  54		 BestInG   23330		 AvgOfG   28227.548		 StDv    2468.507		 95% ConfInt   27733.846  28721.249
+ R   1		 G  55		 BestInG   23339		 AvgOfG     28550.5		 StDv    2476.636		 95% ConfInt   28055.172  29045.827
+ R   1		 G  56		 BestInG   23165		 AvgOfG   29128.429		 StDv    2465.351		 95% ConfInt   28635.358  29621.499
+ R   1		 G  57		 BestInG   22812		 AvgOfG   28359.578		 StDv    2858.632		 95% ConfInt   27787.852  28931.304
+ R   1		 G  58		 BestInG   22165		 AvgOfG   27917.162		 StDv    2850.224		 95% ConfInt   27347.117  28487.207
+ R   1		 G  59		 BestInG   23414		 AvgOfG   28039.399		 StDv    2649.011		 95% ConfInt   27509.597  28569.201
+ R   1		 G  60		 BestInG   23392		 AvgOfG   28722.502		 StDv    2558.341		 95% ConfInt   28210.834   29234.17
+ R   1		 G  61		 BestInG   23168		 AvgOfG    28185.84		 StDv    2492.886		 95% ConfInt   27687.263  28684.418
+ R   1		 G  62		 BestInG   23405		 AvgOfG   28226.675		 StDv    2482.314		 95% ConfInt   27730.212  28723.138
+ R   1		 G  63		 BestInG   23296		 AvgOfG   28585.757		 StDv    2218.592		 95% ConfInt   28142.039  29029.475
+ R   1		 G  64		 BestInG   23078		 AvgOfG   28273.632		 StDv    2189.839		 95% ConfInt   27835.665    28711.6
+ R   1		 G  65		 BestInG   22905		 AvgOfG   28261.526		 StDv    2007.868		 95% ConfInt   27859.952  28663.099
+ R   1		 G  66		 BestInG   24286		 AvgOfG   28472.029		 StDv    2114.579		 95% ConfInt   28049.113  28894.945
+ R   1		 G  67		 BestInG   23697		 AvgOfG   28741.765		 StDv    2222.271		 95% ConfInt   28297.311   29186.22
+ R   1		 G  68		 BestInG   22774		 AvgOfG   28050.756		 StDv    2357.297		 95% ConfInt   27579.297  28522.216
+ R   1		 G  69		 BestInG   22575		 AvgOfG   28430.433		 StDv    2698.151		 95% ConfInt   27890.803  28970.063
+ R   1		 G  70		 BestInG   23166		 AvgOfG   28352.579		 StDv    2543.882		 95% ConfInt   27843.803  28861.355
+ R   1		 G  71		 BestInG   21214		 AvgOfG   27545.812		 StDv    2695.582		 95% ConfInt   27006.696  28084.928
+ R   1		 G  72		 BestInG   22640		 AvgOfG   27796.799		 StDv    2352.903		 95% ConfInt   27326.219   28267.38
+ R   1		 G  73		 BestInG   22630		 AvgOfG   28002.253		 StDv    2145.925		 95% ConfInt   27573.068  28431.438
+ R   1		 G  74		 BestInG   24536		 AvgOfG    28129.58		 StDv    2308.828		 95% ConfInt   27667.814  28591.346
+ R   1		 G  75		 BestInG   24693		 AvgOfG   28989.488		 StDv    2188.647		 95% ConfInt   28551.759  29427.218
+ R   1		 G  76		 BestInG   24595		 AvgOfG   29054.621		 StDv    2227.892		 95% ConfInt   28609.043    29500.2
+ R   1		 G  77		 BestInG   21861		 AvgOfG   28979.991		 StDv    2550.602		 95% ConfInt   28469.871  29490.112
+ R   1		 G  78		 BestInG   21894		 AvgOfG   28382.386		 StDv    2325.461		 95% ConfInt   27917.293  28847.478
+ R   1		 G  79		 BestInG   22627		 AvgOfG    28392.88		 StDv    2415.129		 95% ConfInt   27909.854  28875.905
+ R   1		 G  80		 BestInG   22654		 AvgOfG    28757.55		 StDv    2694.234		 95% ConfInt   28218.703  29296.397
+ R   1		 G  81		 BestInG   22861		 AvgOfG   28083.975		 StDv    2646.967		 95% ConfInt   27554.582  28613.369
+ R   1		 G  82		 BestInG   23679		 AvgOfG   29006.912		 StDv    2386.878		 95% ConfInt   28529.536  29484.287
+ R   1		 G  83		 BestInG   23660		 AvgOfG   28934.494		 StDv    2342.623		 95% ConfInt    28465.97  29403.019
+ R   1		 G  84		 BestInG   23634		 AvgOfG    28869.34		 StDv    2086.222		 95% ConfInt   28452.095  29286.584
+ R   1		 G  85		 BestInG   21740		 AvgOfG   28794.529		 StDv    3074.634		 95% ConfInt   28179.602  29409.455
+ R   1		 G  86		 BestInG   23498		 AvgOfG   29057.007		 StDv    2326.439		 95% ConfInt    28591.72  29522.295
+ R   1		 G  87		 BestInG   23784		 AvgOfG   29470.056		 StDv    2094.112		 95% ConfInt   29051.233  29888.878
+ R   1		 G  88		 BestInG   23610		 AvgOfG   29191.322		 StDv    2229.586		 95% ConfInt   28745.405  29637.239
+ R   1		 G  89		 BestInG   23566		 AvgOfG   28911.345		 StDv    2223.032		 95% ConfInt   28466.739  29355.952
+ R   1		 G  90		 BestInG   20878		 AvgOfG   29377.254		 StDv    3420.875		 95% ConfInt   28693.079  30061.429
+ R   1		 G  91		 BestInG   23367		 AvgOfG    29359.39		 StDv    2602.613		 95% ConfInt   28838.867  29879.912
+ R   1		 G  92		 BestInG   23417		 AvgOfG   28596.969		 StDv    2330.856		 95% ConfInt   28130.798   29063.14
+ R   1		 G  93		 BestInG   23522		 AvgOfG   29164.064		 StDv    3030.975		 95% ConfInt   28557.869  29770.259
+ R   1		 G  94		 BestInG   24646		 AvgOfG   29484.976		 StDv    2757.228		 95% ConfInt   28933.531  30036.422
+ R   1		 G  95		 BestInG   22475		 AvgOfG   28970.826		 StDv    2461.356		 95% ConfInt   28478.554  29463.097
+ R   1		 G  96		 BestInG   22937		 AvgOfG   28606.103		 StDv    2271.207		 95% ConfInt   28151.862  29060.345
+ R   1		 G  97		 BestInG   23576		 AvgOfG   28799.331		 StDv    2421.994		 95% ConfInt   28314.932   29283.73
+ R   1		 G  98		 BestInG   23651		 AvgOfG   29681.914		 StDv     2488.21		 95% ConfInt   29184.271  30179.556
+ R   1		 G  99		 BestInG   23220		 AvgOfG   29328.392		 StDv    2510.437		 95% ConfInt   28826.305   29830.48
+ R   1		 G 100		 BestInG   25566		 AvgOfG     30359.0		 StDv    2254.531		 95% ConfInt   29908.094  30809.906
+ R   1		 G 101		 BestInG   23632		 AvgOfG   29936.092		 StDv    3054.728		 95% ConfInt   29325.146  30547.037
+ R   1		 G 102		 BestInG   23679		 AvgOfG   29984.875		 StDv    2712.947		 95% ConfInt   29442.286  30527.464
+ R   1		 G 103		 BestInG   23694		 AvgOfG   29167.405		 StDv    1948.063		 95% ConfInt   28777.793  29557.018
+ R   1		 G 104		 BestInG   23805		 AvgOfG   29170.799		 StDv     2243.64		 95% ConfInt   28722.071  29619.527
+ R   1		 G 105		 BestInG   24602		 AvgOfG   28874.792		 StDv    2491.053		 95% ConfInt   28376.581  29373.002
+ R   1		 G 106		 BestInG   22781		 AvgOfG   29160.858		 StDv    2681.378		 95% ConfInt   28624.582  29697.133
+ R   1		 G 107		 BestInG   22584		 AvgOfG   28251.853		 StDv    2356.721		 95% ConfInt   27780.509  28723.197
+ R   1		 G 108		 BestInG   22579		 AvgOfG   29413.746		 StDv    2665.206		 95% ConfInt   28880.704  29946.787
+ R   1		 G 109		 BestInG   23705		 AvgOfG   29168.474		 StDv    2649.692		 95% ConfInt   28638.536  29698.412
+ R   1		 G 110		 BestInG   22380		 AvgOfG   28886.422		 StDv    3216.158		 95% ConfInt   28243.191  29529.654
+ R   1		 G 111		 BestInG   24034		 AvgOfG   29007.695		 StDv    2450.564		 95% ConfInt   28517.582  29497.808
+ R   1		 G 112		 BestInG   25388		 AvgOfG   29086.429		 StDv    2265.038		 95% ConfInt   28633.422  29539.437
+ R   1		 G 113		 BestInG   23057		 AvgOfG   28821.377		 StDv    2812.243		 95% ConfInt   28258.928  29383.825
+ R   1		 G 114		 BestInG   23336		 AvgOfG   28735.634		 StDv      2835.9		 95% ConfInt   28168.454  29302.814
+ R   1		 G 115		 BestInG   23306		 AvgOfG   28858.647		 StDv    2772.143		 95% ConfInt   28304.218  29413.075
+ R   1		 G 116		 BestInG   25900		 AvgOfG   29274.472		 StDv    2070.156		 95% ConfInt   28860.441  29688.503
+ R   1		 G 117		 BestInG   24515		 AvgOfG   28932.758		 StDv    2279.831		 95% ConfInt   28476.792  29388.725
+ R   1		 G 118		 BestInG   24785		 AvgOfG    28243.62		 StDv    2095.826		 95% ConfInt   27824.455  28662.786
+ R   1		 G 119		 BestInG   23316		 AvgOfG   28102.445		 StDv     2518.66		 95% ConfInt   27598.713  28606.177
+ R   1		 G 120		 BestInG   23248		 AvgOfG    28428.43		 StDv    2516.812		 95% ConfInt   27925.068  28931.793
+ R   1		 G 121		 BestInG   23343		 AvgOfG   28800.881		 StDv    2109.178		 95% ConfInt   28379.045  29222.716
+ R   1		 G 122		 BestInG   23389		 AvgOfG    29525.82		 StDv    2821.014		 95% ConfInt   28961.617  30090.022
+ R   1		 G 123		 BestInG   23899		 AvgOfG    29028.43		 StDv    2593.513		 95% ConfInt   28509.728  29547.133
+ R   1		 G 124		 BestInG   24467		 AvgOfG   29217.547		 StDv    2764.938		 95% ConfInt    28664.56  29770.535
+ R   1		 G 125		 BestInG   22155		 AvgOfG   28490.838		 StDv    3190.404		 95% ConfInt   27852.757  29128.919
+ R   1		 G 126		 BestInG   24333		 AvgOfG   29215.134		 StDv    2390.307		 95% ConfInt   28737.072  29693.195
+ R   1		 G 127		 BestInG   24496		 AvgOfG   29430.426		 StDv    2601.865		 95% ConfInt   28910.053  29950.799
+ R   1		 G 128		 BestInG   23027		 AvgOfG   29601.995		 StDv    2789.656		 95% ConfInt   29044.064  30159.926
+ R   1		 G 129		 BestInG   24201		 AvgOfG   29108.275		 StDv    2229.743		 95% ConfInt   28662.326  29554.223
+ R   1		 G 130		 BestInG   23392		 AvgOfG   29243.479		 StDv    2305.973		 95% ConfInt   28782.285  29704.674
+ R   1		 G 131		 BestInG   22482		 AvgOfG   28695.533		 StDv    2752.139		 95% ConfInt   28145.105   29245.96
+ R   1		 G 132		 BestInG   21898		 AvgOfG   28366.784		 StDv    2247.405		 95% ConfInt   27917.303  28816.265
+ R   1		 G 133		 BestInG   23547		 AvgOfG   28689.182		 StDv    2268.993		 95% ConfInt   28235.384  29142.981
+ R   1		 G 134		 BestInG   24149		 AvgOfG   28376.701		 StDv    2195.738		 95% ConfInt   27937.554  28815.849
+ R   1		 G 135		 BestInG   24371		 AvgOfG   28622.449		 StDv    2019.683		 95% ConfInt   28218.512  29026.385
+ R   1		 G 136		 BestInG   24463		 AvgOfG   28535.507		 StDv    2351.082		 95% ConfInt   28065.291  29005.724
+ R   1		 G 137		 BestInG   24454		 AvgOfG   29072.656		 StDv    2452.547		 95% ConfInt   28582.147  29563.166
+ R   1		 G 138		 BestInG   23903		 AvgOfG   28556.597		 StDv    2601.181		 95% ConfInt    28036.36  29076.833
+ R   1		 G 139		 BestInG   24008		 AvgOfG   28609.226		 StDv    2624.986		 95% ConfInt   28084.229  29134.223
+ R   1		 G 140		 BestInG   23206		 AvgOfG   28108.501		 StDv    2278.898		 95% ConfInt   27652.721   28564.28
+ R   1		 G 141		 BestInG   23852		 AvgOfG   28512.042		 StDv    2454.171		 95% ConfInt   28021.208  29002.876
+ R   1		 G 142		 BestInG   24381		 AvgOfG   27962.126		 StDv    2404.595		 95% ConfInt   27481.207  28443.045
+ R   1		 G 143		 BestInG   24477		 AvgOfG   27944.295		 StDv    2072.787		 95% ConfInt   27529.738  28358.853
+ R   1		 G 144		 BestInG   21827		 AvgOfG   28090.116		 StDv    2692.497		 95% ConfInt   27551.616  28628.615
+ R   1		 G 145		 BestInG   22759		 AvgOfG    28365.44		 StDv    2660.257		 95% ConfInt   27833.388  28897.491
+ R   1		 G 146		 BestInG   23178		 AvgOfG    28314.97		 StDv    2320.012		 95% ConfInt   27850.968  28778.972
+ R   1		 G 147		 BestInG   22720		 AvgOfG   27998.411		 StDv    2379.297		 95% ConfInt   27522.551   28474.27
+ R   1		 G 148		 BestInG   23316		 AvgOfG   28074.807		 StDv    2275.327		 95% ConfInt   27619.742  28529.873
+ R   1		 G 149		 BestInG   24485		 AvgOfG   28616.265		 StDv    2580.142		 95% ConfInt   28100.237  29132.293
+ R   1		 G 150		 BestInG   24050		 AvgOfG     28854.5		 StDv    2231.668		 95% ConfInt   28408.166  29300.833
+ R   1		 G 151		 BestInG   24012		 AvgOfG    28403.42		 StDv    2060.803		 95% ConfInt   27991.259  28815.581
+ R   1		 G 152		 BestInG   22426		 AvgOfG   28163.631		 StDv    2671.662		 95% ConfInt   27629.299  28697.963
+ R   1		 G 153		 BestInG   21067		 AvgOfG   28111.491		 StDv    2835.133		 95% ConfInt   27544.465  28678.518
+ R   1		 G 154		 BestInG   22728		 AvgOfG   28587.486		 StDv    2656.455		 95% ConfInt   28056.195  29118.777
+ R   1		 G 155		 BestInG   23480		 AvgOfG   28716.715		 StDv    2498.615		 95% ConfInt   28216.992  29216.438
+ R   1		 G 156		 BestInG   23361		 AvgOfG   29249.465		 StDv    3463.517		 95% ConfInt   28556.762  29942.169
+ R   1		 G 157		 BestInG   24724		 AvgOfG   29539.158		 StDv    2664.574		 95% ConfInt   29006.243  30072.073
+ R   1		 G 158		 BestInG   24292		 AvgOfG   28413.623		 StDv     2313.18		 95% ConfInt   27950.987  28876.259
+ R   1		 G 159		 BestInG   23388		 AvgOfG   28814.343		 StDv    2712.533		 95% ConfInt   28271.836   29356.85
+ R   1		 G 160		 BestInG   23453		 AvgOfG   28283.736		 StDv    2343.106		 95% ConfInt   27815.115  28752.358
+ R   1		 G 161		 BestInG   24816		 AvgOfG   28542.189		 StDv    2369.878		 95% ConfInt   28068.214  29016.165
+ R   1		 G 162		 BestInG   23982		 AvgOfG   29655.143		 StDv    2839.329		 95% ConfInt   29087.277  30223.009
+ R   1		 G 163		 BestInG   22465		 AvgOfG   29165.243		 StDv    2702.805		 95% ConfInt   28624.682  29705.804
+ R   1		 G 164		 BestInG   21889		 AvgOfG   29205.085		 StDv    3136.477		 95% ConfInt   28577.789   29832.38
+ R   1		 G 165		 BestInG   22188		 AvgOfG   28788.206		 StDv    3384.405		 95% ConfInt   28111.325  29465.087
+ R   1		 G 166		 BestInG   22801		 AvgOfG   28578.326		 StDv     3064.87		 95% ConfInt   27965.352    29191.3
+ R   1		 G 167		 BestInG   21589		 AvgOfG   28636.182		 StDv    3650.633		 95% ConfInt   27906.055  29366.309
+ R   1		 G 168		 BestInG   21429		 AvgOfG   28981.223		 StDv    2982.776		 95% ConfInt   28384.668  29577.778
+ R   1		 G 169		 BestInG   21483		 AvgOfG    28364.71		 StDv    3193.942		 95% ConfInt   27725.921  29003.498
+ R   1		 G 170		 BestInG   23088		 AvgOfG   28322.991		 StDv    2921.016		 95% ConfInt   27738.788  28907.194
+ R   1		 G 171		 BestInG   24878		 AvgOfG   28755.161		 StDv    2897.201		 95% ConfInt   28175.721  29334.601
+ R   1		 G 172		 BestInG   23413		 AvgOfG   29041.845		 StDv    2712.716		 95% ConfInt   28499.302  29584.388
+ R   1		 G 173		 BestInG   23080		 AvgOfG   28744.234		 StDv     2712.12		 95% ConfInt    28201.81  29286.658
+ R   1		 G 174		 BestInG   23050		 AvgOfG   29062.719		 StDv    2793.534		 95% ConfInt   28504.013  29621.426
+ R   1		 G 175		 BestInG   23161		 AvgOfG   28817.869		 StDv    2742.878		 95% ConfInt   28269.293  29366.444
+ R   1		 G 176		 BestInG   21970		 AvgOfG     28674.4		 StDv    2505.412		 95% ConfInt   28173.318  29175.483
+ R   1		 G 177		 BestInG   22625		 AvgOfG   29379.455		 StDv    3189.751		 95% ConfInt   28741.505  30017.405
+ R   1		 G 178		 BestInG   23184		 AvgOfG   29186.019		 StDv    2757.177		 95% ConfInt   28634.583  29737.454
+ R   1		 G 179		 BestInG   23152		 AvgOfG   28746.603		 StDv    2520.036		 95% ConfInt   28242.596   29250.61
+ R   1		 G 180		 BestInG   23611		 AvgOfG   29461.785		 StDv    2547.756		 95% ConfInt   28952.234  29971.337
+ R   1		 G 181		 BestInG   23775		 AvgOfG   28694.753		 StDv     2400.44		 95% ConfInt   28214.665   29174.84
+ R   1		 G 182		 BestInG   24603		 AvgOfG   30002.678		 StDv    2721.368		 95% ConfInt   29458.404  30546.952
+ R   1		 G 183		 BestInG   23804		 AvgOfG   29275.635		 StDv    2431.651		 95% ConfInt   28789.304  29761.965
+ R   1		 G 184		 BestInG   22946		 AvgOfG   29160.717		 StDv    2701.824		 95% ConfInt   28620.352  29701.082
+ R   1		 G 185		 BestInG   22823		 AvgOfG   29088.436		 StDv    2856.611		 95% ConfInt   28517.114  29659.759
+ R   1		 G 186		 BestInG   22805		 AvgOfG   29065.579		 StDv    2720.167		 95% ConfInt   28521.546  29609.612
+ R   1		 G 187		 BestInG   22836		 AvgOfG   29575.776		 StDv    2704.996		 95% ConfInt   29034.776  30116.775
+ R   1		 G 188		 BestInG   23202		 AvgOfG   28553.626		 StDv    2741.016		 95% ConfInt   28005.423   29101.83
+ R   1		 G 189		 BestInG   22003		 AvgOfG   28020.614		 StDv    2689.327		 95% ConfInt   27482.749  28558.479
+ R   1		 G 190		 BestInG   23458		 AvgOfG   29011.838		 StDv    2601.127		 95% ConfInt   28491.612  29532.063
+ R   1		 G 191		 BestInG   23732		 AvgOfG   28253.674		 StDv    2753.866		 95% ConfInt   27702.901  28804.448
+ R   1		 G 192		 BestInG   22750		 AvgOfG   28831.062		 StDv    3171.108		 95% ConfInt   28196.841  29465.284
+ R   1		 G 193		 BestInG   21287		 AvgOfG   29254.435		 StDv    3161.999		 95% ConfInt   28622.036  29886.835
+ R   1		 G 194		 BestInG   24554		 AvgOfG   29411.856		 StDv    3163.887		 95% ConfInt   28779.079  30044.633
+ R   1		 G 195		 BestInG   24114		 AvgOfG   29304.948		 StDv    3108.483		 95% ConfInt   28683.251  29926.644
+ R   1		 G 196		 BestInG   22642		 AvgOfG   29245.807		 StDv    3307.295		 95% ConfInt   28584.348  29907.266
+ R   1		 G 197		 BestInG   23003		 AvgOfG   28991.658		 StDv    2761.502		 95% ConfInt   28439.358  29543.959
+ R   1		 G 198		 BestInG   23151		 AvgOfG   28855.729		 StDv    3066.203		 95% ConfInt   28242.488  29468.969
+ R   1		 G 199		 BestInG   23155		 AvgOfG   28808.485		 StDv    2672.713		 95% ConfInt   28273.942  29343.027
+1      9         30         30         47         28         22         36         16         24         21         42         18          3         37         14         40         31         51         46         41          6         51          5         34         12         15         43         50         46         30         33         31         27         43         37         40         31         32         39         52         42         39         36         41         28         36         51         37         44         43         26         46         34   RawFitness
+                 30         30         47         28         22         36         16         24         21         42         18          3         37         14         40         31         51         46         41          6         51          5         34         12         15         43         50         46         30         33         31         27         43         37         40         31         32         39         52         42         39         36         41         28         36         51         37         44         43         26         46         34        19275
+
+ R   2		 G   0		 BestInG   25810		 AvgOfG   29550.981		 StDv    1598.341		 95% ConfInt   29231.312  29870.649
+ R   2		 G   1		 BestInG   24593		 AvgOfG   29086.728		 StDv    1845.294		 95% ConfInt   28717.669  29455.787
+ R   2		 G   2		 BestInG   23945		 AvgOfG    28826.18		 StDv    2134.802		 95% ConfInt    28399.22   29253.14
+ R   2		 G   3		 BestInG   24804		 AvgOfG   28783.774		 StDv    1839.357		 95% ConfInt   28415.903  29151.645
+ R   2		 G   4		 BestInG   25480		 AvgOfG   29066.246		 StDv    1678.251		 95% ConfInt   28730.595  29401.896
+ R   2		 G   5		 BestInG   24252		 AvgOfG   28652.447		 StDv     1840.31		 95% ConfInt   28284.385  29020.509
+ R   2		 G   6		 BestInG   24933		 AvgOfG   28855.165		 StDv    1979.917		 95% ConfInt   28459.181  29251.148
+ R   2		 G   7		 BestInG   22193		 AvgOfG   28429.494		 StDv    2072.702		 95% ConfInt   28014.953  28844.034
+ R   2		 G   8		 BestInG   23128		 AvgOfG   28240.365		 StDv     2373.21		 95% ConfInt   27765.723  28715.007
+ R   2		 G   9		 BestInG   23981		 AvgOfG   28715.948		 StDv    2821.859		 95% ConfInt   28151.576   29280.32
+ R   2		 G  10		 BestInG   24015		 AvgOfG    28170.62		 StDv    2277.297		 95% ConfInt    27715.16  28626.079
+ R   2		 G  11		 BestInG   24070		 AvgOfG    28826.17		 StDv     2445.41		 95% ConfInt   28337.088  29315.252
+ R   2		 G  12		 BestInG   24065		 AvgOfG    28679.63		 StDv    2914.723		 95% ConfInt   28096.685  29262.574
+ R   2		 G  13		 BestInG   23553		 AvgOfG    28385.82		 StDv    2340.565		 95% ConfInt   27917.707  28853.933
+ R   2		 G  14		 BestInG   24360		 AvgOfG   28997.047		 StDv    2268.664		 95% ConfInt   28543.315   29450.78
+ R   2		 G  15		 BestInG   22845		 AvgOfG   28877.293		 StDv    2385.248		 95% ConfInt   28400.243  29354.342
+ R   2		 G  16		 BestInG   23848		 AvgOfG   28670.383		 StDv    2312.403		 95% ConfInt   28207.903  29132.864
+ R   2		 G  17		 BestInG   20626		 AvgOfG   28257.099		 StDv    2659.795		 95% ConfInt    27725.14  28789.058
+ R   2		 G  18		 BestInG   24276		 AvgOfG   28629.637		 StDv    2197.504		 95% ConfInt   28190.136  29069.138
+ R   2		 G  19		 BestInG   22066		 AvgOfG   28762.049		 StDv    2616.047		 95% ConfInt    28238.84  29285.258
+ R   2		 G  20		 BestInG   24074		 AvgOfG   29068.121		 StDv    2400.425		 95% ConfInt   28588.037  29548.206
+ R   2		 G  21		 BestInG   24386		 AvgOfG   29084.353		 StDv    2063.637		 95% ConfInt   28671.625   29497.08
+ R   2		 G  22		 BestInG   24539		 AvgOfG   29319.192		 StDv    2414.523		 95% ConfInt   28836.288  29802.097
+ R   2		 G  23		 BestInG   23526		 AvgOfG   28856.671		 StDv    2443.467		 95% ConfInt   28367.978  29345.364
+ R   2		 G  24		 BestInG   23630		 AvgOfG   28263.317		 StDv     2844.58		 95% ConfInt   27694.401  28832.233
+ R   2		 G  25		 BestInG   24125		 AvgOfG   29040.086		 StDv    2594.554		 95% ConfInt   28521.175  29558.997
+ R   2		 G  26		 BestInG   24277		 AvgOfG   28876.637		 StDv    2187.363		 95% ConfInt   28439.164   29314.11
+ R   2		 G  27		 BestInG   23523		 AvgOfG   28837.874		 StDv     2851.49		 95% ConfInt   28267.576  29408.172
+ R   2		 G  28		 BestInG   23535		 AvgOfG   29520.948		 StDv     2684.08		 95% ConfInt   28984.132  30057.764
+ R   2		 G  29		 BestInG   21871		 AvgOfG   28531.386		 StDv    2850.884		 95% ConfInt   27961.209  29101.562
+ R   2		 G  30		 BestInG   22350		 AvgOfG   28815.109		 StDv    2415.672		 95% ConfInt   28331.975  29298.244
+ R   2		 G  31		 BestInG   22442		 AvgOfG   29708.365		 StDv    2562.847		 95% ConfInt   29195.796  30220.935
+ R   2		 G  32		 BestInG   22350		 AvgOfG   29046.487		 StDv    2367.318		 95% ConfInt   28573.023   29519.95
+ R   2		 G  33		 BestInG   23352		 AvgOfG   29040.836		 StDv    2435.362		 95% ConfInt   28553.763  29527.908
+ R   2		 G  34		 BestInG   19484		 AvgOfG   28639.526		 StDv    3247.174		 95% ConfInt   27990.091   29288.96
+ R   2		 G  35		 BestInG   22549		 AvgOfG   28382.127		 StDv    2217.999		 95% ConfInt   27938.527  28825.726
+ R   2		 G  36		 BestInG   22575		 AvgOfG   29045.289		 StDv    2565.332		 95% ConfInt   28532.223  29558.356
+ R   2		 G  37		 BestInG   22407		 AvgOfG   29821.132		 StDv    2300.841		 95% ConfInt   29360.964    30281.3
+ R   2		 G  38		 BestInG   22368		 AvgOfG   28812.531		 StDv    2415.802		 95% ConfInt    28329.37  29295.691
+ R   2		 G  39		 BestInG   22291		 AvgOfG   29575.913		 StDv    2591.564		 95% ConfInt     29057.6  30094.226
+ R   2		 G  40		 BestInG   22317		 AvgOfG   29838.818		 StDv    2786.542		 95% ConfInt    29281.51  30396.127
+ R   2		 G  41		 BestInG   25087		 AvgOfG    30291.99		 StDv     2804.57		 95% ConfInt   29731.076  30852.904
+ R   2		 G  42		 BestInG   24953		 AvgOfG   30290.479		 StDv     2483.57		 95% ConfInt   29793.765  30787.192
+ R   2		 G  43		 BestInG   25151		 AvgOfG   30280.847		 StDv    2931.023		 95% ConfInt   29694.642  30867.051
+ R   2		 G  44		 BestInG   24339		 AvgOfG    30299.21		 StDv    2861.393		 95% ConfInt   29726.931  30871.489
+ R   2		 G  45		 BestInG   24356		 AvgOfG   29387.049		 StDv    2445.602		 95% ConfInt   28897.929   29876.17
+ R   2		 G  46		 BestInG   24294		 AvgOfG   29432.249		 StDv    2836.334		 95% ConfInt   28864.982  29999.515
+ R   2		 G  47		 BestInG   24276		 AvgOfG   29802.187		 StDv    2760.364		 95% ConfInt   29250.114   30354.26
+ R   2		 G  48		 BestInG   26110		 AvgOfG   30224.977		 StDv    2306.858		 95% ConfInt   29763.605  30686.348
+ R   2		 G  49		 BestInG   25265		 AvgOfG   29158.083		 StDv    2625.155		 95% ConfInt   28633.052  29683.114
+ R   2		 G  50		 BestInG   24774		 AvgOfG    29285.67		 StDv     2808.37		 95% ConfInt   28723.996  29847.344
+ R   2		 G  51		 BestInG   25419		 AvgOfG   29985.056		 StDv    2824.528		 95% ConfInt    29420.15  30549.961
+ R   2		 G  52		 BestInG   24038		 AvgOfG   29553.369		 StDv    2865.688		 95% ConfInt   28980.231  30126.506
+ R   2		 G  53		 BestInG   22101		 AvgOfG   29002.827		 StDv    2138.524		 95% ConfInt   28575.122  29430.532
+ R   2		 G  54		 BestInG   23401		 AvgOfG   28480.199		 StDv     2275.13		 95% ConfInt   28025.173  28935.225
+ R   2		 G  55		 BestInG   23372		 AvgOfG   28537.064		 StDv    2719.049		 95% ConfInt   27993.254  29080.874
+ R   2		 G  56		 BestInG   21612		 AvgOfG    28189.27		 StDv    2974.155		 95% ConfInt   27594.439  28784.101
+ R   2		 G  57		 BestInG   23269		 AvgOfG     28168.7		 StDv    2025.913		 95% ConfInt   27763.517  28573.882
+ R   2		 G  58		 BestInG   21881		 AvgOfG   28546.914		 StDv    2260.301		 95% ConfInt   28094.854  28998.974
+ R   2		 G  59		 BestInG   24116		 AvgOfG   28190.835		 StDv    2130.565		 95% ConfInt   27764.722  28616.948
+ R   2		 G  60		 BestInG   24098		 AvgOfG   28678.189		 StDv    2188.007		 95% ConfInt   28240.588   29115.79
+ R   2		 G  61		 BestInG   23990		 AvgOfG   29518.938		 StDv     1831.41		 95% ConfInt   29152.656   29885.22
+ R   2		 G  62		 BestInG   25221		 AvgOfG   28987.397		 StDv     1733.42		 95% ConfInt   28640.713  29334.081
+ R   2		 G  63		 BestInG   25178		 AvgOfG   28921.238		 StDv    1676.507		 95% ConfInt   28585.936  29256.539
+ R   2		 G  64		 BestInG   24030		 AvgOfG   28517.753		 StDv    1853.064		 95% ConfInt    28147.14  28888.366
+ R   2		 G  65		 BestInG   24170		 AvgOfG   28575.629		 StDv    2559.557		 95% ConfInt   28063.717   29087.54
+ R   2		 G  66		 BestInG   24297		 AvgOfG   29207.517		 StDv    2090.298		 95% ConfInt   28789.458  29625.577
+ R   2		 G  67		 BestInG   23945		 AvgOfG   28960.182		 StDv    2313.169		 95% ConfInt   28497.549  29422.816
+ R   2		 G  68		 BestInG   24168		 AvgOfG   28695.237		 StDv    2298.886		 95% ConfInt   28235.459  29155.014
+ R   2		 G  69		 BestInG   24079		 AvgOfG     29468.8		 StDv    2981.891		 95% ConfInt   28872.422  30065.178
+ R   2		 G  70		 BestInG   23906		 AvgOfG   29297.539		 StDv    2423.125		 95% ConfInt   28812.914  29782.164
+ R   2		 G  71		 BestInG   23582		 AvgOfG    29724.91		 StDv    2727.342		 95% ConfInt   29179.442  30270.379
+ R   2		 G  72		 BestInG   21901		 AvgOfG   28882.269		 StDv    2585.038		 95% ConfInt   28365.261  29399.276
+ R   2		 G  73		 BestInG   21779		 AvgOfG   28933.327		 StDv    2540.669		 95% ConfInt   28425.193   29441.46
+ R   2		 G  74		 BestInG   23394		 AvgOfG   29378.105		 StDv    2561.598		 95% ConfInt   28865.786  29890.425
+ R   2		 G  75		 BestInG   23024		 AvgOfG   29143.033		 StDv    1957.426		 95% ConfInt   28751.548  29534.518
+ R   2		 G  76		 BestInG   25406		 AvgOfG   29359.889		 StDv    2249.797		 95% ConfInt    28909.93  29809.849
+ R   2		 G  77		 BestInG   23709		 AvgOfG   29719.645		 StDv    2399.102		 95% ConfInt   29239.824  30199.465
+ R   2		 G  78		 BestInG   24520		 AvgOfG   29490.001		 StDv    1775.692		 95% ConfInt   29134.863  29845.139
+ R   2		 G  79		 BestInG   24664		 AvgOfG   29230.279		 StDv    1657.057		 95% ConfInt   28898.868  29561.691
+ R   2		 G  80		 BestInG   24474		 AvgOfG   29149.803		 StDv    2512.325		 95% ConfInt   28647.338  29652.268
+ R   2		 G  81		 BestInG   24227		 AvgOfG   29343.284		 StDv    2752.261		 95% ConfInt   28792.832  29893.737
+ R   2		 G  82		 BestInG   21938		 AvgOfG   29460.617		 StDv    2981.844		 95% ConfInt   28864.248  30056.986
+ R   2		 G  83		 BestInG   23442		 AvgOfG   28203.093		 StDv    2493.928		 95% ConfInt   27704.307  28701.879
+ R   2		 G  84		 BestInG   23826		 AvgOfG   28777.811		 StDv    2263.789		 95% ConfInt   28325.053  29230.569
+ R   2		 G  85		 BestInG   24300		 AvgOfG   28745.777		 StDv    2282.162		 95% ConfInt   28289.345   29202.21
+ R   2		 G  86		 BestInG   24651		 AvgOfG   28236.648		 StDv    1861.014		 95% ConfInt   27864.445  28608.851
+ R   2		 G  87		 BestInG   23860		 AvgOfG   28025.567		 StDv    2310.756		 95% ConfInt   27563.416  28487.718
+ R   2		 G  88		 BestInG   24631		 AvgOfG   28382.438		 StDv    2059.025		 95% ConfInt   27970.633  28794.244
+ R   2		 G  89		 BestInG   23347		 AvgOfG   27967.857		 StDv    2205.208		 95% ConfInt   27526.816  28408.899
+ R   2		 G  90		 BestInG   24600		 AvgOfG   28343.236		 StDv    2186.682		 95% ConfInt     27905.9  28780.573
+ R   2		 G  91		 BestInG   23370		 AvgOfG   28858.142		 StDv    1968.505		 95% ConfInt   28464.441  29251.843
+ R   2		 G  92		 BestInG   23402		 AvgOfG   29039.208		 StDv    2366.185		 95% ConfInt   28565.971  29512.445
+ R   2		 G  93		 BestInG   23061		 AvgOfG   29777.164		 StDv    2464.941		 95% ConfInt   29284.176  30270.152
+ R   2		 G  94		 BestInG   20433		 AvgOfG   28617.308		 StDv    2315.481		 95% ConfInt   28154.212  29080.404
+ R   2		 G  95		 BestInG   20441		 AvgOfG   29248.828		 StDv    2362.692		 95% ConfInt    28776.29  29721.367
+ R   2		 G  96		 BestInG   20445		 AvgOfG   29083.326		 StDv    2240.168		 95% ConfInt   28635.292  29531.359
+ R   2		 G  97		 BestInG   20608		 AvgOfG   29095.652		 StDv    2322.663		 95% ConfInt    28631.12  29560.185
+ R   2		 G  98		 BestInG   21774		 AvgOfG    29426.87		 StDv    2733.209		 95% ConfInt   28880.228  29973.511
+ R   2		 G  99		 BestInG   21831		 AvgOfG    29456.13		 StDv    2627.766		 95% ConfInt   28930.577  29981.684
+ R   2		 G 100		 BestInG   22448		 AvgOfG   29241.367		 StDv    2650.012		 95% ConfInt   28711.364  29771.369
+ R   2		 G 101		 BestInG   24089		 AvgOfG   28657.634		 StDv    2516.269		 95% ConfInt    28154.38  29160.888
+ R   2		 G 102		 BestInG   24039		 AvgOfG   28910.425		 StDv    2146.224		 95% ConfInt   28481.181   29339.67
+ R   2		 G 103		 BestInG   24042		 AvgOfG   29794.834		 StDv    2719.252		 95% ConfInt   29250.984  30338.685
+ R   2		 G 104		 BestInG   24255		 AvgOfG   29979.234		 StDv    2603.617		 95% ConfInt   29458.511  30499.958
+ R   2		 G 105		 BestInG   23973		 AvgOfG   29378.476		 StDv    2705.364		 95% ConfInt   28837.403  29919.548
+ R   2		 G 106		 BestInG   23709		 AvgOfG   29616.484		 StDv    2275.803		 95% ConfInt   29161.323  30071.645
+ R   2		 G 107		 BestInG   23453		 AvgOfG   29186.473		 StDv    2661.709		 95% ConfInt   28654.131  29718.814
+ R   2		 G 108		 BestInG   22394		 AvgOfG   29691.019		 StDv    3022.309		 95% ConfInt   29086.557  30295.481
+ R   2		 G 109		 BestInG   24478		 AvgOfG   29944.428		 StDv    3149.063		 95% ConfInt   29314.616  30574.241
+ R   2		 G 110		 BestInG   24892		 AvgOfG   29268.878		 StDv    2707.379		 95% ConfInt   28727.402  29810.354
+ R   2		 G 111		 BestInG   25713		 AvgOfG   29678.915		 StDv    2257.776		 95% ConfInt    29227.36  30130.471
+ R   2		 G 112		 BestInG   24148		 AvgOfG   29193.466		 StDv    2936.038		 95% ConfInt   28606.259  29780.674
+ R   2		 G 113		 BestInG   24285		 AvgOfG   28927.016		 StDv    2492.776		 95% ConfInt   28428.461  29425.571
+ R   2		 G 114		 BestInG   24905		 AvgOfG    29111.87		 StDv    2117.731		 95% ConfInt   28688.324  29535.417
+ R   2		 G 115		 BestInG   23449		 AvgOfG   28874.401		 StDv    2792.361		 95% ConfInt   28315.929  29432.874
+ R   2		 G 116		 BestInG   22953		 AvgOfG   28474.573		 StDv    2420.329		 95% ConfInt   27990.507  28958.639
+ R   2		 G 117		 BestInG   23834		 AvgOfG   29258.331		 StDv    2535.376		 95% ConfInt   28751.256  29765.406
+ R   2		 G 118		 BestInG   22897		 AvgOfG   28812.036		 StDv    2709.624		 95% ConfInt   28270.111  29353.961
+ R   2		 G 119		 BestInG   23361		 AvgOfG   29703.997		 StDv    2637.121		 95% ConfInt   29176.573  30231.421
+ R   2		 G 120		 BestInG   24097		 AvgOfG   29240.453		 StDv    2619.276		 95% ConfInt   28716.598  29764.308
+ R   2		 G 121		 BestInG   24205		 AvgOfG   29216.574		 StDv     3088.88		 95% ConfInt   28598.798   29834.35
+ R   2		 G 122		 BestInG   24066		 AvgOfG   29324.569		 StDv    2914.955		 95% ConfInt   28741.578   29907.56
+ R   2		 G 123		 BestInG   24483		 AvgOfG   29020.556		 StDv    2309.137		 95% ConfInt   28558.728  29482.383
+ R   2		 G 124		 BestInG   24633		 AvgOfG   29326.153		 StDv    2359.473		 95% ConfInt   28854.258  29798.047
+ R   2		 G 125		 BestInG   24633		 AvgOfG   28932.333		 StDv    2405.723		 95% ConfInt   28451.188  29413.477
+ R   2		 G 126		 BestInG   22033		 AvgOfG   28868.403		 StDv    2815.897		 95% ConfInt   28305.223  29431.582
+ R   2		 G 127		 BestInG   23305		 AvgOfG   28567.128		 StDv    2687.828		 95% ConfInt   28029.563  29104.694
+ R   2		 G 128		 BestInG   22966		 AvgOfG   28482.241		 StDv    2864.618		 95% ConfInt   27909.318  29055.165
+ R   2		 G 129		 BestInG   24210		 AvgOfG   29320.006		 StDv    2396.916		 95% ConfInt   28840.623  29799.389
+ R   2		 G 130		 BestInG   23931		 AvgOfG   28876.755		 StDv    3032.239		 95% ConfInt   28270.307  29483.202
+ R   2		 G 131		 BestInG   22254		 AvgOfG    28467.39		 StDv    2664.445		 95% ConfInt   27934.501  29000.279
+ R   2		 G 132		 BestInG   22835		 AvgOfG     28722.2		 StDv    3608.701		 95% ConfInt    28000.46   29443.94
+ R   2		 G 133		 BestInG   22863		 AvgOfG    28051.44		 StDv    2829.032		 95% ConfInt   27485.633  28617.246
+ R   2		 G 134		 BestInG   22855		 AvgOfG   27467.433		 StDv    2705.073		 95% ConfInt   26926.419  28008.448
+ R   2		 G 135		 BestInG   22641		 AvgOfG   28096.396		 StDv    2679.899		 95% ConfInt   27560.417  28632.376
+ R   2		 G 136		 BestInG   23067		 AvgOfG   29376.369		 StDv     2947.83		 95% ConfInt   28786.803  29965.935
+ R   2		 G 137		 BestInG   22544		 AvgOfG   28984.054		 StDv    2699.572		 95% ConfInt   28444.139  29523.968
+ R   2		 G 138		 BestInG   22333		 AvgOfG   28308.216		 StDv    2933.281		 95% ConfInt    27721.56  28894.872
+ R   2		 G 139		 BestInG   23251		 AvgOfG   29132.603		 StDv    2659.627		 95% ConfInt   28600.678  29664.529
+ R   2		 G 140		 BestInG   23767		 AvgOfG    29347.41		 StDv    2599.991		 95% ConfInt   28827.412  29867.408
+ R   2		 G 141		 BestInG   23068		 AvgOfG   28488.373		 StDv    2429.221		 95% ConfInt   28002.529  28974.218
+ R   2		 G 142		 BestInG   23078		 AvgOfG   28338.527		 StDv    2455.435		 95% ConfInt    27847.44  28829.614
+ R   2		 G 143		 BestInG   22746		 AvgOfG   28964.685		 StDv    2890.715		 95% ConfInt   28386.542  29542.828
+ R   2		 G 144		 BestInG   22231		 AvgOfG   28720.572		 StDv     2762.31		 95% ConfInt    28168.11  29273.034
+ R   2		 G 145		 BestInG   22198		 AvgOfG   28814.839		 StDv    2622.039		 95% ConfInt   28290.431  29339.246
+ R   2		 G 146		 BestInG   22448		 AvgOfG   27850.256		 StDv    2749.902		 95% ConfInt   27300.275  28400.236
+ R   2		 G 147		 BestInG   22381		 AvgOfG   28798.246		 StDv    2285.673		 95% ConfInt   28341.111   29255.38
+ R   2		 G 148		 BestInG   22381		 AvgOfG   28476.702		 StDv    2592.802		 95% ConfInt   27958.141  28995.262
+ R   2		 G 149		 BestInG   22252		 AvgOfG   28428.043		 StDv     2810.68		 95% ConfInt   27865.907  28990.179
+ R   2		 G 150		 BestInG   21609		 AvgOfG   28465.092		 StDv    2397.429		 95% ConfInt   27985.606  28944.577
+ R   2		 G 151		 BestInG   23754		 AvgOfG   29598.257		 StDv    3035.552		 95% ConfInt   28991.147  30205.368
+ R   2		 G 152		 BestInG   21358		 AvgOfG   29957.553		 StDv    2894.802		 95% ConfInt   29378.592  30536.513
+ R   2		 G 153		 BestInG   21322		 AvgOfG   29236.784		 StDv    3041.388		 95% ConfInt   28628.507  29845.062
+ R   2		 G 154		 BestInG   22991		 AvgOfG   29434.605		 StDv    2792.818		 95% ConfInt   28876.041  29993.168
+ R   2		 G 155		 BestInG   23669		 AvgOfG     29006.6		 StDv    2648.672		 95% ConfInt   28476.866  29536.334
+ R   2		 G 156		 BestInG   23841		 AvgOfG   29070.456		 StDv     2708.26		 95% ConfInt   28528.804  29612.108
+ R   2		 G 157		 BestInG   24025		 AvgOfG   28290.113		 StDv    2566.671		 95% ConfInt   27776.779  28803.448
+ R   2		 G 158		 BestInG   21847		 AvgOfG   28292.257		 StDv     2650.73		 95% ConfInt   27762.111  28822.403
+ R   2		 G 159		 BestInG   22944		 AvgOfG   28577.267		 StDv    2719.072		 95% ConfInt   28033.453  29121.082
+ R   2		 G 160		 BestInG   23553		 AvgOfG   28843.202		 StDv    3005.683		 95% ConfInt   28242.065  29444.338
+ R   2		 G 161		 BestInG   23723		 AvgOfG   29193.199		 StDv    2802.327		 95% ConfInt   28632.734  29753.665
+ R   2		 G 162		 BestInG   23953		 AvgOfG   29488.198		 StDv    2649.735		 95% ConfInt   28958.251  30018.145
+ R   2		 G 163		 BestInG   22597		 AvgOfG   29104.261		 StDv    2684.511		 95% ConfInt   28567.359  29641.163
+ R   2		 G 164		 BestInG   22609		 AvgOfG   29092.123		 StDv    2922.389		 95% ConfInt   28507.645    29676.6
+ R   2		 G 165		 BestInG   20571		 AvgOfG   28230.268		 StDv     3525.08		 95% ConfInt   27525.252  28935.284
+ R   2		 G 166		 BestInG   21536		 AvgOfG   28314.922		 StDv     3193.54		 95% ConfInt   27676.214   28953.63
+ R   2		 G 167		 BestInG   22112		 AvgOfG    28901.53		 StDv    2718.834		 95% ConfInt   28357.764  29445.297
+ R   2		 G 168		 BestInG   23136		 AvgOfG   29084.747		 StDv    2622.776		 95% ConfInt   28560.192  29609.302
+ R   2		 G 169		 BestInG   24213		 AvgOfG   29495.232		 StDv    2201.459		 95% ConfInt    29054.94  29935.524
+ R   2		 G 170		 BestInG   23916		 AvgOfG   29457.882		 StDv    3245.594		 95% ConfInt   28808.763  30107.001
+ R   2		 G 171		 BestInG   24052		 AvgOfG   29407.325		 StDv     3133.96		 95% ConfInt   28780.533  30034.117
+ R   2		 G 172		 BestInG   23333		 AvgOfG   28188.939		 StDv     2551.74		 95% ConfInt   27678.591  28699.287
+ R   2		 G 173		 BestInG   22565		 AvgOfG    28551.81		 StDv    2848.045		 95% ConfInt   27982.201   29121.42
+ R   2		 G 174		 BestInG   22637		 AvgOfG   28238.811		 StDv    2598.687		 95% ConfInt   27719.074  28758.548
+ R   2		 G 175		 BestInG   24024		 AvgOfG   29490.653		 StDv    2511.668		 95% ConfInt   28988.319  29992.987
+ R   2		 G 176		 BestInG   24482		 AvgOfG   29307.089		 StDv    3251.306		 95% ConfInt   28656.828   29957.35
+ R   2		 G 177		 BestInG   21714		 AvgOfG   29085.244		 StDv    2392.687		 95% ConfInt   28606.707  29563.782
+ R   2		 G 178		 BestInG   23677		 AvgOfG   28686.884		 StDv    2789.051		 95% ConfInt   28129.074  29244.694
+ R   2		 G 179		 BestInG   24651		 AvgOfG   28887.702		 StDv    2017.424		 95% ConfInt   28484.217  29291.187
+ R   2		 G 180		 BestInG   24544		 AvgOfG   28837.995		 StDv    2223.017		 95% ConfInt   28393.391  29282.598
+ R   2		 G 181		 BestInG   23212		 AvgOfG   28001.704		 StDv    2215.395		 95% ConfInt   27558.625  28444.783
+ R   2		 G 182		 BestInG   22717		 AvgOfG   28356.121		 StDv    2505.334		 95% ConfInt   27855.054  28857.187
+ R   2		 G 183		 BestInG   24143		 AvgOfG   28839.287		 StDv    3018.614		 95% ConfInt   28235.565   29443.01
+ R   2		 G 184		 BestInG   24289		 AvgOfG    29307.36		 StDv     2783.06		 95% ConfInt   28750.749  29863.972
+ R   2		 G 185		 BestInG   23300		 AvgOfG   28203.467		 StDv    2744.581		 95% ConfInt    27654.55  28752.383
+ R   2		 G 186		 BestInG   24083		 AvgOfG   28451.226		 StDv    2500.667		 95% ConfInt   27951.092  28951.359
+ R   2		 G 187		 BestInG   22910		 AvgOfG   28331.726		 StDv    2598.471		 95% ConfInt   27812.032   28851.42
+ R   2		 G 188		 BestInG   23760		 AvgOfG   29029.699		 StDv    2406.311		 95% ConfInt   28548.436  29510.961
+ R   2		 G 189		 BestInG   23408		 AvgOfG   28874.409		 StDv    2848.142		 95% ConfInt    28304.78  29444.037
+ R   2		 G 190		 BestInG   23182		 AvgOfG   30146.386		 StDv    3796.269		 95% ConfInt   29387.132  30905.639
+ R   2		 G 191		 BestInG   23267		 AvgOfG   29775.057		 StDv    3150.792		 95% ConfInt   29144.898  30405.215
+ R   2		 G 192		 BestInG   22882		 AvgOfG   28880.944		 StDv    3211.363		 95% ConfInt   28238.672  29523.217
+ R   2		 G 193		 BestInG   22281		 AvgOfG   28495.125		 StDv    2987.345		 95% ConfInt   27897.656  29092.594
+ R   2		 G 194		 BestInG   22025		 AvgOfG   28530.386		 StDv    2676.771		 95% ConfInt   27995.031   29065.74
+ R   2		 G 195		 BestInG   22137		 AvgOfG   27985.395		 StDv    2816.089		 95% ConfInt   27422.177  28548.613
+ R   2		 G 196		 BestInG   23245		 AvgOfG   28976.473		 StDv    2822.678		 95% ConfInt   28411.937  29541.008
+ R   2		 G 197		 BestInG   22973		 AvgOfG   29565.464		 StDv    3259.588		 95% ConfInt   28913.546  30217.382
+ R   2		 G 198		 BestInG   21852		 AvgOfG    28242.96		 StDv    3212.909		 95% ConfInt   27600.378  28885.542
+ R   2		 G 199		 BestInG   21215		 AvgOfG   28481.509		 StDv    3491.763		 95% ConfInt   27783.156  29179.861
+2     34         37         27         42         48         26         37         45         23         24         26         12         51         38         31         14         52         44         49          3         39         20          6         15         35         40         30         37         41         44         43         35         42         49         28         26         27         38         47         32         45         49         37         32         39         40         49         32         45         51         33         46         43   RawFitness
+                 37         27         42         48         26         37         45         23         24         26         12         51         38         31         14         52         44         49          3         39         20          6         15         35         40         30         37         41         44         43         35         42         49         28         26         27         38         47         32         45         49         37         32         39         40         49         32         45         51         33         46         43        19484
+
+ R   3		 G   0		 BestInG   26109		 AvgOfG   29767.018		 StDv    1640.608		 95% ConfInt   29438.896   30095.14
+ R   3		 G   1		 BestInG   24517		 AvgOfG   29236.403		 StDv    1955.615		 95% ConfInt    28845.28  29627.526
+ R   3		 G   2		 BestInG   24213		 AvgOfG   29410.886		 StDv    2172.923		 95% ConfInt   28976.302  29845.471
+ R   3		 G   3		 BestInG   25156		 AvgOfG   29180.902		 StDv    2113.791		 95% ConfInt   28758.144   29603.66
+ R   3		 G   4		 BestInG   24049		 AvgOfG   29194.181		 StDv    2286.356		 95% ConfInt   28736.909  29651.452
+ R   3		 G   5		 BestInG   24186		 AvgOfG   28675.781		 StDv     2026.65		 95% ConfInt   28270.451  29081.111
+ R   3		 G   6		 BestInG   23116		 AvgOfG   28293.906		 StDv    2285.402		 95% ConfInt   27836.825  28750.986
+ R   3		 G   7		 BestInG   23085		 AvgOfG   28524.727		 StDv    1809.813		 95% ConfInt   28162.765   28886.69
+ R   3		 G   8		 BestInG   24016		 AvgOfG   28501.559		 StDv    1650.493		 95% ConfInt    28171.46  28831.658
+ R   3		 G   9		 BestInG   21608		 AvgOfG   28346.724		 StDv    2416.036		 95% ConfInt   27863.517  28829.931
+ R   3		 G  10		 BestInG   23396		 AvgOfG   28009.415		 StDv    2573.245		 95% ConfInt   27494.766  28524.064
+ R   3		 G  11		 BestInG   23857		 AvgOfG   28653.536		 StDv    2275.294		 95% ConfInt   28198.478  29108.595
+ R   3		 G  12		 BestInG   20512		 AvgOfG   27654.781		 StDv    2554.863		 95% ConfInt   27143.808  28165.753
+ R   3		 G  13		 BestInG   23306		 AvgOfG   28031.667		 StDv    2497.159		 95% ConfInt   27532.235  28531.099
+ R   3		 G  14		 BestInG   23767		 AvgOfG   27716.472		 StDv    2113.007		 95% ConfInt   27293.871  28139.074
+ R   3		 G  15		 BestInG   23457		 AvgOfG   27507.849		 StDv    2121.442		 95% ConfInt   27083.561  27932.138
+ R   3		 G  16		 BestInG   23086		 AvgOfG   28404.966		 StDv    2119.278		 95% ConfInt    27981.11  28828.821
+ R   3		 G  17		 BestInG   23323		 AvgOfG   28012.005		 StDv    2243.538		 95% ConfInt   27563.298  28460.713
+ R   3		 G  18		 BestInG   22613		 AvgOfG   28472.098		 StDv    2408.402		 95% ConfInt   27990.418  28953.779
+ R   3		 G  19		 BestInG   21490		 AvgOfG   28533.943		 StDv    2817.136		 95% ConfInt   27970.515   29097.37
+ R   3		 G  20		 BestInG   21561		 AvgOfG   28854.736		 StDv    2524.608		 95% ConfInt   28349.814  29359.658
+ R   3		 G  21		 BestInG   21829		 AvgOfG   28550.596		 StDv    2664.683		 95% ConfInt   28017.659  29083.533
+ R   3		 G  22		 BestInG   22044		 AvgOfG   27832.202		 StDv    2552.321		 95% ConfInt   27321.738  28342.666
+ R   3		 G  23		 BestInG   21924		 AvgOfG   27114.685		 StDv    2339.178		 95% ConfInt   26646.849  27582.521
+ R   3		 G  24		 BestInG   23252		 AvgOfG   27106.608		 StDv    2184.833		 95% ConfInt   26669.642  27543.575
+ R   3		 G  25		 BestInG   23068		 AvgOfG   27011.598		 StDv    2539.927		 95% ConfInt   26503.612  27519.583
+ R   3		 G  26		 BestInG   22870		 AvgOfG   27547.591		 StDv    2380.162		 95% ConfInt   27071.559  28023.624
+ R   3		 G  27		 BestInG   23723		 AvgOfG   28030.354		 StDv    1896.006		 95% ConfInt   27651.153  28409.555
+ R   3		 G  28		 BestInG   23854		 AvgOfG    28246.27		 StDv     1761.79		 95% ConfInt   27893.912  28598.628
+ R   3		 G  29		 BestInG   23002		 AvgOfG   27593.345		 StDv    2438.087		 95% ConfInt   27105.727  28080.962
+ R   3		 G  30		 BestInG   20211		 AvgOfG   28120.361		 StDv     2905.31		 95% ConfInt   27539.299  28701.423
+ R   3		 G  31		 BestInG   20328		 AvgOfG   27771.453		 StDv    2568.179		 95% ConfInt   27257.817  28285.089
+ R   3		 G  32		 BestInG   20512		 AvgOfG   27472.243		 StDv    2418.163		 95% ConfInt    26988.61  27955.876
+ R   3		 G  33		 BestInG   20455		 AvgOfG   28037.016		 StDv     2501.36		 95% ConfInt   27536.744  28537.288
+ R   3		 G  34		 BestInG   20459		 AvgOfG   28319.858		 StDv    2587.981		 95% ConfInt   27802.262  28837.454
+ R   3		 G  35		 BestInG   22078		 AvgOfG   27368.548		 StDv    2127.094		 95% ConfInt   26943.129  27793.967
+ R   3		 G  36		 BestInG   21343		 AvgOfG   27719.592		 StDv    2128.201		 95% ConfInt   27293.951  28145.232
+ R   3		 G  37		 BestInG   21308		 AvgOfG   28567.231		 StDv    2793.438		 95% ConfInt   28008.544  29125.919
+ R   3		 G  38		 BestInG   23289		 AvgOfG   27691.355		 StDv    2478.717		 95% ConfInt   27195.611  28187.098
+ R   3		 G  39		 BestInG   22618		 AvgOfG   27308.584		 StDv    2304.636		 95% ConfInt   26847.657  27769.511
+ R   3		 G  40		 BestInG   22618		 AvgOfG   27787.757		 StDv    1829.869		 95% ConfInt   27421.783  28153.731
+ R   3		 G  41		 BestInG   23368		 AvgOfG    27446.34		 StDv    2228.353		 95% ConfInt   27000.669   27892.01
+ R   3		 G  42		 BestInG   22230		 AvgOfG   27011.307		 StDv    2012.546		 95% ConfInt   26608.798  27413.817
+ R   3		 G  43		 BestInG   22777		 AvgOfG   27303.264		 StDv    2122.269		 95% ConfInt   26878.811  27727.718
+ R   3		 G  44		 BestInG   21664		 AvgOfG   27538.904		 StDv    2745.672		 95% ConfInt    26989.77  28088.039
+ R   3		 G  45		 BestInG   19183		 AvgOfG   27684.354		 StDv    2969.958		 95% ConfInt   27090.363  28278.346
+ R   3		 G  46		 BestInG   22637		 AvgOfG   28266.524		 StDv    2250.226		 95% ConfInt   27816.479   28716.57
+ R   3		 G  47		 BestInG   22470		 AvgOfG    28276.49		 StDv    2506.296		 95% ConfInt   27775.231  28777.749
+ R   3		 G  48		 BestInG   24004		 AvgOfG   28179.632		 StDv    2386.458		 95% ConfInt    27702.34  28656.923
+ R   3		 G  49		 BestInG   21715		 AvgOfG   27093.897		 StDv    2824.388		 95% ConfInt   26529.019  27658.774
+ R   3		 G  50		 BestInG   22052		 AvgOfG   27459.426		 StDv    3021.811		 95% ConfInt   26855.064  28063.788
+ R   3		 G  51		 BestInG   22216		 AvgOfG   28819.676		 StDv      2763.3		 95% ConfInt   28267.016  29372.336
+ R   3		 G  52		 BestInG   21719		 AvgOfG   27961.408		 StDv    2476.651		 95% ConfInt   27466.078  28456.739
+ R   3		 G  53		 BestInG   23520		 AvgOfG   28349.732		 StDv    2213.144		 95% ConfInt   27907.104  28792.361
+ R   3		 G  54		 BestInG   22775		 AvgOfG   27975.076		 StDv    2154.991		 95% ConfInt   27544.078  28406.075
+ R   3		 G  55		 BestInG   22459		 AvgOfG   27914.824		 StDv    2341.379		 95% ConfInt   27446.548    28383.1
+ R   3		 G  56		 BestInG   23414		 AvgOfG   27097.851		 StDv    2290.394		 95% ConfInt   26639.772   27555.93
+ R   3		 G  57		 BestInG   23192		 AvgOfG   27390.781		 StDv    1918.224		 95% ConfInt   27007.136  27774.426
+ R   3		 G  58		 BestInG   23512		 AvgOfG   27990.757		 StDv    2146.813		 95% ConfInt   27561.395   28420.12
+ R   3		 G  59		 BestInG   21817		 AvgOfG   27273.779		 StDv      2456.1		 95% ConfInt   26782.559  27764.999
+ R   3		 G  60		 BestInG   21860		 AvgOfG   27742.232		 StDv    2258.533		 95% ConfInt   27290.525  28193.938
+ R   3		 G  61		 BestInG   21366		 AvgOfG   28345.612		 StDv    2622.169		 95% ConfInt   27821.178  28870.046
+ R   3		 G  62		 BestInG   21300		 AvgOfG   28212.034		 StDv    1970.037		 95% ConfInt   27818.027  28606.042
+ R   3		 G  63		 BestInG   23254		 AvgOfG   28046.307		 StDv    1822.732		 95% ConfInt    27681.76  28410.853
+ R   3		 G  64		 BestInG   24467		 AvgOfG   27982.073		 StDv    2299.184		 95% ConfInt   27522.236  28441.909
+ R   3		 G  65		 BestInG   23302		 AvgOfG   28454.929		 StDv    2202.877		 95% ConfInt   28014.354  28895.504
+ R   3		 G  66		 BestInG   23062		 AvgOfG   27993.101		 StDv    2523.509		 95% ConfInt   27488.399  28497.802
+ R   3		 G  67		 BestInG   23029		 AvgOfG   28053.948		 StDv    2288.793		 95% ConfInt   27596.189  28511.706
+ R   3		 G  68		 BestInG   23724		 AvgOfG   28532.244		 StDv    2124.428		 95% ConfInt   28107.358  28957.129
+ R   3		 G  69		 BestInG   23409		 AvgOfG   29201.629		 StDv    2715.767		 95% ConfInt   28658.475  29744.782
+ R   3		 G  70		 BestInG   24747		 AvgOfG   28779.614		 StDv    1827.964		 95% ConfInt   28414.022  29145.207
+ R   3		 G  71		 BestInG   23303		 AvgOfG    28772.14		 StDv    2099.162		 95% ConfInt   28352.308  29191.972
+ R   3		 G  72		 BestInG   21771		 AvgOfG   28545.624		 StDv    3122.013		 95% ConfInt   27921.222  29170.027
+ R   3		 G  73		 BestInG   21630		 AvgOfG   27730.449		 StDv    2259.281		 95% ConfInt   27278.593  28182.305
+ R   3		 G  74		 BestInG   22273		 AvgOfG   28682.216		 StDv    2688.474		 95% ConfInt   28144.521  29219.911
+ R   3		 G  75		 BestInG   22268		 AvgOfG   27720.294		 StDv    2166.864		 95% ConfInt   27286.921  28153.667
+ R   3		 G  76		 BestInG   23271		 AvgOfG   27725.752		 StDv    2384.835		 95% ConfInt   27248.785  28202.719
+ R   3		 G  77		 BestInG   23621		 AvgOfG   27570.437		 StDv     2242.89		 95% ConfInt   27121.859  28019.015
+ R   3		 G  78		 BestInG   24139		 AvgOfG   27738.278		 StDv     1660.61		 95% ConfInt   27406.156    28070.4
+ R   3		 G  79		 BestInG   23430		 AvgOfG   27527.816		 StDv      1978.2		 95% ConfInt   27132.176  27923.456
+ R   3		 G  80		 BestInG   23441		 AvgOfG   27901.057		 StDv    2399.828		 95% ConfInt   27421.092  28381.023
+ R   3		 G  81		 BestInG   22882		 AvgOfG   27604.737		 StDv    2391.498		 95% ConfInt   27126.437  28083.036
+ R   3		 G  82		 BestInG   22407		 AvgOfG    27580.55		 StDv    2319.424		 95% ConfInt   27116.665  28044.435
+ R   3		 G  83		 BestInG   23765		 AvgOfG    28193.17		 StDv    2066.888		 95% ConfInt   27779.793  28606.548
+ R   3		 G  84		 BestInG   22269		 AvgOfG   27578.636		 StDv    2684.636		 95% ConfInt   27041.708  28115.563
+ R   3		 G  85		 BestInG   22868		 AvgOfG   27845.553		 StDv     2494.46		 95% ConfInt   27346.661  28344.445
+ R   3		 G  86		 BestInG   22014		 AvgOfG   28087.969		 StDv    2258.523		 95% ConfInt   27636.265  28539.674
+ R   3		 G  87		 BestInG   22457		 AvgOfG   27803.365		 StDv    1912.061		 95% ConfInt   27420.953  28185.777
+ R   3		 G  88		 BestInG   23966		 AvgOfG   28036.116		 StDv    1848.206		 95% ConfInt   27666.475  28405.757
+ R   3		 G  89		 BestInG   23069		 AvgOfG   28195.916		 StDv    1882.751		 95% ConfInt   27819.366  28572.466
+ R   3		 G  90		 BestInG   22858		 AvgOfG    28232.65		 StDv    1964.222		 95% ConfInt   27839.805  28625.494
+ R   3		 G  91		 BestInG   22714		 AvgOfG   27998.908		 StDv    1633.753		 95% ConfInt   27672.157  28325.658
+ R   3		 G  92		 BestInG   21919		 AvgOfG   27468.499		 StDv    3152.125		 95% ConfInt   26838.074  28098.924
+ R   3		 G  93		 BestInG   23182		 AvgOfG   27659.388		 StDv     1998.54		 95% ConfInt    27259.68  28059.096
+ R   3		 G  94		 BestInG   23502		 AvgOfG   27925.073		 StDv    1669.969		 95% ConfInt   27591.079  28259.067
+ R   3		 G  95		 BestInG   23657		 AvgOfG   27573.903		 StDv    2022.839		 95% ConfInt   27169.336  27978.471
+ R   3		 G  96		 BestInG   22327		 AvgOfG   27708.647		 StDv    2273.989		 95% ConfInt    27253.85  28163.445
+ R   3		 G  97		 BestInG   22967		 AvgOfG   27821.307		 StDv    2560.754		 95% ConfInt   27309.156  28333.458
+ R   3		 G  98		 BestInG   21657		 AvgOfG    27243.56		 StDv    2636.263		 95% ConfInt   26716.307  27770.812
+ R   3		 G  99		 BestInG   22839		 AvgOfG   27605.569		 StDv    2309.256		 95% ConfInt   27143.718   28067.42
+ R   3		 G 100		 BestInG   20832		 AvgOfG   27399.674		 StDv    2484.651		 95% ConfInt   26902.744  27896.604
+ R   3		 G 101		 BestInG   22290		 AvgOfG   27154.966		 StDv    2590.465		 95% ConfInt   26636.873  27673.059
+ R   3		 G 102		 BestInG   20899		 AvgOfG   27691.142		 StDv    2683.639		 95% ConfInt   27154.414   28227.87
+ R   3		 G 103		 BestInG   21124		 AvgOfG   27214.633		 StDv    2306.401		 95% ConfInt   26753.353  27675.913
+ R   3		 G 104		 BestInG   20618		 AvgOfG   27953.578		 StDv    2616.662		 95% ConfInt   27430.245   28476.91
+ R   3		 G 105		 BestInG   23225		 AvgOfG   27684.337		 StDv    2353.584		 95% ConfInt    27213.62  28155.054
+ R   3		 G 106		 BestInG   23225		 AvgOfG   27786.801		 StDv    2368.443		 95% ConfInt   27313.113   28260.49
+ R   3		 G 107		 BestInG   23901		 AvgOfG   28460.317		 StDv    2187.398		 95% ConfInt   28022.837  28897.796
+ R   3		 G 108		 BestInG   21845		 AvgOfG   27735.712		 StDv     2317.09		 95% ConfInt   27272.294   28199.13
+ R   3		 G 109		 BestInG   20131		 AvgOfG   27507.643		 StDv    3006.426		 95% ConfInt   26906.358  28108.928
+ R   3		 G 110		 BestInG   20146		 AvgOfG   27515.105		 StDv     2510.09		 95% ConfInt   27013.087  28017.123
+ R   3		 G 111		 BestInG   20177		 AvgOfG   28114.313		 StDv    2575.802		 95% ConfInt   27599.153  28629.474
+ R   3		 G 112		 BestInG   20176		 AvgOfG   28400.725		 StDv    2854.876		 95% ConfInt    27829.75    28971.7
+ R   3		 G 113		 BestInG   20036		 AvgOfG   27797.868		 StDv    2602.977		 95% ConfInt   27277.273  28318.464
+ R   3		 G 114		 BestInG   19940		 AvgOfG   27978.557		 StDv    2532.601		 95% ConfInt   27472.037  28485.077
+ R   3		 G 115		 BestInG   20059		 AvgOfG   28614.136		 StDv    2785.756		 95% ConfInt   28056.985  29171.288
+ R   3		 G 116		 BestInG   20379		 AvgOfG   27845.767		 StDv    2824.884		 95% ConfInt    27280.79  28410.744
+ R   3		 G 117		 BestInG   22271		 AvgOfG   28410.605		 StDv    2580.005		 95% ConfInt   27894.604  28926.606
+ R   3		 G 118		 BestInG   22236		 AvgOfG   28871.336		 StDv    2664.755		 95% ConfInt   28338.385  29404.287
+ R   3		 G 119		 BestInG   22384		 AvgOfG   29498.491		 StDv    3351.747		 95% ConfInt   28828.142  30168.841
+ R   3		 G 120		 BestInG   22599		 AvgOfG   28923.803		 StDv    2974.552		 95% ConfInt   28328.893  29518.714
+ R   3		 G 121		 BestInG   21468		 AvgOfG   28396.552		 StDv    2848.556		 95% ConfInt    27826.84  28966.263
+ R   3		 G 122		 BestInG   22878		 AvgOfG   27466.352		 StDv    2364.332		 95% ConfInt   26993.486  27939.219
+ R   3		 G 123		 BestInG   20620		 AvgOfG   28144.839		 StDv     3009.58		 95% ConfInt   27542.923  28746.755
+ R   3		 G 124		 BestInG   21556		 AvgOfG    27800.69		 StDv    3116.441		 95% ConfInt   27177.402  28423.978
+ R   3		 G 125		 BestInG   22138		 AvgOfG    27962.28		 StDv    3015.859		 95% ConfInt   27359.108  28565.452
+ R   3		 G 126		 BestInG   21997		 AvgOfG   28495.227		 StDv    2390.505		 95% ConfInt   28017.125  28973.328
+ R   3		 G 127		 BestInG   21253		 AvgOfG   28378.383		 StDv    3188.545		 95% ConfInt   27740.674  29016.092
+ R   3		 G 128		 BestInG   23539		 AvgOfG   28566.619		 StDv    2693.806		 95% ConfInt   28027.858  29105.381
+ R   3		 G 129		 BestInG   22481		 AvgOfG   27760.584		 StDv    3027.651		 95% ConfInt   27155.054  28366.114
+ R   3		 G 130		 BestInG   22349		 AvgOfG   28451.833		 StDv    3181.394		 95% ConfInt   27815.554  29088.111
+ R   3		 G 131		 BestInG   18901		 AvgOfG   27664.912		 StDv    3648.513		 95% ConfInt    26935.21  28394.615
+ R   3		 G 132		 BestInG   21638		 AvgOfG   28471.647		 StDv    2789.439		 95% ConfInt    27913.76  29029.535
+ R   3		 G 133		 BestInG   20149		 AvgOfG   28451.601		 StDv    3232.565		 95% ConfInt   27805.088  29098.114
+ R   3		 G 134		 BestInG   21568		 AvgOfG   28836.974		 StDv    2832.638		 95% ConfInt   28270.446  29403.501
+ R   3		 G 135		 BestInG   21490		 AvgOfG   28020.536		 StDv    2465.294		 95% ConfInt   27527.478  28513.595
+ R   3		 G 136		 BestInG   21351		 AvgOfG   28255.698		 StDv    2860.141		 95% ConfInt   27683.669  28827.726
+ R   3		 G 137		 BestInG   21319		 AvgOfG   28086.176		 StDv    2732.977		 95% ConfInt    27539.58  28632.771
+ R   3		 G 138		 BestInG   21458		 AvgOfG   27661.354		 StDv     2644.58		 95% ConfInt   27132.438   28190.27
+ R   3		 G 139		 BestInG   21413		 AvgOfG   28497.086		 StDv     2868.09		 95% ConfInt   27923.468  29070.704
+ R   3		 G 140		 BestInG   21406		 AvgOfG   28784.605		 StDv    3082.996		 95% ConfInt   28168.006  29401.205
+ R   3		 G 141		 BestInG   21451		 AvgOfG   28242.067		 StDv    2809.863		 95% ConfInt   27680.094   28804.04
+ R   3		 G 142		 BestInG   21430		 AvgOfG   28910.909		 StDv    2872.692		 95% ConfInt   28336.371  29485.448
+ R   3		 G 143		 BestInG   21052		 AvgOfG   27831.614		 StDv    2172.821		 95% ConfInt    27397.05  28266.178
+ R   3		 G 144		 BestInG   22977		 AvgOfG   28283.352		 StDv    2773.921		 95% ConfInt   27728.567  28838.136
+ R   3		 G 145		 BestInG   23282		 AvgOfG   27917.104		 StDv    2720.967		 95% ConfInt    27372.91  28461.297
+ R   3		 G 146		 BestInG   22149		 AvgOfG   27941.143		 StDv    2427.124		 95% ConfInt   27455.718  28426.567
+ R   3		 G 147		 BestInG   22650		 AvgOfG    28167.06		 StDv    2600.275		 95% ConfInt   27647.005  28687.115
+ R   3		 G 148		 BestInG   23104		 AvgOfG   28463.306		 StDv    2397.923		 95% ConfInt   27983.722  28942.891
+ R   3		 G 149		 BestInG   22649		 AvgOfG   28992.454		 StDv    2759.584		 95% ConfInt   28440.537  29544.371
+ R   3		 G 150		 BestInG   22688		 AvgOfG   28912.786		 StDv    2109.602		 95% ConfInt   28490.866  29334.707
+ R   3		 G 151		 BestInG   22724		 AvgOfG    28878.72		 StDv    2965.753		 95% ConfInt    28285.57  29471.871
+ R   3		 G 152		 BestInG   22319		 AvgOfG   28231.395		 StDv    2823.862		 95% ConfInt   27666.623  28796.167
+ R   3		 G 153		 BestInG   22988		 AvgOfG   28060.399		 StDv    2680.987		 95% ConfInt   27524.202  28596.597
+ R   3		 G 154		 BestInG   23093		 AvgOfG   28308.753		 StDv    2283.747		 95% ConfInt   27852.004  28765.503
+ R   3		 G 155		 BestInG   22996		 AvgOfG   27912.662		 StDv     2224.56		 95% ConfInt    27467.75  28357.574
+ R   3		 G 156		 BestInG   23810		 AvgOfG   28635.747		 StDv    2180.467		 95% ConfInt   28199.653   29071.84
+ R   3		 G 157		 BestInG   23798		 AvgOfG   28209.044		 StDv     2259.87		 95% ConfInt    27757.07  28661.018
+ R   3		 G 158		 BestInG   23773		 AvgOfG    28336.22		 StDv    2509.826		 95% ConfInt   27834.255  28838.185
+ R   3		 G 159		 BestInG   22638		 AvgOfG   27655.017		 StDv    2103.214		 95% ConfInt   27234.374   28075.66
+ R   3		 G 160		 BestInG   23870		 AvgOfG   27813.524		 StDv    1943.335		 95% ConfInt   27424.857  28202.191
+ R   3		 G 161		 BestInG   23354		 AvgOfG   28681.002		 StDv    2305.193		 95% ConfInt   28219.963   29142.04
+ R   3		 G 162		 BestInG   22323		 AvgOfG    28113.03		 StDv    2400.762		 95% ConfInt   27632.878  28593.182
+ R   3		 G 163		 BestInG   22158		 AvgOfG     28270.8		 StDv    2079.711		 95% ConfInt   27854.858  28686.742
+ R   3		 G 164		 BestInG   22875		 AvgOfG   28576.847		 StDv    1915.648		 95% ConfInt   28193.718  28959.977
+ R   3		 G 165		 BestInG   22653		 AvgOfG   27543.678		 StDv    2156.286		 95% ConfInt    27112.42  27974.935
+ R   3		 G 166		 BestInG   23670		 AvgOfG    28254.79		 StDv    1773.394		 95% ConfInt   27900.111  28609.469
+ R   3		 G 167		 BestInG   22228		 AvgOfG   28294.299		 StDv      2091.3		 95% ConfInt   27876.039  28712.559
+ R   3		 G 168		 BestInG   22181		 AvgOfG   28124.741		 StDv    2124.859		 95% ConfInt   27699.769  28549.713
+ R   3		 G 169		 BestInG   22927		 AvgOfG   27673.485		 StDv    2410.899		 95% ConfInt   27191.305  28155.664
+ R   3		 G 170		 BestInG   23314		 AvgOfG   28260.499		 StDv    2163.738		 95% ConfInt   27827.751  28693.247
+ R   3		 G 171		 BestInG   20990		 AvgOfG   27654.807		 StDv    2112.563		 95% ConfInt   27232.295   28077.32
+ R   3		 G 172		 BestInG   21038		 AvgOfG   28340.972		 StDv     2288.89		 95% ConfInt   27883.194   28798.75
+ R   3		 G 173		 BestInG   22050		 AvgOfG   28202.627		 StDv    2171.246		 95% ConfInt   27768.377  28636.876
+ R   3		 G 174		 BestInG   21576		 AvgOfG   28150.048		 StDv    2792.675		 95% ConfInt   27591.513  28708.583
+ R   3		 G 175		 BestInG   21566		 AvgOfG   28423.481		 StDv    2920.514		 95% ConfInt   27839.378  29007.584
+ R   3		 G 176		 BestInG   21551		 AvgOfG   27600.402		 StDv    2574.002		 95% ConfInt   27085.602  28115.202
+ R   3		 G 177		 BestInG   21242		 AvgOfG   27322.538		 StDv    3086.474		 95% ConfInt   26705.244  27939.833
+ R   3		 G 178		 BestInG   23434		 AvgOfG   28097.778		 StDv    2389.056		 95% ConfInt   27619.967  28575.589
+ R   3		 G 179		 BestInG   22577		 AvgOfG   27750.199		 StDv    2367.129		 95% ConfInt   27276.773  28223.624
+ R   3		 G 180		 BestInG   23468		 AvgOfG    28321.93		 StDv    2373.424		 95% ConfInt   27847.245  28796.615
+ R   3		 G 181		 BestInG   23153		 AvgOfG    28502.58		 StDv    2364.538		 95% ConfInt   28029.672  28975.488
+ R   3		 G 182		 BestInG   23143		 AvgOfG   28019.937		 StDv    2377.667		 95% ConfInt   27544.404  28495.471
+ R   3		 G 183		 BestInG   23579		 AvgOfG   27844.341		 StDv    2400.384		 95% ConfInt   27364.264  28324.418
+ R   3		 G 184		 BestInG   22843		 AvgOfG   28327.905		 StDv    2405.698		 95% ConfInt   27846.765  28809.044
+ R   3		 G 185		 BestInG   22767		 AvgOfG   27977.121		 StDv    2468.132		 95% ConfInt   27483.494  28470.747
+ R   3		 G 186		 BestInG   23119		 AvgOfG   27944.178		 StDv    2426.595		 95% ConfInt   27458.859  28429.497
+ R   3		 G 187		 BestInG   22881		 AvgOfG   28023.881		 StDv     2301.82		 95% ConfInt   27563.517  28484.245
+ R   3		 G 188		 BestInG   22936		 AvgOfG   28024.019		 StDv     2724.95		 95% ConfInt   27479.029  28569.009
+ R   3		 G 189		 BestInG   23495		 AvgOfG   27280.601		 StDv    1810.733		 95% ConfInt   26918.454  27642.747
+ R   3		 G 190		 BestInG   22703		 AvgOfG   27487.418		 StDv     2230.33		 95% ConfInt   27041.352  27933.484
+ R   3		 G 191		 BestInG   23252		 AvgOfG   27826.722		 StDv    2239.179		 95% ConfInt   27378.886  28274.558
+ R   3		 G 192		 BestInG   23778		 AvgOfG    27763.64		 StDv    2148.772		 95% ConfInt   27333.885  28193.394
+ R   3		 G 193		 BestInG   23688		 AvgOfG   28153.968		 StDv    2599.494		 95% ConfInt   27634.069  28673.867
+ R   3		 G 194		 BestInG   22340		 AvgOfG    27465.84		 StDv    2008.772		 95% ConfInt   27064.086  27867.594
+ R   3		 G 195		 BestInG   23838		 AvgOfG   28215.173		 StDv    2078.473		 95% ConfInt   27799.478  28630.868
+ R   3		 G 196		 BestInG   23830		 AvgOfG   28303.172		 StDv    2325.002		 95% ConfInt   27838.172  28768.173
+ R   3		 G 197		 BestInG   22798		 AvgOfG    28131.47		 StDv    2321.587		 95% ConfInt   27667.153  28595.788
+ R   3		 G 198		 BestInG   22585		 AvgOfG   28991.862		 StDv    2468.115		 95% ConfInt   28498.239  29485.485
+ R   3		 G 199		 BestInG   21798		 AvgOfG   28556.832		 StDv     2609.97		 95% ConfInt   28034.838  29078.826
+3    131         32         36         21         36         28         49          6         34         48         28         45         32         17         42         31         44         33         25         18         23         40         31         41         37         29         49         47         32         48         38         29         52         45         49         40         28         39         26         43         48         51         33         35         30         50         32         39         31         28         42         37         26   RawFitness
+                 32         36         21         36         28         49          6         34         48         28         45         32         17         42         31         44         33         25         18         23         40         31         41         37         29         49         47         32         48         38         29         52         45         49         40         28         39         26         43         48         51         33         35         30         50         32         39         31         28         42         37         26        18901
+
+ R   4		 G   0		 BestInG   25241		 AvgOfG   29740.821		 StDv    1608.956		 95% ConfInt    29419.03  30062.612
+ R   4		 G   1		 BestInG   23656		 AvgOfG   28828.299		 StDv    1974.485		 95% ConfInt   28433.402  29223.196
+ R   4		 G   2		 BestInG   23295		 AvgOfG   28118.351		 StDv    2303.272		 95% ConfInt   27657.696  28579.005
+ R   4		 G   3		 BestInG   22489		 AvgOfG   27897.352		 StDv    2270.654		 95% ConfInt   27443.222  28351.483
+ R   4		 G   4		 BestInG   22359		 AvgOfG   27901.261		 StDv    2005.933		 95% ConfInt   27500.075  28302.448
+ R   4		 G   5		 BestInG   22913		 AvgOfG   27996.567		 StDv    2085.056		 95% ConfInt   27579.556  28413.578
+ R   4		 G   6		 BestInG   22896		 AvgOfG     28545.4		 StDv    2101.127		 95% ConfInt   28125.175  28965.626
+ R   4		 G   7		 BestInG   22920		 AvgOfG   27945.641		 StDv     2472.91		 95% ConfInt   27451.059  28440.223
+ R   4		 G   8		 BestInG   23234		 AvgOfG   27717.654		 StDv    2022.606		 95% ConfInt   27313.133  28122.175
+ R   4		 G   9		 BestInG   24504		 AvgOfG   28359.783		 StDv     1863.42		 95% ConfInt   27987.099  28732.467
+ R   4		 G  10		 BestInG   23861		 AvgOfG   27838.907		 StDv    2094.668		 95% ConfInt   27419.974  28257.841
+ R   4		 G  11		 BestInG   23266		 AvgOfG   28178.581		 StDv    2475.222		 95% ConfInt   27683.536  28673.625
+ R   4		 G  12		 BestInG   23006		 AvgOfG   28203.988		 StDv    2172.816		 95% ConfInt   27769.425  28638.552
+ R   4		 G  13		 BestInG   22892		 AvgOfG   27973.614		 StDv    2229.805		 95% ConfInt   27527.653  28419.575
+ R   4		 G  14		 BestInG   23243		 AvgOfG   27791.963		 StDv    2059.172		 95% ConfInt   27380.129  28203.798
+ R   4		 G  15		 BestInG   24032		 AvgOfG   27750.317		 StDv    1830.735		 95% ConfInt    27384.17  28116.464
+ R   4		 G  16		 BestInG   22857		 AvgOfG   27427.098		 StDv    2063.434		 95% ConfInt   27014.412  27839.785
+ R   4		 G  17		 BestInG   22608		 AvgOfG   27712.307		 StDv    2366.728		 95% ConfInt   27238.961  28185.653
+ R   4		 G  18		 BestInG   23396		 AvgOfG    27787.64		 StDv    2351.303		 95% ConfInt    27317.38  28257.901
+ R   4		 G  19		 BestInG   22464		 AvgOfG   27616.301		 StDv    2223.039		 95% ConfInt   27171.693  28060.908
+ R   4		 G  20		 BestInG   21844		 AvgOfG   27346.648		 StDv    2652.538		 95% ConfInt    26816.14  27877.155
+ R   4		 G  21		 BestInG   22715		 AvgOfG   28104.459		 StDv    2761.666		 95% ConfInt   27552.126  28656.793
+ R   4		 G  22		 BestInG   22813		 AvgOfG   28013.125		 StDv    2604.199		 95% ConfInt   27492.285  28533.965
+ R   4		 G  23		 BestInG   22628		 AvgOfG   28100.086		 StDv    2274.035		 95% ConfInt   27645.279  28554.893
+ R   4		 G  24		 BestInG   22104		 AvgOfG   28109.272		 StDv    2557.855		 95% ConfInt   27597.701  28620.843
+ R   4		 G  25		 BestInG   21416		 AvgOfG   27841.821		 StDv    2496.734		 95% ConfInt   27342.475  28341.168
+ R   4		 G  26		 BestInG   22228		 AvgOfG   27436.414		 StDv    2010.529		 95% ConfInt   27034.308   27838.52
+ R   4		 G  27		 BestInG   21938		 AvgOfG   28117.667		 StDv    2208.203		 95% ConfInt   27676.026  28559.307
+ R   4		 G  28		 BestInG   23237		 AvgOfG   27582.328		 StDv    2097.451		 95% ConfInt   27162.838  28001.818
+ R   4		 G  29		 BestInG   21573		 AvgOfG   27553.222		 StDv    2489.045		 95% ConfInt   27055.413  28051.031
+ R   4		 G  30		 BestInG   23016		 AvgOfG   27327.178		 StDv     2064.25		 95% ConfInt   26914.328  27740.028
+ R   4		 G  31		 BestInG   23070		 AvgOfG   26570.166		 StDv    1871.648		 95% ConfInt   26195.837  26944.496
+ R   4		 G  32		 BestInG   23460		 AvgOfG   27653.314		 StDv    1907.453		 95% ConfInt   27271.823  28034.804
+ R   4		 G  33		 BestInG   23555		 AvgOfG   27862.278		 StDv    1792.909		 95% ConfInt   27503.696   28220.86
+ R   4		 G  34		 BestInG   23360		 AvgOfG   28171.817		 StDv    1928.581		 95% ConfInt   27786.101  28557.533
+ R   4		 G  35		 BestInG   23328		 AvgOfG   28211.778		 StDv    2116.396		 95% ConfInt   27788.499  28635.057
+ R   4		 G  36		 BestInG   23273		 AvgOfG    27935.51		 StDv    2025.579		 95% ConfInt   27530.394  28340.626
+ R   4		 G  37		 BestInG   23467		 AvgOfG   27767.165		 StDv    2330.517		 95% ConfInt   27301.061  28233.268
+ R   4		 G  38		 BestInG   23639		 AvgOfG   27969.496		 StDv    2199.391		 95% ConfInt   27529.618  28409.374
+ R   4		 G  39		 BestInG   23964		 AvgOfG   28013.324		 StDv    1891.455		 95% ConfInt   27635.033  28391.615
+ R   4		 G  40		 BestInG   21635		 AvgOfG   28145.649		 StDv    2382.132		 95% ConfInt   27669.222  28622.075
+ R   4		 G  41		 BestInG   22779		 AvgOfG   27689.251		 StDv    1973.573		 95% ConfInt   27294.536  28083.965
+ R   4		 G  42		 BestInG   23611		 AvgOfG   27446.044		 StDv    1718.915		 95% ConfInt   27102.261  27789.827
+ R   4		 G  43		 BestInG   23191		 AvgOfG   27683.691		 StDv    1809.184		 95% ConfInt   27321.854  28045.528
+ R   4		 G  44		 BestInG   24127		 AvgOfG   27349.845		 StDv    1619.543		 95% ConfInt   27025.937  27673.754
+ R   4		 G  45		 BestInG   23688		 AvgOfG   27113.368		 StDv    1915.023		 95% ConfInt   26730.363  27496.372
+ R   4		 G  46		 BestInG   23613		 AvgOfG   27148.057		 StDv    2196.231		 95% ConfInt   26708.811  27587.304
+ R   4		 G  47		 BestInG   24044		 AvgOfG   27349.835		 StDv    1712.659		 95% ConfInt   27007.303  27692.367
+ R   4		 G  48		 BestInG   23564		 AvgOfG   26833.724		 StDv    1874.593		 95% ConfInt   26458.806  27208.643
+ R   4		 G  49		 BestInG   23621		 AvgOfG   27418.095		 StDv    1773.984		 95% ConfInt   27063.298  27772.892
+ R   4		 G  50		 BestInG   23652		 AvgOfG   27123.544		 StDv    2243.143		 95% ConfInt   26674.915  27572.172
+ R   4		 G  51		 BestInG   23806		 AvgOfG   27694.467		 StDv    1961.547		 95% ConfInt   27302.158  28086.777
+ R   4		 G  52		 BestInG   22044		 AvgOfG   28000.251		 StDv    2537.564		 95% ConfInt   27492.739  28507.764
+ R   4		 G  53		 BestInG   23738		 AvgOfG    27422.92		 StDv    2100.616		 95% ConfInt   27002.797  27843.043
+ R   4		 G  54		 BestInG   24305		 AvgOfG   27550.018		 StDv    1998.447		 95% ConfInt   27150.329  27949.708
+ R   4		 G  55		 BestInG   23517		 AvgOfG   27914.249		 StDv    2055.512		 95% ConfInt   27503.147  28325.352
+ R   4		 G  56		 BestInG   23381		 AvgOfG   27896.295		 StDv    2278.679		 95% ConfInt   27440.559   28352.03
+ R   4		 G  57		 BestInG   23024		 AvgOfG   27349.148		 StDv    2230.208		 95% ConfInt   26903.107   27795.19
+ R   4		 G  58		 BestInG   23394		 AvgOfG   27092.299		 StDv    1947.899		 95% ConfInt   26702.719  27481.879
+ R   4		 G  59		 BestInG   23238		 AvgOfG   26551.669		 StDv    2060.675		 95% ConfInt   26139.534  26963.804
+ R   4		 G  60		 BestInG   22888		 AvgOfG   27242.715		 StDv     2271.94		 95% ConfInt   26788.327  27697.103
+ R   4		 G  61		 BestInG   21987		 AvgOfG   26907.605		 StDv    1760.209		 95% ConfInt   26555.564  27259.647
+ R   4		 G  62		 BestInG   22403		 AvgOfG   27069.889		 StDv    2200.429		 95% ConfInt   26629.803  27509.974
+ R   4		 G  63		 BestInG   22299		 AvgOfG    27573.58		 StDv    2340.706		 95% ConfInt   27105.439  28041.721
+ R   4		 G  64		 BestInG   22293		 AvgOfG    27817.92		 StDv      2070.8		 95% ConfInt    27403.76   28232.08
+ R   4		 G  65		 BestInG   22165		 AvgOfG   27810.381		 StDv    2042.377		 95% ConfInt   27401.905  28218.856
+ R   4		 G  66		 BestInG   23594		 AvgOfG   27571.049		 StDv     2006.83		 95% ConfInt   27169.683  27972.415
+ R   4		 G  67		 BestInG   23513		 AvgOfG   27408.875		 StDv    2219.192		 95% ConfInt   26965.036  27852.713
+ R   4		 G  68		 BestInG   23735		 AvgOfG   27877.963		 StDv    2413.437		 95% ConfInt   27395.276  28360.651
+ R   4		 G  69		 BestInG   23175		 AvgOfG   27901.328		 StDv    2162.996		 95% ConfInt   27468.729  28333.927
+ R   4		 G  70		 BestInG   23852		 AvgOfG   27444.407		 StDv    2195.318		 95% ConfInt   27005.344  27883.471
+ R   4		 G  71		 BestInG   23060		 AvgOfG   27721.567		 StDv    2497.176		 95% ConfInt   27222.132  28221.002
+ R   4		 G  72		 BestInG   22357		 AvgOfG   27685.975		 StDv    2683.883		 95% ConfInt   27149.199  28222.752
+ R   4		 G  73		 BestInG   22378		 AvgOfG   27256.036		 StDv    1939.164		 95% ConfInt   26868.203  27643.869
+ R   4		 G  74		 BestInG   20362		 AvgOfG   26805.512		 StDv    2447.011		 95% ConfInt    26316.11  27294.914
+ R   4		 G  75		 BestInG   22374		 AvgOfG   27258.268		 StDv    2804.011		 95% ConfInt   26697.465   27819.07
+ R   4		 G  76		 BestInG   22177		 AvgOfG   27082.337		 StDv    2356.319		 95% ConfInt   26611.073  27553.601
+ R   4		 G  77		 BestInG   23087		 AvgOfG   28178.253		 StDv    2760.456		 95% ConfInt   27626.162  28730.345
+ R   4		 G  78		 BestInG   23517		 AvgOfG   28125.557		 StDv    2519.061		 95% ConfInt   27621.745  28629.369
+ R   4		 G  79		 BestInG   22987		 AvgOfG   27382.125		 StDv    2717.693		 95% ConfInt   26838.586  27925.664
+ R   4		 G  80		 BestInG   22433		 AvgOfG   27033.039		 StDv    2891.332		 95% ConfInt   26454.773  27611.306
+ R   4		 G  81		 BestInG   23016		 AvgOfG   27049.933		 StDv    2516.452		 95% ConfInt   26546.643  27553.223
+ R   4		 G  82		 BestInG   21497		 AvgOfG   26517.672		 StDv    2537.259		 95% ConfInt    26010.22  27025.124
+ R   4		 G  83		 BestInG   23084		 AvgOfG   26749.267		 StDv    2112.189		 95% ConfInt   26326.829  27171.704
+ R   4		 G  84		 BestInG   22322		 AvgOfG   27143.195		 StDv    2812.381		 95% ConfInt   26580.719  27705.671
+ R   4		 G  85		 BestInG   22609		 AvgOfG   26510.784		 StDv    2502.898		 95% ConfInt   26010.205  27011.364
+ R   4		 G  86		 BestInG   22293		 AvgOfG   26480.362		 StDv    2258.493		 95% ConfInt   26028.663   26932.06
+ R   4		 G  87		 BestInG   21861		 AvgOfG   27180.761		 StDv    2210.482		 95% ConfInt   26738.665  27622.857
+ R   4		 G  88		 BestInG   21674		 AvgOfG   27126.123		 StDv     2682.75		 95% ConfInt   26589.573  27662.673
+ R   4		 G  89		 BestInG   20967		 AvgOfG   27097.212		 StDv    2705.002		 95% ConfInt   26556.212  27638.212
+ R   4		 G  90		 BestInG   22330		 AvgOfG   27461.783		 StDv    2898.125		 95% ConfInt   26882.158  28041.408
+ R   4		 G  91		 BestInG   22607		 AvgOfG   27597.707		 StDv    2798.658		 95% ConfInt   27037.975  28157.438
+ R   4		 G  92		 BestInG   22812		 AvgOfG   27299.854		 StDv    2267.349		 95% ConfInt   26846.384  27753.323
+ R   4		 G  93		 BestInG   22775		 AvgOfG   27228.873		 StDv     2103.48		 95% ConfInt   26808.177  27649.569
+ R   4		 G  94		 BestInG   22496		 AvgOfG   27557.378		 StDv    2421.977		 95% ConfInt   27072.983  28041.773
+ R   4		 G  95		 BestInG   22449		 AvgOfG   26901.634		 StDv    2567.851		 95% ConfInt   26388.064  27415.204
+ R   4		 G  96		 BestInG   23529		 AvgOfG    27338.24		 StDv    2008.753		 95% ConfInt   26936.489  27739.991
+ R   4		 G  97		 BestInG   23712		 AvgOfG    27485.13		 StDv     2202.75		 95% ConfInt    27044.58   27925.68
+ R   4		 G  98		 BestInG   23222		 AvgOfG   27573.803		 StDv    2376.168		 95% ConfInt   27098.569  28049.036
+ R   4		 G  99		 BestInG   23290		 AvgOfG    27324.72		 StDv    2075.693		 95% ConfInt   26909.581  27739.858
+ R   4		 G 100		 BestInG   23223		 AvgOfG   27404.043		 StDv    2163.635		 95% ConfInt   26971.316   27836.77
+ R   4		 G 101		 BestInG   23111		 AvgOfG   27085.049		 StDv    2217.369		 95% ConfInt   26641.575  27528.523
+ R   4		 G 102		 BestInG   22547		 AvgOfG   27190.252		 StDv    2465.614		 95% ConfInt   26697.129  27683.375
+ R   4		 G 103		 BestInG   23195		 AvgOfG   27613.495		 StDv    2016.368		 95% ConfInt   27210.221  28016.768
+ R   4		 G 104		 BestInG   23004		 AvgOfG   27455.322		 StDv    2079.092		 95% ConfInt   27039.504  27871.141
+ R   4		 G 105		 BestInG   22964		 AvgOfG    27418.37		 StDv    2229.279		 95% ConfInt   26972.515  27864.226
+ R   4		 G 106		 BestInG   22730		 AvgOfG    27754.82		 StDv    2825.076		 95% ConfInt   27189.805  28319.835
+ R   4		 G 107		 BestInG   23153		 AvgOfG   27871.249		 StDv    2404.328		 95% ConfInt   27390.383  28352.114
+ R   4		 G 108		 BestInG   21049		 AvgOfG   27758.315		 StDv    2985.292		 95% ConfInt   27161.257  28355.373
+ R   4		 G 109		 BestInG   22299		 AvgOfG   28544.558		 StDv    2801.439		 95% ConfInt    27984.27  29104.846
+ R   4		 G 110		 BestInG   22435		 AvgOfG     27199.7		 StDv    2550.223		 95% ConfInt   26689.656  27709.745
+ R   4		 G 111		 BestInG   22140		 AvgOfG   27594.943		 StDv    3071.661		 95% ConfInt    26980.61  28209.275
+ R   4		 G 112		 BestInG   23219		 AvgOfG   28732.675		 StDv     2531.66		 95% ConfInt   28226.343  29239.007
+ R   4		 G 113		 BestInG   22086		 AvgOfG   27528.172		 StDv    2509.106		 95% ConfInt   27026.351  28029.994
+ R   4		 G 114		 BestInG   22800		 AvgOfG   27420.529		 StDv    2396.018		 95% ConfInt   26941.325  27899.732
+ R   4		 G 115		 BestInG   22567		 AvgOfG   27434.962		 StDv     2230.13		 95% ConfInt   26988.936  27880.988
+ R   4		 G 116		 BestInG   23667		 AvgOfG   27649.533		 StDv    2669.514		 95% ConfInt    27115.63  28183.435
+ R   4		 G 117		 BestInG   20792		 AvgOfG    27253.64		 StDv    2342.352		 95% ConfInt   26785.169   27722.11
+ R   4		 G 118		 BestInG   20862		 AvgOfG   27188.622		 StDv    2162.071		 95% ConfInt   26756.207  27621.036
+ R   4		 G 119		 BestInG   20902		 AvgOfG   27839.973		 StDv    2438.228		 95% ConfInt   27352.327  28327.618
+ R   4		 G 120		 BestInG   19996		 AvgOfG   29119.262		 StDv    2629.144		 95% ConfInt   28593.433   29645.09
+ R   4		 G 121		 BestInG   19731		 AvgOfG   27758.774		 StDv     2319.88		 95% ConfInt   27294.798   28222.75
+ R   4		 G 122		 BestInG   20469		 AvgOfG   28401.503		 StDv    2670.529		 95% ConfInt   27867.397  28935.609
+ R   4		 G 123		 BestInG   23003		 AvgOfG   28689.394		 StDv    2626.703		 95% ConfInt   28164.053  29214.734
+ R   4		 G 124		 BestInG   21942		 AvgOfG   28488.586		 StDv    2582.015		 95% ConfInt   27972.183  29004.988
+ R   4		 G 125		 BestInG   22526		 AvgOfG   27910.526		 StDv    2703.769		 95% ConfInt   27369.772   28451.28
+ R   4		 G 126		 BestInG   22543		 AvgOfG   28226.282		 StDv    2298.814		 95% ConfInt    27766.52  28686.045
+ R   4		 G 127		 BestInG   22982		 AvgOfG   28094.747		 StDv    2203.104		 95% ConfInt   27654.126  28535.368
+ R   4		 G 128		 BestInG   23196		 AvgOfG   28102.264		 StDv    2094.954		 95% ConfInt   27683.273  28521.254
+ R   4		 G 129		 BestInG   23526		 AvgOfG   28096.594		 StDv    2001.098		 95% ConfInt   27696.375  28496.814
+ R   4		 G 130		 BestInG   23952		 AvgOfG   28068.141		 StDv    2310.014		 95% ConfInt   27606.138  28530.143
+ R   4		 G 131		 BestInG   23611		 AvgOfG   27802.938		 StDv     2095.91		 95% ConfInt   27383.756   28222.12
+ R   4		 G 132		 BestInG   20125		 AvgOfG   27577.792		 StDv    2555.017		 95% ConfInt   27066.788  28088.795
+ R   4		 G 133		 BestInG   20334		 AvgOfG   28287.379		 StDv    2138.453		 95% ConfInt   27859.689   28715.07
+ R   4		 G 134		 BestInG   22737		 AvgOfG   28601.047		 StDv    2654.942		 95% ConfInt   28070.058  29132.035
+ R   4		 G 135		 BestInG   21859		 AvgOfG   28085.148		 StDv    2740.469		 95% ConfInt   27537.055  28633.242
+ R   4		 G 136		 BestInG   21727		 AvgOfG   27900.921		 StDv    2652.959		 95% ConfInt   27370.329  28431.513
+ R   4		 G 137		 BestInG   21845		 AvgOfG   27926.988		 StDv    2623.012		 95% ConfInt   27402.385   28451.59
+ R   4		 G 138		 BestInG   22361		 AvgOfG   28283.458		 StDv    2243.945		 95% ConfInt    27834.67  28732.247
+ R   4		 G 139		 BestInG   24045		 AvgOfG    27663.35		 StDv    1812.951		 95% ConfInt    27300.76   28025.94
+ R   4		 G 140		 BestInG   23031		 AvgOfG   28192.998		 StDv    2155.056		 95% ConfInt   27761.987  28624.009
+ R   4		 G 141		 BestInG   23919		 AvgOfG   28200.962		 StDv    2218.252		 95% ConfInt   27757.312  28644.612
+ R   4		 G 142		 BestInG   23334		 AvgOfG   28879.112		 StDv    2045.335		 95% ConfInt   28470.045  29288.179
+ R   4		 G 143		 BestInG   24352		 AvgOfG   28702.893		 StDv    2024.611		 95% ConfInt    28297.97  29107.815
+ R   4		 G 144		 BestInG   23382		 AvgOfG   28018.842		 StDv    2295.809		 95% ConfInt    27559.68  28478.004
+ R   4		 G 145		 BestInG   23950		 AvgOfG   28235.585		 StDv     2106.91		 95% ConfInt   27814.203  28656.967
+ R   4		 G 146		 BestInG   24665		 AvgOfG   27765.103		 StDv    1793.972		 95% ConfInt   27406.309  28123.897
+ R   4		 G 147		 BestInG   24407		 AvgOfG    28051.68		 StDv    1819.499		 95% ConfInt    27687.78  28415.579
+ R   4		 G 148		 BestInG   23052		 AvgOfG    27571.32		 StDv    2072.152		 95% ConfInt   27156.889   27985.75
+ R   4		 G 149		 BestInG   23317		 AvgOfG   27853.778		 StDv    2205.555		 95% ConfInt   27412.667  28294.889
+ R   4		 G 150		 BestInG   19471		 AvgOfG   27111.655		 StDv    2903.107		 95% ConfInt   26531.034  27692.277
+ R   4		 G 151		 BestInG   22730		 AvgOfG   27803.196		 StDv    2400.693		 95% ConfInt   27323.057  28283.334
+ R   4		 G 152		 BestInG   22671		 AvgOfG   27778.757		 StDv    2232.749		 95% ConfInt   27332.207  28225.307
+ R   4		 G 153		 BestInG   22633		 AvgOfG   28326.322		 StDv    2274.116		 95% ConfInt   27871.499  28781.145
+ R   4		 G 154		 BestInG   22926		 AvgOfG   28509.021		 StDv    2114.308		 95% ConfInt   28086.159  28931.882
+ R   4		 G 155		 BestInG   22715		 AvgOfG   27932.582		 StDv    2097.982		 95% ConfInt   27512.986  28352.179
+ R   4		 G 156		 BestInG   24253		 AvgOfG   27818.734		 StDv    2040.039		 95% ConfInt   27410.726  28226.742
+ R   4		 G 157		 BestInG   23382		 AvgOfG   27732.628		 StDv    1966.751		 95% ConfInt   27339.278  28125.979
+ R   4		 G 158		 BestInG   24035		 AvgOfG   28142.758		 StDv    2293.007		 95% ConfInt   27684.156  28601.359
+ R   4		 G 159		 BestInG   24060		 AvgOfG   28281.837		 StDv    2367.167		 95% ConfInt   27808.404  28755.271
+ R   4		 G 160		 BestInG   22616		 AvgOfG   27895.476		 StDv    2018.212		 95% ConfInt   27491.833  28299.118
+ R   4		 G 161		 BestInG   23283		 AvgOfG   27920.805		 StDv     2115.35		 95% ConfInt   27497.735  28343.875
+ R   4		 G 162		 BestInG   23215		 AvgOfG   28633.063		 StDv    2209.526		 95% ConfInt   28191.158  29074.968
+ R   4		 G 163		 BestInG   22696		 AvgOfG   27648.149		 StDv    2077.831		 95% ConfInt   27232.583  28063.715
+ R   4		 G 164		 BestInG   24076		 AvgOfG   28099.075		 StDv    2155.714		 95% ConfInt   27667.932  28530.218
+ R   4		 G 165		 BestInG   22810		 AvgOfG   27718.553		 StDv    2432.782		 95% ConfInt   27231.996  28205.109
+ R   4		 G 166		 BestInG   22295		 AvgOfG   27298.235		 StDv    2668.326		 95% ConfInt    26764.57    27831.9
+ R   4		 G 167		 BestInG   22225		 AvgOfG   27363.705		 StDv    2219.954		 95% ConfInt   26919.714  27807.696
+ R   4		 G 168		 BestInG   22814		 AvgOfG   27093.881		 StDv    2163.047		 95% ConfInt   26661.271   27526.49
+ R   4		 G 169		 BestInG   21022		 AvgOfG   27398.151		 StDv    2761.358		 95% ConfInt    26845.88  27950.423
+ R   4		 G 170		 BestInG   22168		 AvgOfG   27258.248		 StDv    2442.489		 95% ConfInt    26769.75  27746.746
+ R   4		 G 171		 BestInG   23488		 AvgOfG   28241.514		 StDv    2017.429		 95% ConfInt   27838.028    28645.0
+ R   4		 G 172		 BestInG   21419		 AvgOfG   27503.291		 StDv    2268.442		 95% ConfInt   27049.602  27956.979
+ R   4		 G 173		 BestInG   21472		 AvgOfG   27469.555		 StDv    2196.345		 95% ConfInt   27030.286  27908.824
+ R   4		 G 174		 BestInG   23378		 AvgOfG   27604.207		 StDv    1974.669		 95% ConfInt   27209.274  27999.141
+ R   4		 G 175		 BestInG   23959		 AvgOfG   27775.328		 StDv    2141.318		 95% ConfInt   27347.065  28203.592
+ R   4		 G 176		 BestInG   23331		 AvgOfG   27370.665		 StDv    2331.815		 95% ConfInt   26904.302  27837.028
+ R   4		 G 177		 BestInG   23299		 AvgOfG   26923.017		 StDv    2232.956		 95% ConfInt   26476.425  27369.608
+ R   4		 G 178		 BestInG   23088		 AvgOfG   27720.725		 StDv    2214.783		 95% ConfInt   27277.768  28163.682
+ R   4		 G 179		 BestInG   23104		 AvgOfG    28139.42		 StDv    2302.007		 95% ConfInt   27679.019  28599.822
+ R   4		 G 180		 BestInG   23033		 AvgOfG   27982.649		 StDv    2427.609		 95% ConfInt   27497.128  28468.171
+ R   4		 G 181		 BestInG   22948		 AvgOfG   27527.672		 StDv    2326.883		 95% ConfInt   27062.296  27993.049
+ R   4		 G 182		 BestInG   22332		 AvgOfG   26763.654		 StDv    2696.743		 95% ConfInt   26224.306  27303.003
+ R   4		 G 183		 BestInG   21630		 AvgOfG   27089.519		 StDv    2530.421		 95% ConfInt   26583.435  27595.603
+ R   4		 G 184		 BestInG   21902		 AvgOfG   27844.862		 StDv    3041.502		 95% ConfInt   27236.562  28453.162
+ R   4		 G 185		 BestInG   22062		 AvgOfG   28017.566		 StDv    2733.153		 95% ConfInt   27470.935  28564.196
+ R   4		 G 186		 BestInG   21721		 AvgOfG   28392.143		 StDv    2886.407		 95% ConfInt   27814.861  28969.424
+ R   4		 G 187		 BestInG   22479		 AvgOfG    27506.64		 StDv    2915.297		 95% ConfInt    26923.58  28089.699
+ R   4		 G 188		 BestInG   23571		 AvgOfG   27808.481		 StDv    2845.304		 95% ConfInt   27239.421  28377.542
+ R   4		 G 189		 BestInG   22554		 AvgOfG   27396.796		 StDv    2639.212		 95% ConfInt   26868.954  27924.639
+ R   4		 G 190		 BestInG   22554		 AvgOfG   27502.975		 StDv    2497.389		 95% ConfInt   27003.498  28002.453
+ R   4		 G 191		 BestInG   22391		 AvgOfG   27327.819		 StDv    2446.227		 95% ConfInt   26838.573  27817.064
+ R   4		 G 192		 BestInG   22686		 AvgOfG    28063.78		 StDv    2268.878		 95% ConfInt   27610.004  28517.555
+ R   4		 G 193		 BestInG   22584		 AvgOfG   27778.596		 StDv    2607.016		 95% ConfInt   27257.193    28300.0
+ R   4		 G 194		 BestInG   23688		 AvgOfG   27370.383		 StDv      2387.5		 95% ConfInt   26892.883  27847.883
+ R   4		 G 195		 BestInG   23187		 AvgOfG   27637.749		 StDv    2309.433		 95% ConfInt   27175.863  28099.636
+ R   4		 G 196		 BestInG   21413		 AvgOfG   27995.783		 StDv    2535.227		 95% ConfInt   27488.738  28502.829
+ R   4		 G 197		 BestInG   21661		 AvgOfG   27766.823		 StDv    2112.863		 95% ConfInt    27344.25  28189.395
+ R   4		 G 198		 BestInG   22763		 AvgOfG   27222.643		 StDv     2121.18		 95% ConfInt   26798.407  27646.879
+ R   4		 G 199		 BestInG   22609		 AvgOfG   27569.082		 StDv    2150.724		 95% ConfInt   27138.938  27999.227
+4    150         48         25         47         16         37         49         37          1         32         24         39         23         45         38         29         20         33         15          5          2          9         13         38          6          8         47         27         27         45         39         27         33         41         31         52         43         36         46         40         40         34         37         47         40         27         27         45         39         27         33         41         31   RawFitness
+                 48         25         47         16         37         49         37          1         32         24         39         23         45         38         29         20         33         15          5          2          9         13         38          6          8         47         27         27         45         39         27         33         41         31         52         43         36         46         40         40         34         37         47         40         27         27         45         39         27         33         41         31        19471
+
+ R   5		 G   0		 BestInG   26066		 AvgOfG   29731.896		 StDv    1543.341		 95% ConfInt   29423.227  30040.564
+ R   5		 G   1		 BestInG   24591		 AvgOfG   28556.783		 StDv     1946.73		 95% ConfInt   28167.437  28946.129
+ R   5		 G   2		 BestInG   22652		 AvgOfG   28095.643		 StDv     2178.44		 95% ConfInt   27659.955  28531.331
+ R   5		 G   3		 BestInG   24019		 AvgOfG   27385.531		 StDv    1955.724		 95% ConfInt   26994.386  27776.676
+ R   5		 G   4		 BestInG   22903		 AvgOfG   27390.749		 StDv    2218.137		 95% ConfInt   26947.121  27834.376
+ R   5		 G   5		 BestInG   22693		 AvgOfG   27539.597		 StDv    2672.943		 95% ConfInt   27005.008  28074.186
+ R   5		 G   6		 BestInG   20347		 AvgOfG   27398.455		 StDv    2626.296		 95% ConfInt   26873.196  27923.714
+ R   5		 G   7		 BestInG   22025		 AvgOfG   27883.915		 StDv    2456.298		 95% ConfInt   27392.655  28375.175
+ R   5		 G   8		 BestInG   21840		 AvgOfG   27705.594		 StDv    2569.241		 95% ConfInt   27191.746  28219.443
+ R   5		 G   9		 BestInG   21805		 AvgOfG   27535.393		 StDv    1892.362		 95% ConfInt   27156.921  27913.865
+ R   5		 G  10		 BestInG   23421		 AvgOfG   27664.003		 StDv    2018.258		 95% ConfInt   27260.351  28067.654
+ R   5		 G  11		 BestInG   20902		 AvgOfG   28225.171		 StDv    2464.706		 95% ConfInt    27732.23  28718.112
+ R   5		 G  12		 BestInG   23814		 AvgOfG   28188.748		 StDv    2316.359		 95% ConfInt   27725.476  28652.019
+ R   5		 G  13		 BestInG   23967		 AvgOfG   28361.732		 StDv    2716.193		 95% ConfInt   27818.493  28904.971
+ R   5		 G  14		 BestInG   23106		 AvgOfG   27822.196		 StDv    2205.703		 95% ConfInt   27381.055  28263.337
+ R   5		 G  15		 BestInG   24354		 AvgOfG    28213.43		 StDv    2624.977		 95% ConfInt   27688.434  28738.425
+ R   5		 G  16		 BestInG   22960		 AvgOfG   27431.514		 StDv    2618.383		 95% ConfInt   26907.837  27955.191
+ R   5		 G  17		 BestInG   21283		 AvgOfG   27986.553		 StDv    2831.207		 95% ConfInt   27420.312  28552.794
+ R   5		 G  18		 BestInG   21351		 AvgOfG   27223.059		 StDv    2780.893		 95% ConfInt    26666.88  27779.237
+ R   5		 G  19		 BestInG   20785		 AvgOfG    27592.73		 StDv    2308.169		 95% ConfInt   27131.096  28054.364
+ R   5		 G  20		 BestInG   21769		 AvgOfG   26970.582		 StDv    2530.016		 95% ConfInt   26464.579  27476.585
+ R   5		 G  21		 BestInG   21788		 AvgOfG   27220.507		 StDv    2248.646		 95% ConfInt   26770.778  27670.236
+ R   5		 G  22		 BestInG   21459		 AvgOfG   27455.879		 StDv    2330.297		 95% ConfInt   26989.819  27921.938
+ R   5		 G  23		 BestInG   23240		 AvgOfG   27535.443		 StDv    2304.511		 95% ConfInt   27074.541  27996.346
+ R   5		 G  24		 BestInG   21586		 AvgOfG   27269.826		 StDv    2252.921		 95% ConfInt   26819.242  27720.411
+ R   5		 G  25		 BestInG   22470		 AvgOfG   28119.683		 StDv    2512.285		 95% ConfInt   27617.226   28622.14
+ R   5		 G  26		 BestInG   23460		 AvgOfG    27510.62		 StDv    2382.289		 95% ConfInt   27034.162  27987.077
+ R   5		 G  27		 BestInG   21606		 AvgOfG   27918.116		 StDv    2569.319		 95% ConfInt   27404.252   28431.98
+ R   5		 G  28		 BestInG   21868		 AvgOfG   27496.787		 StDv    2555.269		 95% ConfInt   26985.733  28007.841
+ R   5		 G  29		 BestInG   21894		 AvgOfG   28174.585		 StDv     2344.25		 95% ConfInt   27705.735  28643.435
+ R   5		 G  30		 BestInG   21906		 AvgOfG   28049.686		 StDv    2790.439		 95% ConfInt   27491.598  28607.774
+ R   5		 G  31		 BestInG   21880		 AvgOfG   27166.627		 StDv    2736.903		 95% ConfInt   26619.247  27714.008
+ R   5		 G  32		 BestInG   21661		 AvgOfG   27053.001		 StDv    2577.959		 95% ConfInt   26537.409  27568.593
+ R   5		 G  33		 BestInG   22506		 AvgOfG   26976.204		 StDv    2153.742		 95% ConfInt   26545.456  27406.952
+ R   5		 G  34		 BestInG   22813		 AvgOfG    27465.53		 StDv    2872.736		 95% ConfInt   26890.983  28040.077
+ R   5		 G  35		 BestInG   21981		 AvgOfG   27227.715		 StDv    2165.141		 95% ConfInt   26794.687  27660.743
+ R   5		 G  36		 BestInG   22107		 AvgOfG     27688.9		 StDv     2570.98		 95% ConfInt   27174.704  28203.096
+ R   5		 G  37		 BestInG   21718		 AvgOfG   26969.862		 StDv    2672.295		 95% ConfInt   26435.403  27504.321
+ R   5		 G  38		 BestInG   22289		 AvgOfG   27734.793		 StDv    2648.119		 95% ConfInt    27205.17  28264.417
+ R   5		 G  39		 BestInG   22455		 AvgOfG   27242.094		 StDv    2400.885		 95% ConfInt   26761.917  27722.271
+ R   5		 G  40		 BestInG   21369		 AvgOfG   27577.029		 StDv    2705.766		 95% ConfInt   27035.876  28118.183
+ R   5		 G  41		 BestInG   21647		 AvgOfG   26897.669		 StDv    2481.681		 95% ConfInt   26401.333  27394.006
+ R   5		 G  42		 BestInG   23364		 AvgOfG   27938.448		 StDv    2171.302		 95% ConfInt   27504.187  28372.708
+ R   5		 G  43		 BestInG   23628		 AvgOfG   27447.405		 StDv    2357.116		 95% ConfInt   26975.982  27918.828
+ R   5		 G  44		 BestInG   21859		 AvgOfG   27434.672		 StDv    2664.682		 95% ConfInt   26901.736  27967.609
+ R   5		 G  45		 BestInG   22648		 AvgOfG   27426.808		 StDv    2439.858		 95% ConfInt   26938.837   27914.78
+ R   5		 G  46		 BestInG   22524		 AvgOfG   27686.496		 StDv    2635.104		 95% ConfInt   27159.475  28213.517
+ R   5		 G  47		 BestInG   22371		 AvgOfG   27939.711		 StDv    3103.369		 95% ConfInt   27319.037  28560.385
+ R   5		 G  48		 BestInG   22269		 AvgOfG    27918.98		 StDv    2781.028		 95% ConfInt   27362.774  28475.185
+ R   5		 G  49		 BestInG   21964		 AvgOfG   28413.827		 StDv    2617.241		 95% ConfInt   27890.379  28937.275
+ R   5		 G  50		 BestInG   21979		 AvgOfG   27889.933		 StDv    2422.799		 95% ConfInt   27405.373  28374.493
+ R   5		 G  51		 BestInG   21287		 AvgOfG   27719.406		 StDv    2356.459		 95% ConfInt   27248.114  28190.698
+ R   5		 G  52		 BestInG   21020		 AvgOfG   27882.011		 StDv    3109.123		 95% ConfInt   27260.187  28503.836
+ R   5		 G  53		 BestInG   21078		 AvgOfG   28097.278		 StDv    2434.404		 95% ConfInt   27610.397  28584.159
+ R   5		 G  54		 BestInG   24394		 AvgOfG   28289.792		 StDv    2411.526		 95% ConfInt   27807.487  28772.097
+ R   5		 G  55		 BestInG   23085		 AvgOfG   27571.133		 StDv    2282.352		 95% ConfInt   27114.662  28027.603
+ R   5		 G  56		 BestInG   22452		 AvgOfG   27829.239		 StDv    2387.063		 95% ConfInt   27351.827  28306.652
+ R   5		 G  57		 BestInG   21345		 AvgOfG   27717.921		 StDv    2908.386		 95% ConfInt   27136.244  28299.598
+ R   5		 G  58		 BestInG   21364		 AvgOfG   27758.484		 StDv    2877.085		 95% ConfInt   27183.067    28333.9
+ R   5		 G  59		 BestInG   21482		 AvgOfG   28333.008		 StDv     2793.54		 95% ConfInt     27774.3  28891.716
+ R   5		 G  60		 BestInG   21281		 AvgOfG   27024.496		 StDv    3049.816		 95% ConfInt   26414.532  27634.459
+ R   5		 G  61		 BestInG   20358		 AvgOfG   27169.698		 StDv    3603.842		 95% ConfInt   26448.929  27890.466
+ R   5		 G  62		 BestInG   20766		 AvgOfG   27809.092		 StDv     2660.76		 95% ConfInt    27276.94  28341.244
+ R   5		 G  63		 BestInG   21032		 AvgOfG   27344.883		 StDv    3121.167		 95% ConfInt    26720.65  27969.117
+ R   5		 G  64		 BestInG   21095		 AvgOfG    27923.55		 StDv    3639.424		 95% ConfInt   27195.666  28651.435
+ R   5		 G  65		 BestInG   21039		 AvgOfG   28164.928		 StDv     3048.03		 95% ConfInt   27555.322  28774.534
+ R   5		 G  66		 BestInG   19510		 AvgOfG   27573.026		 StDv    3334.253		 95% ConfInt   26906.175  28239.877
+ R   5		 G  67		 BestInG   21267		 AvgOfG   27920.384		 StDv    2965.869		 95% ConfInt    27327.21  28513.558
+ R   5		 G  68		 BestInG   23908		 AvgOfG   28222.076		 StDv    2554.588		 95% ConfInt   27711.158  28732.993
+ R   5		 G  69		 BestInG   23563		 AvgOfG    28451.51		 StDv    2438.303		 95% ConfInt    27963.85  28939.171
+ R   5		 G  70		 BestInG   21265		 AvgOfG   28307.755		 StDv    2680.361		 95% ConfInt   27771.683  28843.828
+ R   5		 G  71		 BestInG   21300		 AvgOfG   28774.865		 StDv    2947.513		 95% ConfInt   28185.362  29364.367
+ R   5		 G  72		 BestInG   21867		 AvgOfG   28462.402		 StDv     2461.03		 95% ConfInt   27970.196  28954.608
+ R   5		 G  73		 BestInG   22022		 AvgOfG   28472.343		 StDv    2818.576		 95% ConfInt   27908.628  29036.058
+ R   5		 G  74		 BestInG   22038		 AvgOfG   28218.607		 StDv    2441.869		 95% ConfInt   27730.233  28706.981
+ R   5		 G  75		 BestInG   22265		 AvgOfG    27174.25		 StDv    2523.437		 95% ConfInt   26669.563  27678.938
+ R   5		 G  76		 BestInG   22570		 AvgOfG   27774.302		 StDv    2125.421		 95% ConfInt   27349.218  28199.386
+ R   5		 G  77		 BestInG   22678		 AvgOfG   28423.351		 StDv    2851.517		 95% ConfInt   27853.047  28993.654
+ R   5		 G  78		 BestInG   23091		 AvgOfG   28053.507		 StDv    2744.943		 95% ConfInt   27504.518  28602.495
+ R   5		 G  79		 BestInG   21141		 AvgOfG   28124.713		 StDv    2746.983		 95% ConfInt   27575.316   28674.11
+ R   5		 G  80		 BestInG   21766		 AvgOfG   27595.623		 StDv    2422.831		 95% ConfInt   27111.057  28080.189
+ R   5		 G  81		 BestInG   21629		 AvgOfG   27705.301		 StDv     2372.19		 95% ConfInt   27230.863  28179.739
+ R   5		 G  82		 BestInG   21798		 AvgOfG   27405.416		 StDv    2827.717		 95% ConfInt   26839.873   27970.96
+ R   5		 G  83		 BestInG   21522		 AvgOfG   27403.725		 StDv    2900.571		 95% ConfInt    26823.61  27983.839
+ R   5		 G  84		 BestInG   22348		 AvgOfG   27430.846		 StDv    2998.504		 95% ConfInt   26831.146  28030.547
+ R   5		 G  85		 BestInG   22765		 AvgOfG   27720.016		 StDv    2418.357		 95% ConfInt   27236.345  28203.688
+ R   5		 G  86		 BestInG   23054		 AvgOfG    27991.87		 StDv    2754.487		 95% ConfInt   27440.973  28542.768
+ R   5		 G  87		 BestInG   22803		 AvgOfG   27960.879		 StDv    2810.757		 95% ConfInt   27398.727   28523.03
+ R   5		 G  88		 BestInG   21049		 AvgOfG   28145.429		 StDv    2878.894		 95% ConfInt   27569.651  28721.208
+ R   5		 G  89		 BestInG   21166		 AvgOfG   28449.761		 StDv    3278.533		 95% ConfInt   27794.054  29105.468
+ R   5		 G  90		 BestInG   21222		 AvgOfG   27947.548		 StDv    3088.654		 95% ConfInt   27329.817  28565.279
+ R   5		 G  91		 BestInG   21103		 AvgOfG   27762.212		 StDv    2696.841		 95% ConfInt   27222.844   28301.58
+ R   5		 G  92		 BestInG   21156		 AvgOfG   27798.501		 StDv    2748.963		 95% ConfInt   27248.709  28348.294
+ R   5		 G  93		 BestInG   22638		 AvgOfG   28461.126		 StDv    2754.775		 95% ConfInt   27910.171   29012.08
+ R   5		 G  94		 BestInG   23089		 AvgOfG   27330.513		 StDv    2594.428		 95% ConfInt   26811.627  27849.399
+ R   5		 G  95		 BestInG   20335		 AvgOfG   27847.384		 StDv    2989.278		 95% ConfInt   27249.529   28445.24
+ R   5		 G  96		 BestInG   21223		 AvgOfG    27565.36		 StDv    2996.742		 95% ConfInt   26966.012  28164.709
+ R   5		 G  97		 BestInG   21229		 AvgOfG   26986.496		 StDv    3149.234		 95% ConfInt    26356.65  27616.343
+ R   5		 G  98		 BestInG   20802		 AvgOfG   27308.106		 StDv    2566.815		 95% ConfInt   26794.743  27821.469
+ R   5		 G  99		 BestInG   22397		 AvgOfG   28031.992		 StDv      2594.4		 95% ConfInt   27513.112  28550.872
+ R   5		 G 100		 BestInG   20412		 AvgOfG   28374.673		 StDv    2704.132		 95% ConfInt   27833.847  28915.499
+ R   5		 G 101		 BestInG   22845		 AvgOfG   28055.388		 StDv    2361.025		 95% ConfInt   27583.183  28527.593
+ R   5		 G 102		 BestInG   22109		 AvgOfG   27902.338		 StDv     2665.77		 95% ConfInt   27369.184  28435.492
+ R   5		 G 103		 BestInG   22155		 AvgOfG   28334.807		 StDv    2858.555		 95% ConfInt   27763.096  28906.518
+ R   5		 G 104		 BestInG   21462		 AvgOfG   27569.884		 StDv     2962.85		 95% ConfInt   26977.314  28162.454
+ R   5		 G 105		 BestInG   20616		 AvgOfG   27637.311		 StDv    2647.383		 95% ConfInt   27107.835  28166.788
+ R   5		 G 106		 BestInG   20262		 AvgOfG   27426.331		 StDv     2752.24		 95% ConfInt   26875.883  27976.779
+ R   5		 G 107		 BestInG   20148		 AvgOfG   27848.704		 StDv    3277.151		 95% ConfInt   27193.273  28504.134
+ R   5		 G 108		 BestInG   23402		 AvgOfG   28653.735		 StDv    3494.511		 95% ConfInt   27954.833  29352.637
+ R   5		 G 109		 BestInG   23033		 AvgOfG   27630.854		 StDv    2755.014		 95% ConfInt   27079.851  28181.856
+ R   5		 G 110		 BestInG   23009		 AvgOfG   28270.982		 StDv    2860.261		 95% ConfInt   27698.929  28843.034
+ R   5		 G 111		 BestInG   21823		 AvgOfG   27649.911		 StDv    2405.461		 95% ConfInt   27168.819  28131.003
+ R   5		 G 112		 BestInG   23406		 AvgOfG   28073.532		 StDv    2497.378		 95% ConfInt   27574.057  28573.008
+ R   5		 G 113		 BestInG   23585		 AvgOfG   27844.313		 StDv    2162.323		 95% ConfInt   27411.849  28276.778
+ R   5		 G 114		 BestInG   22841		 AvgOfG   28346.624		 StDv    2925.059		 95% ConfInt   27761.612  28931.636
+ R   5		 G 115		 BestInG   17798		 AvgOfG   26950.209		 StDv    3503.843		 95% ConfInt   26249.441  27650.978
+ R   5		 G 116		 BestInG   17793		 AvgOfG   27412.294		 StDv    3520.749		 95% ConfInt   26708.144  28116.444
+ R   5		 G 117		 BestInG   17786		 AvgOfG   27533.988		 StDv    3054.049		 95% ConfInt   26923.178  28144.797
+ R   5		 G 118		 BestInG   17786		 AvgOfG   27759.234		 StDv    3063.504		 95% ConfInt   27146.533  28371.934
+ R   5		 G 119		 BestInG   23198		 AvgOfG   28279.144		 StDv    2827.645		 95% ConfInt   27713.615  28844.673
+ R   5		 G 120		 BestInG   22305		 AvgOfG   27670.551		 StDv    2900.903		 95% ConfInt   27090.371  28250.732
+ R   5		 G 121		 BestInG   22984		 AvgOfG   28178.706		 StDv      2562.7		 95% ConfInt   27666.166  28691.246
+ R   5		 G 122		 BestInG   22411		 AvgOfG   27635.167		 StDv    2854.716		 95% ConfInt   27064.224   28206.11
+ R   5		 G 123		 BestInG   19442		 AvgOfG   27381.147		 StDv    3032.583		 95% ConfInt    26774.63  27987.663
+ R   5		 G 124		 BestInG   22905		 AvgOfG   28158.115		 StDv    2535.875		 95% ConfInt    27650.94   28665.29
+ R   5		 G 125		 BestInG   23684		 AvgOfG   27428.087		 StDv    2127.188		 95% ConfInt   27002.649  27853.524
+ R   5		 G 126		 BestInG   23623		 AvgOfG   28764.276		 StDv    2916.909		 95% ConfInt   28180.895  29347.658
+ R   5		 G 127		 BestInG   22304		 AvgOfG   27801.029		 StDv    2574.031		 95% ConfInt   27286.223  28315.835
+ R   5		 G 128		 BestInG   20172		 AvgOfG   27662.068		 StDv    2859.947		 95% ConfInt   27090.078  28234.057
+ R   5		 G 129		 BestInG   20125		 AvgOfG   28275.616		 StDv    2882.375		 95% ConfInt   27699.141  28852.091
+ R   5		 G 130		 BestInG   20887		 AvgOfG   28871.517		 StDv    2722.964		 95% ConfInt   28326.924  29416.109
+ R   5		 G 131		 BestInG   20672		 AvgOfG   28502.061		 StDv    3053.769		 95% ConfInt   27891.307  29112.815
+ R   5		 G 132		 BestInG   21213		 AvgOfG   27866.628		 StDv    2842.816		 95% ConfInt   27298.064  28435.191
+ R   5		 G 133		 BestInG   23076		 AvgOfG     27858.0		 StDv    2609.291		 95% ConfInt   27336.142  28379.858
+ R   5		 G 134		 BestInG   21368		 AvgOfG   27438.334		 StDv    2856.627		 95% ConfInt   26867.009  28009.659
+ R   5		 G 135		 BestInG   20097		 AvgOfG   27006.866		 StDv    3178.498		 95% ConfInt   26371.166  27642.565
+ R   5		 G 136		 BestInG   20821		 AvgOfG   27413.754		 StDv    3213.844		 95% ConfInt   26770.985  28056.523
+ R   5		 G 137		 BestInG   21724		 AvgOfG   27832.668		 StDv     2600.32		 95% ConfInt   27312.604  28352.732
+ R   5		 G 138		 BestInG   21589		 AvgOfG   27964.233		 StDv    2390.816		 95% ConfInt    27486.07  28442.396
+ R   5		 G 139		 BestInG   20107		 AvgOfG   27461.691		 StDv     2760.53		 95% ConfInt   26909.585  28013.797
+ R   5		 G 140		 BestInG   20021		 AvgOfG   27925.758		 StDv    3012.811		 95% ConfInt   27323.196  28528.321
+ R   5		 G 141		 BestInG   21064		 AvgOfG   27607.283		 StDv    2787.806		 95% ConfInt   27049.722  28164.844
+ R   5		 G 142		 BestInG   21932		 AvgOfG    27745.12		 StDv    2744.063		 95% ConfInt   27196.307  28293.933
+ R   5		 G 143		 BestInG   21744		 AvgOfG   27277.587		 StDv    2758.701		 95% ConfInt   26725.847  27829.327
+ R   5		 G 144		 BestInG   19759		 AvgOfG   27026.536		 StDv    2504.859		 95% ConfInt   26525.564  27527.508
+ R   5		 G 145		 BestInG   19794		 AvgOfG   27507.931		 StDv     2574.17		 95% ConfInt   26993.097  28022.765
+ R   5		 G 146		 BestInG   21299		 AvgOfG   27424.647		 StDv    2636.474		 95% ConfInt   26897.353  27951.942
+ R   5		 G 147		 BestInG   19751		 AvgOfG    27417.15		 StDv    2785.094		 95% ConfInt   26860.131  27974.169
+ R   5		 G 148		 BestInG   21250		 AvgOfG   27322.244		 StDv    2705.342		 95% ConfInt   26781.175  27863.312
+ R   5		 G 149		 BestInG   22250		 AvgOfG   27524.477		 StDv    2422.664		 95% ConfInt   27039.945   28009.01
+ R   5		 G 150		 BestInG   22872		 AvgOfG   27411.527		 StDv    2370.602		 95% ConfInt   26937.406  27885.647
+ R   5		 G 151		 BestInG   21762		 AvgOfG   27894.875		 StDv     2841.85		 95% ConfInt   27326.505  28463.245
+ R   5		 G 152		 BestInG   21271		 AvgOfG   27336.163		 StDv    2537.812		 95% ConfInt   26828.601  27843.726
+ R   5		 G 153		 BestInG   22549		 AvgOfG   27163.032		 StDv    2042.691		 95% ConfInt   26754.494   27571.57
+ R   5		 G 154		 BestInG   23070		 AvgOfG   27833.073		 StDv    2463.085		 95% ConfInt   27340.456   28325.69
+ R   5		 G 155		 BestInG   22778		 AvgOfG   28037.348		 StDv    2595.945		 95% ConfInt   27518.159  28556.537
+ R   5		 G 156		 BestInG   20364		 AvgOfG   28022.853		 StDv    3162.671		 95% ConfInt   27390.318  28655.387
+ R   5		 G 157		 BestInG   19401		 AvgOfG   27283.719		 StDv    3001.697		 95% ConfInt   26683.379  27884.058
+ R   5		 G 158		 BestInG   22455		 AvgOfG   27969.665		 StDv     2839.86		 95% ConfInt   27401.693  28537.637
+ R   5		 G 159		 BestInG   22393		 AvgOfG   27767.992		 StDv    2312.357		 95% ConfInt   27305.521  28230.464
+ R   5		 G 160		 BestInG   22163		 AvgOfG   27821.312		 StDv    3022.364		 95% ConfInt   27216.839  28425.784
+ R   5		 G 161		 BestInG   21663		 AvgOfG   27959.488		 StDv    2863.519		 95% ConfInt   27386.784  28532.192
+ R   5		 G 162		 BestInG   20697		 AvgOfG    27284.03		 StDv    3113.828		 95% ConfInt   26661.265  27906.796
+ R   5		 G 163		 BestInG   20783		 AvgOfG   28053.818		 StDv    2683.839		 95% ConfInt   27517.051  28590.586
+ R   5		 G 164		 BestInG   22450		 AvgOfG   27885.223		 StDv    2619.441		 95% ConfInt   27361.334  28409.111
+ R   5		 G 165		 BestInG   23620		 AvgOfG   28452.865		 StDv    2158.111		 95% ConfInt   28021.243  28884.487
+ R   5		 G 166		 BestInG   22891		 AvgOfG   27915.579		 StDv    2427.511		 95% ConfInt   27430.077  28401.081
+ R   5		 G 167		 BestInG   22036		 AvgOfG   28006.934		 StDv    2591.935		 95% ConfInt   27488.547  28525.321
+ R   5		 G 168		 BestInG   21617		 AvgOfG   27617.722		 StDv    2342.093		 95% ConfInt   27149.304  28086.141
+ R   5		 G 169		 BestInG   22203		 AvgOfG   27454.949		 StDv    2568.078		 95% ConfInt   26941.333  27968.564
+ R   5		 G 170		 BestInG   22758		 AvgOfG    27554.62		 StDv    2190.655		 95% ConfInt   27116.489  27992.751
+ R   5		 G 171		 BestInG   23374		 AvgOfG   27884.339		 StDv    2442.428		 95% ConfInt   27395.853  28372.824
+ R   5		 G 172		 BestInG   24260		 AvgOfG     28141.7		 StDv     2366.99		 95% ConfInt   27668.302  28615.098
+ R   5		 G 173		 BestInG   22440		 AvgOfG   27747.559		 StDv    3131.187		 95% ConfInt   27121.321  28373.796
+ R   5		 G 174		 BestInG   22187		 AvgOfG   27349.721		 StDv    2725.648		 95% ConfInt   26804.592  27894.851
+ R   5		 G 175		 BestInG   22778		 AvgOfG   27487.336		 StDv    2645.246		 95% ConfInt   26958.287  28016.386
+ R   5		 G 176		 BestInG   22608		 AvgOfG   27963.695		 StDv     2439.88		 95% ConfInt   27475.719   28451.67
+ R   5		 G 177		 BestInG   23192		 AvgOfG   27973.572		 StDv     2601.79		 95% ConfInt   27453.214   28493.93
+ R   5		 G 178		 BestInG   22499		 AvgOfG   27526.889		 StDv    2717.882		 95% ConfInt   26983.313  28070.465
+ R   5		 G 179		 BestInG   21579		 AvgOfG   27232.188		 StDv    2583.111		 95% ConfInt   26715.566   27748.81
+ R   5		 G 180		 BestInG   21869		 AvgOfG    27419.76		 StDv    2466.158		 95% ConfInt   26926.528  27912.992
+ R   5		 G 181		 BestInG   17667		 AvgOfG   27831.787		 StDv    3194.155		 95% ConfInt   27192.956  28470.618
+ R   5		 G 182		 BestInG   17664		 AvgOfG   27742.871		 StDv    3265.031		 95% ConfInt   27089.865  28395.877
+ R   5		 G 183		 BestInG   22623		 AvgOfG   27704.566		 StDv    2408.004		 95% ConfInt   27222.965  28186.167
+ R   5		 G 184		 BestInG   22542		 AvgOfG   27997.995		 StDv    2343.111		 95% ConfInt   27529.373  28466.617
+ R   5		 G 185		 BestInG   20869		 AvgOfG    28295.54		 StDv    2970.414		 95% ConfInt   27701.458  28889.623
+ R   5		 G 186		 BestInG   21109		 AvgOfG   28117.089		 StDv    2331.827		 95% ConfInt   27650.724  28583.454
+ R   5		 G 187		 BestInG   23258		 AvgOfG   27442.086		 StDv    2703.245		 95% ConfInt   26901.437  27982.735
+ R   5		 G 188		 BestInG   22939		 AvgOfG   28168.676		 StDv    2647.203		 95% ConfInt   27639.235  28698.116
+ R   5		 G 189		 BestInG   21979		 AvgOfG   26571.622		 StDv    2612.751		 95% ConfInt   26049.071  27094.172
+ R   5		 G 190		 BestInG   21842		 AvgOfG   27386.534		 StDv     2358.38		 95% ConfInt   26914.858   27858.21
+ R   5		 G 191		 BestInG   22188		 AvgOfG   27336.924		 StDv    2539.427		 95% ConfInt   26829.039   27844.81
+ R   5		 G 192		 BestInG   21827		 AvgOfG   27130.653		 StDv     2765.02		 95% ConfInt   26577.649  27683.657
+ R   5		 G 193		 BestInG   21773		 AvgOfG   27773.171		 StDv    2616.003		 95% ConfInt   27249.971  28296.372
+ R   5		 G 194		 BestInG   22259		 AvgOfG   26937.401		 StDv    2656.532		 95% ConfInt   26406.094  27468.707
+ R   5		 G 195		 BestInG   22132		 AvgOfG     26827.6		 StDv    2112.467		 95% ConfInt   26405.107  27250.094
+ R   5		 G 196		 BestInG   21196		 AvgOfG   26899.047		 StDv      2682.4		 95% ConfInt   26362.567  27435.527
+ R   5		 G 197		 BestInG   19127		 AvgOfG   26347.969		 StDv    2350.587		 95% ConfInt   25877.852  26818.087
+ R   5		 G 198		 BestInG   19215		 AvgOfG   26655.872		 StDv    2877.533		 95% ConfInt   26080.365  27231.379
+ R   5		 G 199		 BestInG   20259		 AvgOfG   26630.596		 StDv    2908.517		 95% ConfInt   26048.893    27212.3
+5    182         49         31         40         38         44         48         23         34          2         49         11         33         31          4          5         41         25         19         15         43         46         39         35          6         32         44         33         44         29         48         38         28         47         30         49         26         47         34         27         50         31         35         51         40         41         33         34         51         40         32         49         48   RawFitness
+                 49         31         40         38         44         48         23         34          2         49         11         33         31          4          5         41         25         19         15         43         46         39         35          6         32         44         33         44         29         48         38         28         47         30         49         26         47         34         27         50         31         35         51         40         41         33         34         51         40         32         49         48        17664
+
+B                49         31         40         38         44         48         23         34          2         49         11         33         31          4          5         41         25         19         15         43         46         39         35          6         32         44         33         44         29         48         38         28         47         30         49         26         47         34         27         50         31         35         51         40         41         33         34         51         40         32         49         48   RawFitness
+                 49         31         40         38         44         48         23         34          2         49         11         33         31          4          5         41         25         19         15         43         46         39         35          6         32         44         33         44         29         48         38         28         47         30         49         26         47         34         27         50         31         35         51         40         41         33         34         51         40         32         49         48        17664
+
+Gen            AvgOfAvgFit            AvgOfBestFit            StDvAvg            StDvAvgBst           95%ConfIntBst
+0              29721.7             25915.04            90.45               377.21              25577.66            26252.43            
+1              29030.38            24336.18            310.35              354.07              24019.49            24652.87            
+2              28683.55            23809.97            508.84              783.36              23109.31            24510.63            
+3              28454.58            24241.33            694.99              950.59              23391.1             25091.56            
+4              28476.29            24023.76            706.67              1252.6              22903.4             25144.12            
+5              28300.76            23729.51            458.46              772.17              23038.87            24420.16            
+6              28397.5             23195.57            545.39              1639.78             21728.91            24662.24            
+7              28217.73            22251.81            257.74              732.3               21596.82            22906.79            
+8              27943.03            22761.59            363.87              911.69              21946.15            23577.02            
+9              28107.34            22235.04            468.59              1872.81             20559.95            23910.14            
+10             27878.46            23383.27            189.03              629.04              22820.64            23945.9             
+11             28381.14            22860.23            305.42              1173.8              21810.35            23910.11            
+12             28158.71            22695.79            327.65              1293.73             21538.65            23852.94            
+13             28178.15            22983.46            168.37              958.74              22125.94            23840.98            
+14             27996.82            23132.71            503.46              1068.83             22176.72            24088.7             
+15             28003.93            23169.85            495.6               1129.12             22159.93            24179.77            
+16             27902.4             22783.11            528.25              881.95              21994.27            23571.95            
+17             28102.18            22087.38            279.92              983.88              21207.37            22967.39            
+18             28147.85            22866.84            557.07              965.16              22003.58            23730.1             
+19             28179.13            21915.88            483.96              709.5               21281.28            22550.47            
+20             28031.83            22437.48            819.7               948.15              21589.43            23285.54            
+21             28306.06            22770.18            625.22              958.42              21912.94            23627.41            
+22             28274.9             22799.73            671.64              1049.75             21860.81            23738.65            
+23             28022.2             22904.03            631.69              569.88              22394.31            23413.74            
+24             27886.68            22776.17            602.78              787.96              22071.4             23480.95            
+25             28109.06            22868.22            681.43              898.99              22064.15            23672.3             
+26             27974.15            23199.96            596.06              675.49              22595.78            23804.13            
+27             28184.38            22713.71            332.82              837.5               21964.62            23462.8             
+28             28145.71            22992.21            736.11              726.6               22342.32            23642.11            
+29             28011.71            22252.41            379.37              590.2               21724.52            22780.29            
+30             28105.86            22080.56            474.36              1017.35             21170.62            22990.51            
+31             27799.56            22020.01            1054.2              926.49              21191.33            22848.69            
+32             27958.54            22133.91            735.43              996.05              21243.02            23024.81            
+33             28100.08            22549.71            698.98              1109.33             21557.5             23541.93            
+34             28211.69            21760.17            403.88              1509.75             20409.81            23110.54            
+35             27872.51            22524.58            476.34              483.17              22092.42            22956.74            
+36             27976.57            22280.8             552.44              634.28              21713.48            22848.11            
+37             28144.35            21982.88            981.06              877.99              21197.58            22768.18            
+38             28016.64            22545.76            410.12              873.5               21764.48            23327.04            
+39             28041.73            22203.93            840.5               1389.82             20960.84            23447.02            
+40             28289.06            22105.96            802.23              510.75              21649.13            22562.79            
+41             28065.36            23013.57            1170.48             1186.4              21952.43            24074.72            
+42             28334.82            23272.93            1178.96             1017.58             22362.79            24183.08            
+43             28303.23            23405.26            1120.26             981.15              22527.7             24282.83            
+44             28064.33            22797.33            1123.49             1179.18             21742.63            23852.02            
+45             28082.26            22510.74            865.32              1783.91             20915.16            24106.32            
+46             28229.72            23326.67            782.45              662.35              22734.24            23919.09            
+47             28355.36            23174.92            810.7               815.66              22445.37            23904.47            
+48             28249.43            23458.89            1099.69             1626.48             22004.12            24913.65            
+49             27903.96            22749.48            767.35              1499.55             21408.25            24090.72            
+50             27846.1             22731.37            759.72              1296.13             21572.07            23890.67            
+51             28502.13            23093.94            849.59              1419.32             21824.46            24363.43            
+52             28236.34            22640.53            662.64              1327.01             21453.62            23827.44            
+53             28304.61            22626.11            534.68              970.76              21757.84            23494.38            
+54             28104.53            23641.54            320.88              618.56              23088.28            24194.8             
+55             28097.55            23154.85            385.34              374.5               22819.89            23489.81            
+56             28028.22            22805.42            657.11              690.12              22188.15            23422.69            
+57             27797.23            22729.09            406.57              709.32              22094.65            23363.52            
+58             27861.12            22463.68            467.31              849.05              21704.26            23223.1             
+59             27677.74            22813.87            671.51              1000.38             21919.11            23708.64            
+60             27882.03            22704.01            707.66              1018.63             21792.92            23615.1             
+61             28025.54            22174.47            931.73              1286.22             21024.04            23324.9             
+62             28061.02            22619.43            625.18              1588.16             21198.94            24039.92            
+63             28094.35            23012.42            593.37              1360.74             21795.34            24229.51            
+64             28102.99            22993.04            256.61              1212.09             21908.92            24077.16            
+65             28253.48            22716.71            264.05              1058.98             21769.53            23663.88            
+66             28163.34            22950.33            618.68              1780.93             21357.41            24543.24            
+67             28217.03            23090.62            564.86              959.52              22232.4             23948.84            
+68             28275.66            23662.14            301.16              472.16              23239.83            24084.46            
+69             28690.74            23360.81            568.25              492.26              22920.51            23801.1             
+70             28436.38            23387.5             611.06              1173.59             22337.81            24437.19            
+71             28507.86            22492.29            795.76              1022.11             21578.09            23406.5             
+72             28274.61            22107.58            458.86              334.62              21808.28            22406.87            
+73             28078.88            22088.29            581.25              371.11              21756.36            22420.23            
+74             28242.8             22521.02            843.94              1398.42             21270.24            23771.81            
+75             28057.07            22925.3             846.12              927.96              22095.31            23755.3             
+76             28199.38            23604.14            863.83              1220.17             22512.78            24695.49            
+77             28574.34            22991.86            729.9               677.66              22385.74            23597.98            
+78             28357.95            23432.72            602.13              913.62              22615.56            24249.88            
+79             28131.56            22970.23            663.58              1144.21             21946.82            23993.64            
+80             28087.41            22953.98            770.2               929.6               22122.52            23785.44            
+81             27957.45            22923.51            767.87              823.27              22187.15            23659.86            
+82             27994.23            22264.24            1083.87             765.87              21579.23            22949.26            
+83             27896.75            23095.41            750.79              820.1               22361.89            23828.92            
+84             27959.97            22880.47            719.49              697.19              22256.89            23504.06            
+85             27923.33            22856.88            834.04              824.4               22119.51            23594.25            
+86             27970.77            23102.58            835.0               937.67              22263.91            23941.25            
+87             28088.13            22953.77            752.89              771.14              22264.05            23643.5             
+88             28176.29            22986.59            662.76              1380.45             21751.87            24221.3             
+89             28124.42            22423.7             601.64              1120.69             21421.32            23426.07            
+90             28272.49            22378.08            630.86              1323.15             21194.62            23561.53            
+91             28315.27            22632.9             679.08              828.25              21892.09            23373.71            
+92             28040.61            22541.76            669.53              881.86              21753.0             23330.51            
+93             28458.12            23036.13            936.72              311.33              22757.68            23314.59            
+94             28183.05            22833.68            783.38              1390.85             21589.67            24077.7             
+95             28108.52            21871.84            878.0               1287.99             20719.83            23023.85            
+96             28060.34            22092.9             668.5               1122.6              21088.81            23096.98            
+97             28037.58            22418.61            794.55              1265.37             21286.83            23550.38            
+98             28246.85            22221.67            1076.35             1056.27             21276.91            23166.43            
+99             28349.36            22715.65            881.73              544.81              22228.35            23202.94            
+100            28555.75            22496.71            1132.92             1847.47             20844.29            24149.14            
+101            28177.83            23194.03            1056.14             622.85              22636.94            23751.12            
+102            28335.81            22655.12            996.53              1127.36             21646.78            23663.46            
+103            28425.03            22842.42            954.91              1068.92             21886.34            23798.49            
+104            28425.76            22629.38            986.47              1383.85             21391.63            23867.14            
+105            28198.66            23076.51            779.44              1357.98             21861.9             24291.12            
+106            28349.06            22542.0             870.18              1193.25             21474.72            23609.27            
+107            28323.72            22648.22            489.6               1321.21             21466.49            23829.94            
+108            28650.51            22254.26            812.17              782.63              21554.26            22954.26            
+109            28559.19            22729.62            922.81              1486.02             21400.48            24058.75            
+110            28228.22            22572.9             785.42              1517.7              21215.43            23930.37            
+111            28409.16            22778.03            812.02              1911.71             21068.15            24487.91            
+112            28697.37            23267.82            418.54              1723.16             21726.58            24809.06            
+113            28183.75            22610.45            574.96              1473.22             21292.76            23928.13            
+114            28318.64            22765.16            587.56              1605.84             21328.86            24201.47            
+115            28146.47            21436.38            799.13              2189.27             19478.24            23394.53            
+116            28131.33            22138.87            671.61              2797.49             19636.72            24641.03            
+117            28277.86            21840.18            775.91              2402.06             19691.72            23988.64            
+118            28174.97            21713.74            638.94              2334.6              19625.62            23801.87            
+119            28684.81            22632.71            763.97              935.03              21796.4             23469.03            
+120            28676.5             22449.48            574.23              1372.07             21222.27            23676.7             
+121            28470.3             22346.53            502.58              1579.17             20934.08            23758.98            
+122            28470.68            22643.05            843.09              1218.18             21553.48            23732.63            
+123            28452.87            22289.99            624.97              1939.45             20555.29            24024.68            
+124            28598.22            23101.12            592.49              1263.37             21971.13            24231.1             
+125            28144.81            23027.44            518.04              981.13              22149.89            23904.98            
+126            28713.86            22906.16            335.63              924.11              22079.61            23732.71            
+127            28454.34            22868.51            552.69              1075.14             21906.88            23830.14            
+128            28483.04            22580.38            644.68              1220.51             21488.72            23672.04            
+129            28512.21            22909.17            600.25              1528.03             21542.46            24275.88            
+130            28702.34            22902.88            404.19              1163.43             21862.28            23943.49            
+131            28226.57            21584.56            412.0               1636.78             20120.58            23048.54            
+132            28201.01            21542.21            417.75              885.67              20750.04            22334.37            
+133            28267.52            21994.05            292.05              1449.05             20697.98            23290.11            
+134            28144.1             22535.97            582.92              1004.27             21637.72            23434.22            
+135            27966.28            22092.02            526.31              1406.61             20833.9             23350.13            
+136            28296.45            22286.52            657.36              1317.78             21107.87            23465.18            
+137            28380.51            22377.63            535.87              1111.12             21383.81            23371.44            
+138            28154.77            22329.13            310.27              870.04              21550.94            23107.32            
+139            28272.79            22565.35            621.62              1556.38             21173.28            23957.42            
+140            28471.85            22286.83            523.91              1378.45             21053.91            23519.75            
+141            28210.15            22671.4             326.53              1198.45             21599.48            23743.33            
+142            28367.16            22831.66            471.08              1047.46             21894.78            23768.54            
+143            28144.21            22874.54            612.21              1368.89             21650.16            24098.91            
+144            28027.88            22035.62            557.09              1262.21             20906.66            23164.57            
+145            28168.18            22397.15            438.31              1424.1              21123.4             23670.91            
+146            27859.22            22748.37            287.13              1132.22             21735.68            23761.06            
+147            28086.51            22382.17            440.47              1497.26             21042.97            23721.36            
+148            27981.68            22621.27            466.68              753.66              21947.18            23295.36            
+149            28283.0             22991.19            528.21              842.56              22237.59            23744.8             
+150            28151.11            22138.37            748.46              1542.07             20759.1             23517.63            
+151            28515.69            22996.99            664.74              809.4               22273.04            23720.94            
+152            28293.5             22009.38            891.21              578.97              21491.53            22527.23            
+153            28179.61            22112.23            662.03              767.38              21425.87            22798.59            
+154            28534.59            22962.04            520.88              131.06              22844.81            23079.27            
+155            28321.18            23128.15            452.7               381.35              22787.06            23469.24            
+156            28559.45            23126.41            562.08              1409.41             21865.79            24387.03            
+157            28210.93            23066.54            756.17              1883.24             21382.12            24750.96            
+158            28230.9             23280.75            157.64              956.09              22425.6             24135.91            
+159            28219.29            23085.19            449.05              590.33              22557.18            23613.19            
+160            28131.45            23131.5             395.66              637.29              22561.49            23701.52            
+161            28459.34            23368.63            476.32              1013.72             22461.93            24275.33            
+162            28634.69            22834.53            879.34              1228.23             21735.97            23933.09            
+163            28448.45            22140.6             595.26              702.23              21512.51            22768.7             
+164            28571.67            22780.35            522.81              723.84              22132.93            23427.77            
+165            28146.71            22368.89            460.26              1010.66             21464.93            23272.85            
+166            28072.37            22639.18            440.9               705.21              22008.42            23269.94            
+167            28240.53            22038.47            532.87              236.0               21827.38            22249.55            
+168            28180.46            22236.08            769.34              660.47              21645.34            22826.82            
+169            28077.31            22370.22            788.01              1126.18             21362.93            23377.51            
+170            28170.85            23049.37            761.61              580.26              22530.37            23568.37            
+171            28388.63            23356.89            630.32              1297.5              22196.36            24517.41            
+172            28243.35            22693.04            491.55              1244.59             21579.85            23806.24            
+173            28143.16            22321.98            477.93              537.28              21841.43            22802.54            
+174            28081.1             22566.03            592.54              636.07              21997.11            23134.95            
+175            28398.93            23098.02            719.42              900.31              22292.75            23903.28            
+176            28183.25            22788.93            714.49              1038.64             21859.94            23717.91            
+177            28136.77            22415.05            959.86              811.78              21688.97            23141.12            
+178            28243.66            23176.8             615.3               395.89              22822.71            23530.89            
+179            28151.22            23013.0             616.84              995.81              22122.33            23903.68            
+180            28404.82            23305.69            701.46              870.75              22526.87            24084.52            
+181            28111.7             22151.47            429.95              2258.74             20131.19            24171.75            
+182            28177.05            22092.3             1056.02             2343.59             19996.13            24188.48            
+183            28150.67            23156.43            794.81              914.93              22338.1             23974.76            
+184            28527.77            22904.96            599.23              782.31              22205.24            23604.68            
+185            28316.43            22364.77            403.4               845.43              21608.59            23120.95            
+186            28394.04            22567.88            382.97              1049.08             21629.56            23506.2             
+187            28176.02            22873.14            773.75              247.54              22651.74            23094.55            
+188            28316.9             23282.31            431.36              333.64              22983.9             23580.73            
+189            27628.81            22688.22            774.31              656.93              22100.64            23275.79            
+190            28307.03            22748.16            1099.6              557.29              22249.7             23246.62            
+191            28104.04            22966.4             903.61              582.34              22445.55            23487.26            
+192            28134.02            22785.0             662.21              620.38              22230.11            23339.88            
+193            28291.06            22323.01            551.25              813.55              21595.35            23050.68            
+194            27943.17            22973.83            902.15              981.91              22095.59            23852.07            
+195            27994.17            23081.92            806.84              829.82              22339.71            23824.14            
+196            28284.06            22465.88            825.36              1021.85             21551.91            23379.86            
+197            28160.68            21912.95            1105.06             1477.96             20591.02            23234.88            
+198            27993.81            21913.66            914.97              1413.42             20649.45            23177.86            
+199            28009.3             21807.71            806.98              1020.66             20894.81            22720.62            
+
+Best Each Run: Average		18959.0             Best Each Run: StDv	18548.88            Best Each Run: 95%ConInt	2368.38             35549.62            

@@ -4,7 +4,7 @@ Data Input File Name         :berlin52.tsp
 Number of Runs               :5
 Generations per Run          :200
 Population Size              :100
-Selection Method (1)         :2
+Selection Method (1)         :3
 Fitness Scaling Type (2)     :1
 Crossover Type (3)           :1
 Crossover Rate (4)           :1.0

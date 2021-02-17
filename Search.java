@@ -730,45 +730,46 @@ public class Search {
 			// // ************ CROSSOVER AND CREATE NEXT GENERATION *******************
 			// // *********************************************************************
 
-			// 	int parent1 = -1;
-			// 	int parent2 = -1;
+				int parent1 = -1;
+				int parent2 = -1;
 
-			// 	//  Assumes always two offspring per mating
-			// 	for (int i=0; i<Parameters.popSize; i=i+2)
-			// 	{
-			// 		//	Select Two Parents
-			// 		parent1 = ChromoMap.selectParent();
-			// 		parent2 = parent1;
+				//  Assumes always two offspring per mating
+				for (int i=0; i<Parameters.popSize; i=i+2)
+				{
+					//	Select Two Parents
+					parent1 = ChromoMap.selectParent();
+					parent2 = parent1;
 
-			// 		while (parent2 == parent1)
-			// 		{
-			// 			parent2 = ChromoMap.selectParent();
-			// 		}
+					while (parent2 == parent1)
+					{
+						parent2 = ChromoMap.selectParent();
+					}
 
-			// 		//	Crossover Two Parents to Create Two Children
-			// 		randnum = r.nextDouble();
-			// 		if (randnum < Parameters.xoverRate)
-			// 		{
-			// 			ChromoMap.mateParents(parent1, parent2, member[parent1], member[parent2], child[i], child[i+1]);
-			// 		}
-			// 		else 
-			// 		{
-			// 			ChromoMap.mateParents(parent1, member[parent1], child[i]);
-			// 			ChromoMap.mateParents(parent2, member[parent2], child[i+1]);
-			// 		}
-			// 	} // End Crossover
+					//	Crossover Two Parents to Create Two Children
+					randnum = r.nextDouble();
+					if (randnum < Parameters.xoverRate)
+					{
+						ChromoMap.mateParents(memberMap[parent1], memberMap[parent2], childMap[i], childMap[i+1]);
+					}
+					else 
+					{
+						ChromoMap.mateParents(memberMap[parent1], childMap[i]);
+						ChromoMap.mateParents(memberMap[parent2], childMap[i+1]);
+					}
+				} // End Crossover
 
-			// 	//	Mutate Children
-			// 	for (int i=0; i<Parameters.popSize; i++)
-			// 	{
-			// 		child[i].doMutation();
-			// 	}
+				//	Mutate Children
+				for (int i=0; i<Parameters.popSize; i++)
+				{
+					//System.out.println(childMap[i].chromo.size());
+					childMap[i].doMutation();
+				}
 
-			// 	//	Swap Children with Last Generation
-			// 	for (int i=0; i<Parameters.popSize; i++)
-			// 	{
-			// 		ChromoMap.copyB2A(member[i], child[i]);
-			// 	}
+				//	Swap Children with Last Generation
+				for (int i=0; i<Parameters.popSize; i++)
+				{
+					ChromoMap.copyB2A(memberMap[i], childMap[i]);
+				}
 			}//  Repeat the above loop for each generation
 
 			Hwrite.left(bestOfRunR, 4, summaryOutput);
