@@ -62,26 +62,31 @@ public class ChromoMap
 
                 for (j=0; j<Parameters.popSize; j++)
                 {
-                    rWheel = rWheel + Search.member[j].proFitness;
+                    rWheel = rWheel + Search.memberMap[j].proFitness;
                     if (randnum < rWheel) return(j);
                 }
 
                 break;
+
+			case 2:     //  Tournament Selection
+				randnum = Search.r.nextDouble();
+				k = (int) (randnum * Parameters.popSize);
+				
+				randnum = Search.r.nextDouble();
+				j = (int) (randnum * Parameters.popSize);
+				
+				if (Search.memberMap[k].rawFitness > Search.memberMap[j].rawFitness) {
+					return(k);
+				}
+				else {
+					return(j);
+				}
 
             case 3:     // Random Selection
                 randnum = Search.r.nextDouble();
                 j = (int) (randnum * Parameters.popSize);
 
                 return(j);
-
-            case 2:     //  Tournament Selection (Binary)
-                randnum = Search.r.nextDouble();
-                j = (int) (randnum * Parameters.popSize);
-                randnum = Search.r.nextDouble();
-                k = (int) (randnum * Parameters.popSize);
-
-                if (Search.member[j].proFitness > Search.member[k].proFitness) return(j);
-                else return(k);
 
             default:
                 System.out.println("ERROR - No selection method selected");
