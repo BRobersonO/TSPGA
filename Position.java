@@ -23,6 +23,7 @@ public class Position
     {
         return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     }
+    
     //Calculate the distance between two positions passed in
     public static double GetDistance(Position first, Position second)
     {
