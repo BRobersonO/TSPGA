@@ -75,7 +75,7 @@ public class ChromoMap
 				randnum = Search.r.nextDouble();
 				j = (int) (randnum * Parameters.popSize);
 				
-				if (Search.memberMap[k].rawFitness > Search.memberMap[j].rawFitness) {
+				if (Search.memberMap[k].proFitness > Search.memberMap[j].proFitness) {
 					return(k);
 				}
 				else {
