@@ -527,6 +527,8 @@ public class Search {
 
 			for (G = 0; G < Parameters.generations; G++) 
 			{
+				sumProFitness = 0;
+				sumSclFitness = 0;
 				sumRawFitness = 0;
 				sumRawFitness2 = 0;
 
@@ -536,6 +538,9 @@ public class Search {
 				for (int i = 0; i < Parameters.popSize; i++)
 				{
 					memberMap[i].rawFitness = 0;
+					memberMap[i].proFitness = 0;
+					memberMap[i].sclFitness = 0;
+
 					problem.doRawFitness(memberMap[i]);
 
 					sumRawFitness += memberMap[i].rawFitness;

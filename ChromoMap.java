@@ -60,7 +60,7 @@ public class ChromoMap
             case 1:     // Proportional Selection
                 randnum = Search.r.nextDouble();
 
-                for (j=0; j<Parameters.popSize; j++)
+                for (j = 0; j < Parameters.popSize; j++)
                 {
                     rWheel = rWheel + Search.memberMap[j].proFitness;
                     if (randnum < rWheel) return(j);
@@ -98,43 +98,8 @@ public class ChromoMap
 	//Creates a new child from two selected chromos from the population - Still needs work
 	public static void mateParents(ChromoMap parent1, ChromoMap parent2, ChromoMap child1, ChromoMap child2)
     {
-		int i, j;
-
-		switch (Parameters.xoverType){
-
-		case 1:     //  Single Point Crossover
-
-		case 2:     //  Two Point Crossover
-
-		case 3:     //  Uniform Crossover
-			int half = parent1.chromo.size() / 2;
-			ChromoMap.copyB2A(child1, parent1);
-			
-			List<Integer> compareTo = new ArrayList<Integer>(half);
-
-			for(i = 0; i < half; i++) 
-			{
-				compareTo.add(i);
-			}
-
-			for(j = 0; j < parent2.chromo.size(); j++) 
-			{
-				if(compareTo.contains(parent2.chromo.get(j))) 
-				{
-					continue;
-				}
-				else if(i < child1.chromo.size())
-				{
-					child1.chromo.set(i, parent2.chromo.get(j)); 
-					i++;
-				}
-				else break;
-			}
-			break;
-
-		default:
-			System.out.println("ERROR - Bad crossover method selected");
-		}
+		CreateChild(parent1, parent2, child1);
+		// CreateChild(parent2, parent1, child2);
 
 		//  Set fitness values back to zero
 		child1.rawFitness = -1;   //  Fitness not yet evaluated
@@ -155,6 +120,34 @@ public class ChromoMap
 		child.rawFitness = -1;   //  Fitness not yet evaluated
 		child.sclFitness = -1;   //  Fitness not yet scaled
 		child.proFitness = -1;   //  Fitness not yet proportionalized
+	}
+
+	private static void CreateChild(ChromoMap parent1, ChromoMap parent2, ChromoMap child)
+	{
+		int i, j;
+		int half = parent1.chromo.size() / 2;
+		ChromoMap.copyB2A(child, parent1);
+		
+		List<Integer> compareTo = new ArrayList<Integer>(half);
+
+		for(i = 0; i < half; i++) 
+		{
+			compareTo.add(i);
+		}
+
+		for(j = 0; j < parent2.chromo.size(); j++) 
+		{
+			if(compareTo.contains(parent2.chromo.get(j))) 
+			{
+				continue;
+			}
+			else if(i < child.chromo.size())
+			{
+				child.chromo.set(i, parent2.chromo.get(j)); 
+				i++;
+			}
+			else break;
+		}
 	}
 
 	//Copies one chromosome to another

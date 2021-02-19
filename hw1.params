@@ -4,10 +4,10 @@ Data Input File Name         :berlin52.tsp
 Number of Runs               :50
 Generations per Run          :200
 Population Size              :1000
-Selection Method (1)         :2
-Fitness Scaling Type (2)     :1
+Selection Method (1)         :1
+Fitness Scaling Type (2)     :0
 Crossover Type (3)           :3
-Crossover Rate (4)           :1.0
+Crossover Rate (4)           :0.5
 Mutation Type (5)            :1
 Mutation Rate (6)            :0.0001
 Random Number Seed           :75982
