@@ -80,23 +80,12 @@ public class TSPAdjSearch{
 	 *                             STATIC METHODS                                   *
 	 *******************************************************************************/
 
-	public static void main(String[] args) throws java.io.IOException {
+	public TSPAdjSearch(FileWriter summaryOutput) throws java.io.IOException {
 
 
 		Calendar dateAndTime = Calendar.getInstance();
 		Date startTime = dateAndTime.getTime();
-
-		//  Read Parameter File
-		System.out.println("\nParameter File Name is: " + args[0] + "\n");
-		Parameters parmValues = new Parameters(args[0]);
 		coords = new CityAdjData(new String("berlin52.tsp"));
-
-		//  Write Parameters To Summary Output File
-		String summaryFileName = Parameters.expID + "_summary.txt";
-		FileWriter summaryOutput = new FileWriter(summaryFileName);
-		parmValues.outputParameters(summaryOutput);
-
-
 
 		//		Set up Fitness Statistics matrix
 		fitnessStats = new double[2][Parameters.generations];

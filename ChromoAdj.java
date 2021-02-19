@@ -187,7 +187,7 @@ public class ChromoAdj
 
 		case 2:     //  Tournament Selection
 			int winner =  TSPAdjSearch.r.nextInt(Parameters.popSize);
-			int challenger = TSPAdjSearch.r.nextInt(Parameters.popSize);
+			/*int challenger = TSPAdjSearch.r.nextInt(Parameters.popSize);
 			while(winner == challenger){
 				challenger = TSPAdjSearch.r.nextInt(Parameters.popSize);
 			}
@@ -201,7 +201,7 @@ public class ChromoAdj
 				while(winner == challenger){
 					challenger = TSPAdjSearch.r.nextInt(Parameters.popSize);
 				}
-			}
+			}*/
 			return winner;
 			/*if(Search.member[contestant1].rawFitness > Search.member[contestant2].rawFitness){
 				return contestant1;
