@@ -47,7 +47,7 @@ public class Search
 		
 		if (Parameters.problemType.equals("TSPAdj"))
 		{
-			//TSPAdjSearch();
+			new TSPAdjSearch(summaryOutput);
 		}
 		else if (Parameters.problemType.equals("TSPMap"))
 		{
