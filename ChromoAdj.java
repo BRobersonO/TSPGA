@@ -1,7 +1,7 @@
 /******************************************************************************
-*  A Teaching GA					  Developed by Hal Stringer & Annie Wu, UCF
-*  Version 2, January 18, 2004
-*******************************************************************************/
+ *  A Teaching GA					  Developed by Hal Stringer & Annie Wu, UCF
+ *  Version 2, January 18, 2004
+ *******************************************************************************/
 
 import java.io.*;
 import java.util.*;
@@ -9,32 +9,34 @@ import java.text.*;
 
 public class ChromoAdj
 {
-/*******************************************************************************
-*                            INSTANCE VARIABLES                                *
-*******************************************************************************/
+	/*******************************************************************************
+	 *                            INSTANCE VARIABLES                                *
+	 *******************************************************************************/
 
 	public int[] chromo;
 	public double rawFitness;
 	public double sclFitness;
 	public double proFitness;
 
-/*******************************************************************************
-*                            Class VARIABLES                                *
-*******************************************************************************/
+	/*******************************************************************************
+	 *                            Class VARIABLES                                *
+	 *******************************************************************************/
 
 	private static int randnum;
 	private static double randnumDouble;
+	//used to flip a city from unused to used to prevent invalid paths.
+	private final static int used = 1;
+	//allows the program to take advantage of pre-filling with 0s 
+	private static int Array_Bound = Parameters.numGenes-1;
 
-/*******************************************************************************
-*                              CONSTRUCTORS                                    *
-*******************************************************************************/
+	/*******************************************************************************
+	 *                              CONSTRUCTORS                                    *
+	 *******************************************************************************/
 
 	public ChromoAdj(){
 		int[] verify = new int[Parameters.numGenes];
 		Arrays.fill(verify, 0);
-		final int used = 1;
 		verify[0] = used;
-		int Array_Bound = Parameters.numGenes-1;
 		int prevRandNum = 0;
 		//  Set gene values to a randum sequence of 1's and 0's
 		chromo = new int[Parameters.numGenes];
@@ -57,9 +59,9 @@ public class ChromoAdj
 		this.proFitness = -1;   //  Fitness not yet proportionalized
 	}
 
-	
 
-  //creates chromo with max gene
+
+	//creates chromo with max gene
 	public ChromoAdj(int x){
 		char geneBit;
 		//chromo = "";
@@ -76,12 +78,12 @@ public class ChromoAdj
 	}
 
 
-/*******************************************************************************
-*                                MEMBER METHODS                                *
-*******************************************************************************/
+	/*******************************************************************************
+	 *                                MEMBER METHODS                                *
+	 *******************************************************************************/
 
 	//  Get Alpha Represenation of a Gene **************************************
-/*
+	/*
 	public String getGeneAlpha(int geneID){
 		int start = geneID * Parameters.geneSize;
 		int end = (geneID+1) * Parameters.geneSize;
@@ -149,10 +151,10 @@ public class ChromoAdj
 			System.out.println("ERROR - No mutation method selected");
 		}
 	}
-*/
-/*******************************************************************************
-*                             STATIC METHODS                                   *
-*******************************************************************************/
+	 */
+	/*******************************************************************************
+	 *                             STATIC METHODS                                   *
+	 *******************************************************************************/
 
 	//  Select a parent for crossover ******************************************
 
@@ -168,13 +170,13 @@ public class ChromoAdj
 			randnumDouble = TSPAdjSearch.r.nextDouble();
 			for (j=0; j<Parameters.popSize; j++){
 				rWheel = rWheel + TSPAdjSearch.member[j].proFitness;
-				if (randnum < rWheel) return(j);
+				if (randnumDouble < rWheel) return(j);
 			}
 			break;
 
 		case 3:     // Random Selection
 			randnumDouble = TSPAdjSearch.r.nextDouble();
-			j = (int) (randnum * Parameters.popSize);
+			j = (int) (randnumDouble * Parameters.popSize);
 			return(j);
 
 		case 2:     //  Tournament Selection
@@ -204,7 +206,7 @@ public class ChromoAdj
 		default:
 			System.out.println("ERROR - No selection method selected");
 		}
-	return(-1);
+		return(-1);
 	}
 
 	//  Produce a new child from two parents  **********************************
@@ -213,40 +215,59 @@ public class ChromoAdj
 
 		int[] verify = new int[Parameters.numGenes];
 		Arrays.fill(verify, 0);
+		verify[0] = used;
 		int startCity = 0;
 		int parent1End;
 		int parent2End;
 		double distance1 = 0;
 		double distance2 = 0;
-		
 
 		//perform the crossover
-		
-		//find where startCity goes in each parent.
-		parent1End = parent1.chromo[startCity];
-		parent2End = parent2.chromo[startCity];
-		
-		//get the distance from that city to the next city in both parents.
-		distance1 = Position.GetDistance((float)coords.citiesMap[startCity][0],(float)coords.citiesMap[parent1End][0],(float)coords.citiesMap[startCity][1],(float)coords.citiesMap[parent1End][1]);
-		distance2 = Position.GetDistance((float)coords.citiesMap[startCity][0],(float)coords.citiesMap[parent2End][0],(float)coords.citiesMap[startCity][1],(float)coords.citiesMap[parent2End][1]);
-		
-		if(distance1 < distance2) {
-			
-		}
-		
-		
-		//get new startCity
-		
-		
-		
+		for(int i = 0; i < Array_Bound; i++) {
+			//find where startCity goes in each parent.
+			parent1End = parent1.chromo[startCity];
+			parent2End = parent2.chromo[startCity];
+
+			//get the distance from that city to the next city in both parents.
+			distance1 = Position.GetDistance((float)coords.citiesMap[startCity][0],(float)coords.citiesMap[parent1End][0],(float)coords.citiesMap[startCity][1],(float)coords.citiesMap[parent1End][1]);
+			distance2 = Position.GetDistance((float)coords.citiesMap[startCity][0],(float)coords.citiesMap[parent2End][0],(float)coords.citiesMap[startCity][1],(float)coords.citiesMap[parent2End][1]);
+
+			if(distance1 <= distance2 && verify[parent1End] == 0) {
+				child.chromo[startCity] = parent1End;
+				verify[parent1End] = 1;
+				startCity = parent1End;
+			}else if(verify[parent2End] == 0) {
+				child.chromo[startCity] = parent2End;
+				verify[parent2End] = 1;
+				startCity = parent2End;
+			} else {
+				if(verify[parent1End] == 0) {
+					child.chromo[startCity] = parent1End;
+					verify[parent1End] = 1;
+					startCity = parent1End;
+				} else {
+					randnum = TSPAdjSearch.r.nextInt(Parameters.numGenes);
+					while(verify[randnum] == used) {
+						if(randnum == Array_Bound) {
+							randnum = 0;
+							continue;
+						}
+						randnum++;
+					}
+					child.chromo[startCity] = randnum;
+					verify[randnum] = 1;
+					startCity = randnum;
+				}//end final else
+			}//end inserting next city
+		}//end crossover loop
+
+
+
 
 		//  Set fitness values back to zero
-		child1.rawFitness = -1;   //  Fitness not yet evaluated
-		child1.sclFitness = -1;   //  Fitness not yet scaled
-		child1.proFitness = -1;   //  Fitness not yet proportionalized
-		child2.rawFitness = -1;   //  Fitness not yet evaluated
-		child2.sclFitness = -1;   //  Fitness not yet scaled
-		child2.proFitness = -1;   //  Fitness not yet proportionalized
+		child.rawFitness = -1;   //  Fitness not yet evaluated
+		child.sclFitness = -1;   //  Fitness not yet scaled
+		child.proFitness = -1;   //  Fitness not yet proportionalized
 	}
 
 	//  Produce a new child from a single parent  ******************************
