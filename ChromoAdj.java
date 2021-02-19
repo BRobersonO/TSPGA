@@ -38,8 +38,8 @@ public class ChromoAdj
 		Arrays.fill(verify, 0);
 		verify[0] = used;
 		int prevRandNum = 0;
-		//  Set gene values to a randum sequence of 1's and 0's
-		chromo = new int[Parameters.numGenes];
+		//  Set gene values to a randum sequence cities
+		this.chromo = new int[Parameters.numGenes];
 		for (int i=0; i<Array_Bound; i++){
 			randnum = TSPAdjSearch.r.nextInt(Parameters.numGenes);
 			while(verify[randnum] == used) {
@@ -63,27 +63,22 @@ public class ChromoAdj
 
 	//creates chromo with max gene
 	public ChromoAdj(int x){
-		char geneBit;
-		//chromo = "";
-		for (int i=0; i<Parameters.numGenes; i++){
-			for (int j=0; j<Parameters.geneSize; j++){
-				geneBit = '1';
-				//this.chromo = chromo + geneBit;
-			}
-		}
-
-		this.rawFitness = -1;   //  Fitness not yet evaluated
-		this.sclFitness = -1;   //  Fitness not yet scaled
-		this.proFitness = -1;   //  Fitness not yet proportionalized
-	}
+		/*
+		 * char geneBit; //chromo = ""; for (int i=0; i<Parameters.numGenes; i++){ for
+		 * (int j=0; j<Parameters.geneSize; j++){ geneBit = '1'; //this.chromo = chromo
+		 * + geneBit; } }
+		 * 
+		 * this.rawFitness = -1; // Fitness not yet evaluated this.sclFitness = -1; //
+		 * Fitness not yet scaled this.proFitness = -1; // Fitness not yet
+		 * proportionalized
+		 */	}
 
 
 	/*******************************************************************************
 	 *                                MEMBER METHODS                                *
 	 *******************************************************************************/
-
-	//  Get Alpha Represenation of a Gene **************************************
 	/*
+	//  Get Alpha Represenation of a Gene **************************************
 	public String getGeneAlpha(int geneID){
 		int start = geneID * Parameters.geneSize;
 		int end = (geneID+1) * Parameters.geneSize;
@@ -123,35 +118,46 @@ public class ChromoAdj
 		}
 		return (geneValue);
 	}
-
+	 */
 	//  Mutate a Chromosome Based on Mutation Type *****************************
 
 	public void doMutation(){
-
-		String mutChromo = "";
-		char x;
-
-		switch (Parameters.mutationType){
-
-		case 1:     //  Replace with new random number
-
-			for (int j=0; j<(Parameters.geneSize * Parameters.numGenes); j++){
-				x = this.chromo.charAt(j);
-				randnum = TSPBinSearch.r.nextDouble();
-				if (randnum < Parameters.mutationRate){
-					if (x == '1') x = '0';
-					else x = '1';
+		//check if mutating
+		if (randnum < Parameters.mutationRate){
+			//create needed structures
+			int[] verify = new int[Parameters.numGenes];
+			int[] mutChromo = new int[Parameters.numGenes];
+			Arrays.fill(verify, 0);
+			//verify[0] = used;
+			int newCity;
+			
+			//loop through the chromosome building a mutated chromo
+			for(int i = 0; i < Parameters.numGenes; i++) {
+				//get current traveling destination and adjust it to the mutated destination
+				if(this.chromo[i]+1 > Array_Bound) {
+					newCity = 0;
+				}else {
+					newCity = this.chromo[i]+1;
 				}
-				mutChromo = mutChromo + x;
+				//check new destination to prevent premature loops
+				while(verify[newCity] == 1 || newCity == i) {
+					newCity++;
+					if(newCity > Array_Bound) {
+						newCity = 0;
+						System.out.println("am Stuck?");
+					}
+				}
+
+				//now insert new destination.
+				mutChromo[i] = newCity;
+				verify[newCity] = 1;
 			}
 			this.chromo = mutChromo;
-			break;
-
-		default:
-			System.out.println("ERROR - No mutation method selected");
 		}
+
 	}
-	 */
+
+
 	/*******************************************************************************
 	 *                             STATIC METHODS                                   *
 	 *******************************************************************************/

@@ -131,7 +131,7 @@ public class TSPAdjSearch{
 		bestOfGenChromo = new ChromoAdj();
 		bestOfRunChromo = new ChromoAdj();
 		bestOverAllChromo = new ChromoAdj();
-		//maxChromo = new Chromo(1);
+		maxChromo = new ChromoAdj(1);
 
 		averageBestFitOverRuns = 0.0;
 		bestofRunGAverage = 0.0;
@@ -166,7 +166,7 @@ public class TSPAdjSearch{
 		}
 
 		bestOverAllChromo.rawFitness = defaultBest;
-		//maxChromo.rawFitness = 0;
+		maxChromo.rawFitness = 0;
 		//problem.doRawFitness(maxChromo);
 
 
@@ -390,8 +390,40 @@ public class TSPAdjSearch{
 					}
 				} // End Crossover
 
-			}// end of run
-		}//end of all runs
+				//	Mutate Children
+				for (int i=0; i<Parameters.popSize; i++){
+					child[i].doMutation();
+				}
+
+				//	Swap Children with Last Generation
+				for (int i=0; i<Parameters.popSize; i++){
+					ChromoAdj.copyB2A(member[i], child[i]);
+				}
+
+			}// end of generation
+			
+			Hwrite.left(bestOfRunR, 4, summaryOutput);
+			Hwrite.right(bestOfRunG, 4, summaryOutput);
+
+			problem.doPrintGenes(bestOfRunChromo, summaryOutput);
+
+			if (bestOfRunChromo.rawFitness == maxChromo.rawFitness){
+				numOfOptimals++;
+				optimalChrmosomeGeneration[R] = bestOfRunG;
+				OptimalChromoGenAverage += bestOfRunG;
+				sumOfSquaresOptimalGen = sumOfSquaresOptimalGen + (bestOfRunG * bestOfRunG);
+			}
+
+			averageRunFitness = averageRunFitness / Parameters.generations;
+			averageAvgFitnessOverRuns += averageRunFitness;
+			sumOfSquaresAvgFit = sumOfSquaresAvgFit + (averageRunFitness * averageRunFitness);
+
+			System.out.println("\n" + R + "\t" + bestOfRunG + "\t"+ (int)bestOfRunChromo.rawFitness + "\t" + df2.format(averageRunFitness));
+			bestofRunGAverage += bestOfRunG;
+			sumOfSquaresBestFitGen = sumOfSquaresBestFitGen + (bestOfRunG * bestOfRunG);
+			averageBestFitOverRuns += bestOfRunChromo.rawFitness;
+			sumOfSquaresBestFit = sumOfSquaresBestFit + (bestOfRunChromo.rawFitness * bestOfRunChromo.rawFitness);
+		}//end of run
 
 
 

@@ -18,7 +18,7 @@ public class TSPAdj extends FitnessFunction{
 	*                                MEMBER METHODS                                *
 	*******************************************************************************/
 		
-		public void doRawFitness(Chromo X, CityAdjData Coords) {
+		public void doRawFitness(ChromoAdj X, CityAdjData Coords) {
 			int city1 = 0;
 			int city2 = X.chromo[city1];
 			int pathLength = Parameters.numGenes;
