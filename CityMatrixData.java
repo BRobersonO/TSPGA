@@ -1,8 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-//Main class to read in the city data
-public class CityMapData 
+public class CityMatrixData 
 {
     //File information for displaying purposes
     public static String Name;
@@ -12,11 +11,12 @@ public class CityMapData
     public static String EDGE_WEIGHT_TYPE;
 
     //Collection of cities needed for the GA's
-    public Map<Integer, Position> citiesMap = new HashMap<Integer, Position>();
+    public List<City> cities = new ArrayList<City>();
+    public double[][] citiesMatrix;
 
     //Constructor that will bring in the data file needed for the variables
     //Note: This will need to be called in another class like NumberMatch.java is doing
-    public CityMapData(String filename) throws java.io.IOException
+    public CityMatrixData(String filename) throws java.io.IOException
     {
         //Scanner to read in the file
         Scanner scanner = new Scanner(new File(filename));
@@ -47,7 +47,18 @@ public class CityMapData
                 float cityY = Float.parseFloat(cityVars[2]);
 
                 //Creating and adding in new city as they are read in from the file
-                citiesMap.put(cityID, new Position(cityX, cityY));
+                cities.add(new City(cityID, new Position(cityX, cityY)));
+            }
+        }
+
+        //Setting up the 2d array for the distances
+        citiesMatrix = new double[cities.size()][cities.size()];
+
+        for (City city1 : cities)
+        {
+            for (City city2 : cities) 
+            {
+                citiesMatrix[city1.ID][city2.ID] = Position.GetDistance(city1.position, city2.position);
             }
         }
 	}
