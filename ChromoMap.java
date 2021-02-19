@@ -33,7 +33,6 @@ public class ChromoMap
 		{
 			case 1:     //  Replace with new random number
 				Random rand = new Random();
-				//System.out.println(this.chromo.size());
 				int x = rand.nextInt(this.chromo.size());
 				
 				int temp = this.chromo.get(x);
@@ -99,7 +98,7 @@ public class ChromoMap
 	public static void mateParents(ChromoMap parent1, ChromoMap parent2, ChromoMap child1, ChromoMap child2)
     {
 		CreateChild(parent1, parent2, child1);
-		// CreateChild(parent2, parent1, child2);
+		CreateChild(parent2, parent1, child2);
 
 		//  Set fitness values back to zero
 		child1.rawFitness = -1;   //  Fitness not yet evaluated
