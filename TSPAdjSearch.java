@@ -394,15 +394,6 @@ public class TSPAdjSearch{
 			Hwrite.left(bestOfRunR, 4, summaryOutput);
 			Hwrite.right(bestOfRunG, 4, summaryOutput);
 
-			problem.doPrintGenes(bestOfRunChromo, summaryOutput);
-
-			if (bestOfRunChromo.rawFitness == maxChromo.rawFitness){
-				numOfOptimals++;
-				optimalChrmosomeGeneration[R] = bestOfRunG;
-				OptimalChromoGenAverage += bestOfRunG;
-				sumOfSquaresOptimalGen = sumOfSquaresOptimalGen + (bestOfRunG * bestOfRunG);
-			}
-
 			averageRunFitness = averageRunFitness / Parameters.generations;
 			averageAvgFitnessOverRuns += averageRunFitness;
 			sumOfSquaresAvgFit = sumOfSquaresAvgFit + (averageRunFitness * averageRunFitness);
@@ -415,8 +406,78 @@ public class TSPAdjSearch{
 		}//end of run
 
 
+		
+		
+		//grab the standard Deviations while the average variables are still sums
+		stdevBestGen = Math.sqrt(
+				Math.abs(sumOfSquaresBestFitGen -
+						bestofRunGAverage*bestofRunGAverage/Parameters.numRuns)
+				/
+				(Parameters.numRuns-1)
+				);
+		stdevBestFitOverRuns = Math.sqrt(
+				Math.abs(sumOfSquaresBestFit -
+						averageBestFitOverRuns*averageBestFitOverRuns/Parameters.numRuns)
+				/
+				(Parameters.numRuns-1)
+				);
+		stdevAvgFitOverRuns = Math.sqrt(
+				Math.abs(sumOfSquaresAvgFit -
+						averageAvgFitnessOverRuns*averageAvgFitnessOverRuns/Parameters.numRuns)
+				/
+				(Parameters.numRuns-1)
+				);
+		averageAvgFitnessOverRuns = averageAvgFitnessOverRuns / Parameters.numRuns;
+		bestofRunGAverage = bestofRunGAverage/ Parameters.numRuns;
+		averageBestFitOverRuns = averageBestFitOverRuns / Parameters.numRuns;
+		averageBestFit95CI[0] = averageBestFitOverRuns - (1.960 * (stdevBestFitOverRuns / Math.sqrt(Parameters.numRuns)));
+		averageBestFit95CI[1] = averageBestFitOverRuns + (1.960 * (stdevBestFitOverRuns / Math.sqrt(Parameters.numRuns)));
+		averageAvgFit95CI[0] = averageAvgFitnessOverRuns - (1.960 * (stdevAvgFitOverRuns / Math.sqrt(Parameters.numRuns)));
+		averageAvgFit95CI[1] = averageAvgFitnessOverRuns + (1.960 * (stdevAvgFitOverRuns / Math.sqrt(Parameters.numRuns)));
+		averageBestFitGen95CI[0] = bestofRunGAverage - (1.960 * (stdevBestGen / Math.sqrt(Parameters.numRuns)));
+		averageBestFitGen95CI[1] = bestofRunGAverage + (1.960 * (stdevBestGen / Math.sqrt(Parameters.numRuns)));
+
+		System.out.println("\n" + "Best Fitness' averaged over runs: " + averageBestFitOverRuns);
+		System.out.println("Standard Deviation of Best Fitness over runs : " + stdevBestFitOverRuns);
+		System.out.println("Average Best Fitness 95% Fitness Interval: " + df2.format(averageBestFit95CI[0]) + "-" + df2.format(averageBestFit95CI[1]) + "   Interval: " + (1.960 * (stdevBestFitOverRuns / Math.sqrt(Parameters.numRuns))) +"\n");
+
+		System.out.println("average generation best fitness was found: " + bestofRunGAverage);
+		System.out.println("Standard Deviation of best fitness Generation found average: " + stdevBestGen);
+		System.out.println("Average Generation best Fitness found 95% Fitness Interval: " + df2.format(averageBestFitGen95CI[0]) + "-" + df2.format(averageBestFitGen95CI[1]) + "   Interval: " + (1.960 * (stdevBestGen / Math.sqrt(Parameters.numRuns))) +"\n");
+
+		System.out.println("Average average fitness over the runs: " + averageAvgFitnessOverRuns);
+		System.out.println("Standard Deviation of the average of the average fitness over the runs: " + stdevAvgFitOverRuns);
+		System.out.println("Average Average Fitness over the runs 95% Fitness Interval: " + df2.format(averageAvgFit95CI[0]) + "-" + df2.format(averageAvgFit95CI[1]) + "   Interval: " + (1.960 * (stdevAvgFitOverRuns / Math.sqrt(Parameters.numRuns))) +"\n");
 
 
+		Hwrite.left("B" + bestOverAllG, 8, summaryOutput);
+
+		//	Output Fitness Statistics matrix
+		summaryOutput.write("average best fitness over runs: " + averageBestFitOverRuns + "\n" );
+		summaryOutput.write("Standard Deviation of Best Fitness over runs : " + stdevBestFitOverRuns + "\n" );
+
+		summaryOutput.write("average generation best fitness was found: " + bestofRunGAverage + "\n" );
+		summaryOutput.write("Gen            AvgFit              AvgFitSD            BestFit Avg         BestFitSD \n");
+		for (int i=0; i<Parameters.generations; i++){
+			Hwrite.left(i, 15, summaryOutput);
+			Hwrite.left(fitnessStats[0][i]/Parameters.numRuns, 20, 2, summaryOutput);
+			Hwrite.left(Math.sqrt( Math.abs(sumOfSquaresAvgFitPerGen[i] -
+					fitnessStats[0][i]*fitnessStats[0][i]/Parameters.numRuns)
+					/(Parameters.numRuns-1)), 20, 2, summaryOutput);
+			Hwrite.left(fitnessStats[1][i]/Parameters.numRuns, 20, 2, summaryOutput);
+			Hwrite.left(Math.sqrt( Math.abs(sumOfSquaresPerGenBestFit[i] -
+					fitnessStats[1][i]*fitnessStats[1][i]/Parameters.numRuns)
+					/(Parameters.numRuns-1)), 20, 2, summaryOutput);
+			summaryOutput.write("\n");
+		}
+		summaryOutput.write("\n");
+		summaryOutput.close();
+
+		System.out.println();
+		System.out.println("Start:  " + startTime);
+		dateAndTime = Calendar.getInstance();
+		Date endTime = dateAndTime.getTime();
+		System.out.println("End  :  " + endTime);
 
 
 
