@@ -58,24 +58,24 @@ public class ChromoMap
 		switch (Parameters.selectType)
         {
             case 1:     // Proportional Selection
-                randnum = Search.r.nextDouble();
+                randnum = TSPMapSearch.r.nextDouble();
 
                 for (j = 0; j < Parameters.popSize; j++)
                 {
-                    rWheel = rWheel + Search.memberMap[j].proFitness;
+                    rWheel = rWheel + TSPMapSearch.memberMap[j].proFitness;
                     if (randnum < rWheel) return(j);
                 }
 
                 break;
 
 			case 2:     //  Tournament Selection
-				randnum = Search.r.nextDouble();
+				randnum = TSPMapSearch.r.nextDouble();
 				k = (int) (randnum * Parameters.popSize);
 				
-				randnum = Search.r.nextDouble();
+				randnum = TSPMapSearch.r.nextDouble();
 				j = (int) (randnum * Parameters.popSize);
 				
-				if (Search.memberMap[k].proFitness > Search.memberMap[j].proFitness) {
+				if (TSPMapSearch.memberMap[k].proFitness > TSPMapSearch.memberMap[j].proFitness) {
 					return(k);
 				}
 				else {
@@ -83,7 +83,7 @@ public class ChromoMap
 				}
 
             case 3:     // Random Selection
-                randnum = Search.r.nextDouble();
+                randnum = TSPMapSearch.r.nextDouble();
                 j = (int) (randnum * Parameters.popSize);
 
                 return(j);
