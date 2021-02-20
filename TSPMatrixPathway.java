@@ -2,16 +2,16 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class Pathway {
+public class TSPMatrixPathway {
     int [][] path;
-    int fitness;
+    double fitness;
     
-    public Pathway (int[][] path, int fitness) {
+    public TSPMatrixPathway (int[][] path, double fitness) {
         this.path = path;
         this.fitness = fitness;
     }
     
-    public void addFitness(int x) {
+    public void addFitness(double x) {
         this.fitness += x;
     }
     
