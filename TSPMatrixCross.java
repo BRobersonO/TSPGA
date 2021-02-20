@@ -49,7 +49,7 @@ public class Cross {
             
             visited.add(city1);
         
-            DoTheThing.step(dataMatrix, city2, visited, population, newWay);
+            TSPMatrixSearch.step(dataMatrix, city2, visited, population, newWay);
         }
         int h;
         //for (h = 0; h < population.size(); h++) {
