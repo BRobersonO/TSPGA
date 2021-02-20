@@ -18,6 +18,8 @@ public class TSPMap extends FitnessFunction
     //RawFitness scoreing method
     public void doRawFitness(ChromoMap x)
     {
+        x.rawFitness = 0;
+
         Position prevChromo = null;
         
         for (Object o : x.chromo)

@@ -114,72 +114,6 @@ public class TSPMapSearch {
 
 	} // End of Main Class
 
-	private static void OutputCreation(Calendar dateAndTime, Date startTime, FileWriter summaryOutput) throws IOException 
-	{
-		Hwrite.left("B", 8, summaryOutput);
-
-		if (Parameters.problemType.equals("TSPMap"))
-		{
-			problem.doPrintGenes(bestOverAllChromoMap, summaryOutput);
-		}
-
-		// Output Fitness Statistics matrix
-		summaryOutput.write(
-				"Gen            AvgOfAvgFit            AvgOfBestFit            StDvAvg            StDvAvgBst           95%ConfIntBst\n");
-		for (int i = 0; i < Parameters.generations; i++) {
-			Hwrite.left(i, 15, summaryOutput);
-			Hwrite.left(fitnessStats[0][i] / Parameters.numRuns, 20, 2, summaryOutput);
-			Hwrite.left(fitnessStats[1][i] / Parameters.numRuns, 20, 2, summaryOutput);
-
-			stDvA = Math.sqrt(
-					Math.abs(fitnessStats[2][i] - fitnessStats[0][i] * fitnessStats[0][i] / Parameters.numRuns)
-							/ Parameters.numRuns);
-
-			stDvB = Math.sqrt(
-					Math.abs(fitnessStats[3][i] - fitnessStats[1][i] * fitnessStats[1][i] / Parameters.numRuns)
-							/ Parameters.numRuns);
-
-			Hwrite.left(stDvA, 20, 2, summaryOutput);
-			Hwrite.left(stDvB, 20, 2, summaryOutput);
-
-			conIntLow = (fitnessStats[1][i] / Parameters.numRuns) - (stDvB / Math.sqrt(Parameters.numRuns)) * 2;
-			conIntHigh = (fitnessStats[1][i] / Parameters.numRuns) + (stDvB / Math.sqrt(Parameters.numRuns)) * 2;
-
-			Hwrite.left(conIntLow, 20, 2, summaryOutput);
-			Hwrite.left(conIntHigh, 20, 2, summaryOutput);
-
-			summaryOutput.write("\n");
-		}
-
-		// Best of Each Run Output
-		summaryOutput.write("\n");
-
-		bestEaRunAvg = bestEaRunSum / Parameters.numRuns;
-
-		stDvR = Math.sqrt(
-				Math.abs(bestEaRunSum2 - bestEaRunSum * bestEaRunSum / Parameters.numRuns) / Parameters.numRuns);
-
-		bestEaLow = bestEaRunAvg - (stDvR / Math.sqrt(Parameters.numRuns)) * 2;
-		bestEaHigh = bestEaRunAvg + (stDvR / Math.sqrt(Parameters.numRuns)) * 2;
-
-		summaryOutput.write("Best Each Run: Average		");
-		Hwrite.left(bestEaRunAvg, 20, 2, summaryOutput);
-		summaryOutput.write("Best Each Run: StDv	");
-		Hwrite.left(stDvR, 20, 2, summaryOutput);
-		summaryOutput.write("Best Each Run: 95%ConInt	");
-		Hwrite.left(bestEaLow, 20, 2, summaryOutput);
-		Hwrite.left(bestEaHigh, 20, 2, summaryOutput);
-
-		summaryOutput.write("\n");
-		summaryOutput.close();
-
-		System.out.println();
-		System.out.println("Start:  " + startTime);
-		dateAndTime = Calendar.getInstance();
-		Date endTime = dateAndTime.getTime();
-		System.out.println("End  :  " + endTime);
-	}
-
 	private static void RunSolution(FileWriter summaryOutput) throws IOException
 	{
 		//	Initialize RNG, array sizes and other objects
@@ -481,6 +415,72 @@ public class TSPMapSearch {
 			System.out.println(R + "\t" + "B" + "\t"+ (int)bestOfRunChromoMap.rawFitness);
 
 		} //End of a Run
+	}
+
+	private static void OutputCreation(Calendar dateAndTime, Date startTime, FileWriter summaryOutput) throws IOException 
+	{
+		Hwrite.left("B", 8, summaryOutput);
+
+		if (Parameters.problemType.equals("TSPMap"))
+		{
+			problem.doPrintGenes(bestOverAllChromoMap, summaryOutput);
+		}
+
+		// Output Fitness Statistics matrix
+		summaryOutput.write(
+				"Gen            AvgOfAvgFit            AvgOfBestFit            StDvAvg            StDvAvgBst           95%ConfIntBst\n");
+		for (int i = 0; i < Parameters.generations; i++) {
+			Hwrite.left(i, 15, summaryOutput);
+			Hwrite.left(fitnessStats[0][i] / Parameters.numRuns, 20, 2, summaryOutput);
+			Hwrite.left(fitnessStats[1][i] / Parameters.numRuns, 20, 2, summaryOutput);
+
+			stDvA = Math.sqrt(
+					Math.abs(fitnessStats[2][i] - fitnessStats[0][i] * fitnessStats[0][i] / Parameters.numRuns)
+							/ Parameters.numRuns);
+
+			stDvB = Math.sqrt(
+					Math.abs(fitnessStats[3][i] - fitnessStats[1][i] * fitnessStats[1][i] / Parameters.numRuns)
+							/ Parameters.numRuns);
+
+			Hwrite.left(stDvA, 20, 2, summaryOutput);
+			Hwrite.left(stDvB, 20, 2, summaryOutput);
+
+			conIntLow = (fitnessStats[1][i] / Parameters.numRuns) - (stDvB / Math.sqrt(Parameters.numRuns)) * 2;
+			conIntHigh = (fitnessStats[1][i] / Parameters.numRuns) + (stDvB / Math.sqrt(Parameters.numRuns)) * 2;
+
+			Hwrite.left(conIntLow, 20, 2, summaryOutput);
+			Hwrite.left(conIntHigh, 20, 2, summaryOutput);
+
+			summaryOutput.write("\n");
+		}
+
+		// Best of Each Run Output
+		summaryOutput.write("\n");
+
+		bestEaRunAvg = bestEaRunSum / Parameters.numRuns;
+
+		stDvR = Math.sqrt(
+				Math.abs(bestEaRunSum2 - bestEaRunSum * bestEaRunSum / Parameters.numRuns) / Parameters.numRuns);
+
+		bestEaLow = bestEaRunAvg - (stDvR / Math.sqrt(Parameters.numRuns)) * 2;
+		bestEaHigh = bestEaRunAvg + (stDvR / Math.sqrt(Parameters.numRuns)) * 2;
+
+		summaryOutput.write("Best Each Run: Average		");
+		Hwrite.left(bestEaRunAvg, 20, 2, summaryOutput);
+		summaryOutput.write("Best Each Run: StDv	");
+		Hwrite.left(stDvR, 20, 2, summaryOutput);
+		summaryOutput.write("Best Each Run: 95%ConInt	");
+		Hwrite.left(bestEaLow, 20, 2, summaryOutput);
+		Hwrite.left(bestEaHigh, 20, 2, summaryOutput);
+
+		summaryOutput.write("\n");
+		summaryOutput.close();
+
+		System.out.println();
+		System.out.println("Start:  " + startTime);
+		dateAndTime = Calendar.getInstance();
+		Date endTime = dateAndTime.getTime();
+		System.out.println("End  :  " + endTime);
 	}
 
 }   // End of Search.Java ******************************************************
