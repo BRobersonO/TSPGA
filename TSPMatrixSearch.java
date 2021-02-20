@@ -65,9 +65,9 @@ public class TSPMatrixSearch extends FitnessFunction{
 
         name = "Traveling Salesman Problem";
 
-        CityMatrixData matrixData = new CityMatrixData(Parameters.dataInputFileName);
+        new CityMatrixData(Parameters.dataInputFileName);
 
-        double[][] matrix1 = matrixData.citiesMatrix;
+        double[][] matrix1 = CityMatrixData.citiesMatrix;
         
         System.out.println("\nOriginal Matrix");
         //TSPMatrixPrinter.printMatrix(matrix1);
@@ -81,6 +81,8 @@ public class TSPMatrixSearch extends FitnessFunction{
 			fitnessStats[2][i] = 0;
 			fitnessStats[3][i] = 0;
 		}
+
+        Parameters.numGenes = CityMatrixData.cities.size();
         
         List<Integer> visited = new ArrayList<>(matrix1.length);
     
@@ -110,7 +112,10 @@ public class TSPMatrixSearch extends FitnessFunction{
             if(error == 1) {
                 System.out.println("step had an error");
             }
-        }
+        } // Population created
+
+        
+
         int h;
         for (h = 0; h < population.size(); h++) {
             TSPMatrixPathway element = population.get(h);
