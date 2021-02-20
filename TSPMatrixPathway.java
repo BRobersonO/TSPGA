@@ -4,14 +4,14 @@ import java.text.*;
 
 public class Pathway {
     int [][] path;
-    int fitness;
+    double fitness;
     
-    public Pathway (int[][] path, int fitness) {
+    public Pathway (int[][] path, double fitness) {
         this.path = path;
         this.fitness = fitness;
     }
     
-    public void addFitness(int x) {
+    public void addFitness(double x) {
         this.fitness += x;
     }
     
