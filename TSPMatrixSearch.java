@@ -44,6 +44,11 @@ public class TSPMatrixSearch extends FitnessFunction{
                 System.out.println("step had an error");
             }
         }
+        //We now have a population
+        //we need to do crossover, then select who's in, who's out.
+        //we need to measure fitness, produce report on this generation
+        //repeat -> produce a new generation?
+
         int h;
         for (h = 0; h < population.size(); h++) {
             TSPMatrixPathway element = population.get(h);
