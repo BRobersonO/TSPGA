@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class Printer {
+public class TSPMatrixPrinter {
     public static void printMatrix (int[][] matrix) {
         
         for(int i = 0; i < matrix.length; i++) {

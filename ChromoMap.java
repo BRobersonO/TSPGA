@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class ChromoMap
 {
@@ -9,26 +6,25 @@ public class ChromoMap
 	public double rawFitness;
 	public double sclFitness;
 	public double proFitness;
-
-    private static double randnum;
-
-    public ChromoMap()
-    {
+	
+	private static double randnum;
+	
+	public ChromoMap()
+	{
 		//Sets the initial chromo list with the keys from the citiesMap
-        chromo = new ArrayList<Integer>(TSPMap.citiesMap.keySet());
-
-        //Shuffles the chromo list to randomize the values
-        Collections.shuffle(chromo);
-
+		chromo = new ArrayList<Integer>(TSPMap.citiesMap.keySet());
+		
+		//Shuffles the chromo list to randomize the values
+		Collections.shuffle(chromo);
+		
 		this.rawFitness = -1;   //  Fitness not yet evaluated
 		this.sclFitness = -1;   //  Fitness not yet scaled
 		this.proFitness = -1;   //  Fitness not yet proportionalized
 	}
-
-    
+	
 	//Mutate a Chromosome Based on Mutation Type - Still needs work
 	public void doMutation()
-    {
+	{
 		switch (Parameters.mutationType)
 		{
 			case 1:     //  Replace with new random number
@@ -41,19 +37,19 @@ public class ChromoMap
 				this.chromo.set(x, this.chromo.get(next));
 				this.chromo.set(next, temp);
 				break;
-
+				
 			default:
 				System.out.println("ERROR - No mutation method selected");
 		}
 	}
-
+	
 	//Selection of a parent for crossover
 	public static int selectParent()
-    {
+	{
 		double rWheel = 0;
 		int j = 0;
 		int k = 0;
-
+		
 		switch (Parameters.selectType)
         {
             case 1:     // Proportional Selection

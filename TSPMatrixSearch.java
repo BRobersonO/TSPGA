@@ -10,17 +10,15 @@ public class TSPMatrixSearch extends FitnessFunction{
 
         CityMatrixData matrixData = new CityMatrixData(Parameters.dataInputFileName);
 
-        citiesMatrix = matrixData.citiesMatrix;
-    
-        double[][] matrix1 = citiesMatrix;
+        double[][] matrix1 = matrixData.citiesMatrix;
         
         System.out.println("\nOriginal Matrix");
-        Printer.printMatrix(matrix1);
+        //TSPMatrixPrinter.printMatrix(matrix1);
         
         List<Integer> visited = new ArrayList<>(matrix1.length);
     
         //make a pop list
-        List<Pathway> population = new ArrayList<>();
+        List<TSPMatrixPathway> population = new ArrayList<>();
         
         int k;
         for(k = 0; k < 5/*POP SIZE*/; k++) {
@@ -35,8 +33,8 @@ public class TSPMatrixSearch extends FitnessFunction{
                 }
             }
 
-            int fitness = 0;
-            Pathway newWay = new Pathway(path, fitness);
+            double fitness = 0;
+            TSPMatrixPathway newWay = new TSPMatrixPathway(path, fitness);
             
             //clear the cities-visited list
             visited.clear();  
@@ -48,19 +46,19 @@ public class TSPMatrixSearch extends FitnessFunction{
         }
         int h;
         for (h = 0; h < population.size(); h++) {
-            Pathway element = population.get(h);
+            TSPMatrixPathway element = population.get(h);
             
             System.out.println("\nCreated Matrix");
-            Printer.printMatrix(element.path);
+            //TSPMatrixPrinter.printMatrix(element.path);
             System.out.println("The fitness of this path is " + element.fitness);
             System.out.println("\n");
         }
         
-        Cross.cross(population.get(0),population.get(1), matrix1);
+        TSPMatrixCross.cross(population.get(0),population.get(1), matrix1);
         
     }
     
-    public static int step(double [][] matrix, int city, List<Integer> visited, List<Pathway> population, Pathway newWay) {
+    public static int step(double [][] matrix, int city, List<Integer> visited, List<TSPMatrixPathway> population, TSPMatrixPathway newWay) {
         if(visited.size() == matrix.length) {
             return 0;
         }

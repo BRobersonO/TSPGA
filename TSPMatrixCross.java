@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class Cross {
-    public static void cross(Pathway p1, Pathway p2, int[][] dataMatrix) {
+public class TSPMatrixCross {
+    public static void cross(TSPMatrixPathway p1, TSPMatrixPathway p2, double[][] dataMatrix) {
         //take starting cities, make sure not the same city
         int city1 = findFirst(p1.path);
         int city2 = findFirst(p2.path);
@@ -21,7 +21,7 @@ public class Cross {
             System.out.println("city2errorfindsecond");
         }
         
-        List<Pathway> population = new ArrayList<>();
+        List<TSPMatrixPathway> population = new ArrayList<>();
         List<Integer> visited = new ArrayList<>(dataMatrix.length);
         
         int k;
@@ -43,7 +43,7 @@ public class Cross {
             fitness += dataMatrix[city1][city2];
             
             
-            Pathway newWay = new Pathway(path, fitness);
+            TSPMatrixPathway newWay = new TSPMatrixPathway(path, fitness);
             
 
             
@@ -53,10 +53,10 @@ public class Cross {
         }
         int h;
         //for (h = 0; h < population.size(); h++) {
-            Pathway element = population.get(0);
+            TSPMatrixPathway element = population.get(0);
             
             System.out.println("\nCrossed Matrix");
-            Printer.printMatrix(element.path);
+            TSPMatrixPrinter.printMatrix(element.path);
             System.out.println("The fitness of this path is " + element.fitness);
             System.out.println("\n");
         //}

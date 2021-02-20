@@ -2,11 +2,11 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class Pathway {
+public class TSPMatrixPathway {
     int [][] path;
     double fitness;
     
-    public Pathway (int[][] path, double fitness) {
+    public TSPMatrixPathway (int[][] path, double fitness) {
         this.path = path;
         this.fitness = fitness;
     }
