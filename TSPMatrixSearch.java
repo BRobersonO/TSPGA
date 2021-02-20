@@ -2,9 +2,66 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
+
 public class TSPMatrixSearch extends FitnessFunction{
+
+    public static FitnessFunction problem;
+
+	public static ChromoMap[] memberMap;
+	public static ChromoMap[] childMap;
+
+	public static ChromoMap bestOfGenChromoMap;
+	public static int bestOfGenR;
+	public static int bestOfGenG;
+
+	public static ChromoMap bestOfRunChromoMap;
+	public static int bestOfRunR;
+	public static int bestOfRunG;
+
+	public static ChromoMap bestOverAllChromoMap;
+	public static int bestOverAllR;
+	public static int bestOverAllG;
+
+	public static double sumRawFitness;
+	public static double sumRawFitness2;	// sum of squares of fitness
+	public static double sumSclFitness;
+	public static double sumProFitness;
+	public static double defaultBest;
+	public static double defaultWorst;
+
+	public static double averageRawFitness;
+	public static double stdevRawFitness;
+	public static double ninetyFiveLow = 0;
+	public static double ninetyFiveHigh = 0;
+
+	public static int G;
+	public static int R;
+	public static Random r = new Random();
+	private static double randnum;
+
+	private static int memberIndex[];
+	private static double memberFitness[];
+	private static int TmemberIndex;
+	private static double TmemberFitness;
+
+	private static double fitnessStats[][];  // 0=Avg, 1=Best, 2=sum of squares of avgs, 3=sum of sqs of bests
+
+	public static int bestEaRunSum = 0;
+	public static int bestEaRunSum2 = 0;
+	public static double bestEaRunAvg = 0;
+	public static double stDvR = 0; //stdv from best in each run
+	public static double bestEaLow = 0;
+	public static double bestEaHigh = 0;
+
+	public static double stDvA = 0;
+	public static double stDvB = 0;
+	public static double conIntLow = 0;
+	public static double conIntHigh = 0;
+
     public TSPMatrixSearch(FileWriter summaryOutput) throws java.io.IOException  { 
 
+		Calendar dateAndTime = Calendar.getInstance(); 
+		Date startTime = dateAndTime.getTime();
 
         name = "Traveling Salesman Problem";
 
@@ -14,6 +71,16 @@ public class TSPMatrixSearch extends FitnessFunction{
         
         System.out.println("\nOriginal Matrix");
         //TSPMatrixPrinter.printMatrix(matrix1);
+
+        //Set up Fitness Statistics matrix
+		fitnessStats = new double[4][Parameters.generations];
+		for (int i=0; i<Parameters.generations; i++)
+		{
+			fitnessStats[0][i] = 0;
+			fitnessStats[1][i] = 0;
+			fitnessStats[2][i] = 0;
+			fitnessStats[3][i] = 0;
+		}
         
         List<Integer> visited = new ArrayList<>(matrix1.length);
     
