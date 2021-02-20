@@ -112,17 +112,12 @@ public class TSPMatrixSearch extends FitnessFunction{
             if(error == 1) {
                 System.out.println("step had an error");
             }
-<<<<<<< HEAD
-        } // Population created
-
-        
-=======
         }
+        
         //We now have a population
         //we need to do crossover, then select who's in, who's out.
         //we need to measure fitness, produce report on this generation
         //repeat -> produce a new generation?
->>>>>>> d791b0c14ead1425d7cd570980e359eaaf7465b4
 
         int h;
         for (h = 0; h < population.size(); h++) {
