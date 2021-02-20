@@ -53,7 +53,7 @@ public class Search
 		{
 			new TSPMapSearch(summaryOutput);
 		}
-		else if (Parameters.problemType.equals("TSPBlake"))
+		else if (Parameters.problemType.equals("TSPMatrix"))
 		{
 			new TSPMatrixSearch(summaryOutput);
 		}
