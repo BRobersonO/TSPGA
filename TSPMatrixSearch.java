@@ -2,16 +2,17 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class TSPMatrixSearch {
-    public static void TSPMatrixSearch(FileWriter summaryOutput) throws java.io.IOException { 
-    /***Use GetDistance method to populate Matrix based on going from city i (row) to city j (column)***/
-        int[][] matrix1 = new int[][]    
-        {
-            {0,10,20,30},
-            {40,0,10,21},
-            {21,70,0,50},
-            {100,20,31,0}
-        };
+public class TSPMatrixSearch extends FitnessFunction{
+    public TSPMatrixSearch(FileWriter summaryOutput) throws java.io.IOException  { 
+
+
+        name = "Traveling Salesman Problem";
+
+        CityMatrixData matrixData = new CityMatrixData(Parameters.dataInputFileName);
+
+        citiesMatrix = matrixData.citiesMatrix;
+    
+        double[][] matrix1 = citiesMatrix;
         
         System.out.println("\nOriginal Matrix");
         Printer.printMatrix(matrix1);
@@ -59,7 +60,7 @@ public class TSPMatrixSearch {
         
     }
     
-    public static int step(int [][] matrix, int city, List<Integer> visited, List<Pathway> population, Pathway newWay) {
+    public static int step(double [][] matrix, int city, List<Integer> visited, List<Pathway> population, Pathway newWay) {
         if(visited.size() == matrix.length) {
             return 0;
         }
