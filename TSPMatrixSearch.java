@@ -21,7 +21,7 @@ public class TSPMatrixSearch extends FitnessFunction{
         List<TSPMatrixPathway> population = new ArrayList<>();
         
         int k;
-        for(k = 0; k < 5/*POP SIZE*/; k++) {
+        for(k = 0; k < Parameters.popSize/*POP SIZE*/; k++) {
             Random rand = new Random();
             int x = rand.nextInt(matrix1.length); //our randomly selected start city
             //initialize path to 0's
@@ -66,7 +66,7 @@ public class TSPMatrixSearch extends FitnessFunction{
         int i;
         int minNotVisited = -1;
         int maxNotVisited = -1;
-        boolean m = mutate(); //will have to feed mutation rate into here
+        boolean m = mutate(Parameters.mutationRate); //will have to feed mutation rate into here
         for (i = 0; i < matrix.length; i++) {
             if (city == i) {
                 continue;
@@ -128,9 +128,9 @@ public class TSPMatrixSearch extends FitnessFunction{
         return visited.contains(city);
     }
     
-    public static boolean mutate(){
+    public static boolean mutate(double mutRate){
         Random rand = new Random();
-        int chance = rand.nextInt(10000);
-        return chance == 1; //represents a mutation rate of 0.01
+        int chance = rand.nextInt(100);
+        return chance < (mutRate * 100); //represents a mutation rate of mutRate
     }
 }
