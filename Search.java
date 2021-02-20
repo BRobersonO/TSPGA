@@ -55,7 +55,7 @@ public class Search
 		}
 		else if (Parameters.problemType.equals("TSPBlake"))
 		{
-			//BlakeSearch();
+			new TSPMatrixSearch(summaryOutput);
 		}
 		else System.out.println("Invalid Problem Type");
 
