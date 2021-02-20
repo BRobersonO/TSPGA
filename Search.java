@@ -53,9 +53,9 @@ public class Search
 		{
 			new TSPMapSearch(summaryOutput);
 		}
-		else if (Parameters.problemType.equals("TSPBlake"))
+		else if (Parameters.problemType.equals("TSPMatrix"))
 		{
-			//BlakeSearch();
+			new TSPMatrixSearch(summaryOutput);
 		}
 		else System.out.println("Invalid Problem Type");
 
