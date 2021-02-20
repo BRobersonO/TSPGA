@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class DoTheThing {
-    public static void main(String[] args) { 
+public class TSPMatrixSearch {
+    public static void TSPMatrixSearch(FileWriter summaryOutput) throws java.io.IOException { 
     /***Use GetDistance method to populate Matrix based on going from city i (row) to city j (column)***/
         int[][] matrix1 = new int[][]    
         {
