@@ -3,7 +3,7 @@ import java.util.*;
 import java.text.*;
 
 public class TSPMatrixCross {
-    public static void cross(TSPMatrixPathway p1, TSPMatrixPathway p2, double[][] dataMatrix) {
+    public static void cross(TSPMatrixPathway p1, TSPMatrixPathway p2, double[][] dataMatrix, List<TSPMatrixPathway> newPop) {
         //take starting cities, make sure not the same city
         int city1 = p1.firstCity;
         int city2 = p2.firstCity;
@@ -24,7 +24,7 @@ public class TSPMatrixCross {
         List<TSPMatrixPathway> population = new ArrayList<>();
         List<Integer> visited = new ArrayList<>(dataMatrix.length);
         
-        int k;
+        // int k;
         // for(k = 0; k < 1/*POP SIZE*/; k++) {
         //     Random rand = new Random();
         //     int x = rand.nextInt(dataMatrix.length); //our randomly selected start city
@@ -49,23 +49,18 @@ public class TSPMatrixCross {
             
             visited.add(city1);
         
-            TSPMatrixSearch.step(dataMatrix, city2, visited, population, newWay);
-        //}
-        //int h;
-        //for (h = 0; h < population.size(); h++) {
-            TSPMatrixPathway element = population.get(0);
-            
-            System.out.println("\nCrossed Matrix");
-            TSPMatrixPrinter.printMatrix(element.path);
-            System.out.println("The fitness of this path is " + element.fitness);
-            System.out.println("\n");
-        //}
+            TSPMatrixSearch.step(dataMatrix, city2, visited, newPop, newWay);
+
     }
 
     public static void crossO (double crossRate, List<TSPMatrixPathway> population, double[][] dataMatrix) {
         Random rand = new Random();
         List<TSPMatrixPathway> newPop = new ArrayList<>();
-        //TODO elitism, put best of pop into newpop
+
+        //elitism, put best of pop into newpop
+        List<TSPMatrixPathway> sortedPop = population;
+        sortedPop.sort(new SortTheFitness());
+        newPop.add(sortedPop.get(0));
 
         while(newPop.size() < population.size()){
             int parent1 = rand.nextInt(population.size()); // get first parent
@@ -75,15 +70,16 @@ public class TSPMatrixCross {
                 parent2 = parent2++ % population.size();
             }
             if(isCrossing(crossRate)){
-                cross(population.get(parent1), population.get(parent2), dataMatrix); //TODO need to send new pop to cross
+                //add the child
+                cross(population.get(parent1), population.get(parent2), dataMatrix, newPop);
             }
             else {
-                //TODO put parents into newpop
+                //add the best parent instead
+                newPop.add( population.get(parent1).fitness >= population.get(parent2).fitness ? population.get(parent1) : population.get(parent2));
             }
 
         }
-
-
+        population = newPop;
     }
 
     public static boolean isCrossing(double crossRate){
@@ -113,3 +109,11 @@ public class TSPMatrixCross {
     // }
     
 }
+class SortTheFitness implements Comparator<TSPMatrixPathway>
+{
+    // Sort a list ascending order by fitness
+    public int compare(TSPMatrixPathway o1, TSPMatrixPathway o2) {
+        double x = o1.fitness - o2.fitness;
+        return x < 0 ? -1 : 1;
+    }
+

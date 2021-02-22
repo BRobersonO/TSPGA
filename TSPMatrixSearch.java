@@ -92,14 +92,17 @@ public class TSPMatrixSearch extends FitnessFunction{
         //Looping through the number of runs
         for (R = 0; R < Parameters.numRuns; R++) 
         {
+            visited.clear();
+            population.clear();
+
             InitialPopulation(matrix1, visited, population); //creates init pop
 
             //Looping through the generations
             //TODO: Get the best fit, Calculate the crossover and apply to the new generation
             for (G = 0; G < Parameters.generations; G++) 
             {
-                
-                TSPMatrixCross.cross(population.get(0),population.get(1), matrix1);
+                //Crossover produces new modified population
+                TSPMatrixCross.crossO (Parameters.xoverRate, population, matrix1);
                 
                 //Get the best fit for the generation
                 //Get the best fit for the run
@@ -155,51 +158,6 @@ public class TSPMatrixSearch extends FitnessFunction{
                     memberMap[i].proFitness = memberMap[i].sclFitness/sumSclFitness;
 					sumProFitness = sumProFitness + memberMap[i].proFitness;
                 }
-
-            // // *********************************************************************
-			// // ************ CROSSOVER AND CREATE NEXT GENERATION *******************
-			// // *********************************************************************
-
-				// int parent1 = -1;
-				// int parent2 = -1;
-
-				// //  Assumes always two offspring per mating
-				// for (int i=0; i<Parameters.popSize; i=i+2)
-				// {
-				// 	//	Select Two Parents
-				// 	parent1 = ChromoMap.selectParent();
-				// 	parent2 = parent1;
-
-				// 	while (parent2 == parent1)
-				// 	{
-				// 		parent2 = ChromoMap.selectParent();
-				// 	}
-
-				// 	//	Crossover Two Parents to Create Two Children
-				// 	randnum = r.nextDouble();
-				// 	if (randnum < Parameters.xoverRate)
-				// 	{
-				// 		ChromoMap.mateParents(memberMap[parent1], memberMap[parent2], childMap[i], childMap[i+1]);
-				// 	}
-				// 	else 
-				// 	{
-				// 		ChromoMap.mateParents(memberMap[parent1], childMap[i]);
-				// 		ChromoMap.mateParents(memberMap[parent2], childMap[i+1]);
-				// 	}
-				// } // End Crossover
-
-                // //	Mutate Children
-				// for (int i=0; i<Parameters.popSize; i++)
-				// {
-				// 	//System.out.println(childMap[i].chromo.size());
-				// 	childMap[i].doMutation();
-				// }
-
-				// //	Swap Children with Last Generation
-				// for (int i=0; i<Parameters.popSize; i++)
-				// {
-				// 	ChromoMap.copyB2A(memberMap[i], childMap[i]);
-				// }
             }//  Repeat the above loop for each generation
             //END OF GENERATIONS
 
@@ -215,22 +173,7 @@ public class TSPMatrixSearch extends FitnessFunction{
         }
         //END OF RUNS
 
-        //We now have a population
         //we need to measure fitness, produce report on this generation
-        //we need to do crossover, then select who's in, who's out.
-        //repeat -> produce a new generation?
-
-        int h;
-        for (h = 0; h < population.size(); h++) {
-            TSPMatrixPathway element = population.get(h);
-            
-            System.out.println("\nCreated Matrix");
-            //TSPMatrixPrinter.printMatrix(element.path);
-            System.out.println("The fitness of this path is " + element.fitness);
-            System.out.println("\n");
-        }
-        
-        
         
     }
     
