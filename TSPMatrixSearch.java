@@ -234,11 +234,10 @@ public class TSPMatrixSearch extends FitnessFunction{
             return 0;
         }
         
-        int i;
         int minNotVisited = -1;
         int maxNotVisited = -1;
         boolean m = mutate(Parameters.mutationRate); //will have to feed mutation rate into here
-        for (i = 0; i < matrix.length; i++) {
+        for (int i = 0; i < matrix.length; i++) {
             if (city == i) {
                 continue;
             }
@@ -320,7 +319,7 @@ public class TSPMatrixSearch extends FitnessFunction{
             }
 
             double fitness = 0;
-            TSPMatrixPathway newWay = new TSPMatrixPathway(path, fitness);
+            TSPMatrixPathway newWay = new TSPMatrixPathway(path, fitness, x);
             
             //clear the cities-visited list
             visited.clear();  
