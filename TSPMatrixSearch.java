@@ -90,14 +90,17 @@ public class TSPMatrixSearch extends FitnessFunction{
         List<TSPMatrixPathway> population = new ArrayList<>();
 
         //Looping through the number of runs
-        for (int r = 0; r < Parameters.numRuns; r++) 
+        for (R = 0; R < Parameters.numRuns; R++) 
         {
-            InitialPopulation(matrix1, visited, population);
+            InitialPopulation(matrix1, visited, population); //creates init pop
 
             //Looping through the generations
             //TODO: Get the best fit, Calculate the crossover and apply to the new generation
-            for (int g = 0; g < Parameters.generations; g++) 
+            for (G = 0; G < Parameters.generations; G++) 
             {
+                
+                TSPMatrixCross.cross(population.get(0),population.get(1), matrix1);
+                
                 //Get the best fit for the generation
                 //Get the best fit for the run
                 //Get the best fit for the overall
@@ -198,6 +201,7 @@ public class TSPMatrixSearch extends FitnessFunction{
 				// 	ChromoMap.copyB2A(memberMap[i], childMap[i]);
 				// }
             }//  Repeat the above loop for each generation
+            //END OF GENERATIONS
 
             Hwrite.left(bestOfRunR, 4, summaryOutput);
 			Hwrite.right(bestOfRunG, 4, summaryOutput);
@@ -209,6 +213,7 @@ public class TSPMatrixSearch extends FitnessFunction{
 
 			System.out.println(R + "\t" + "B" + "\t"+ (int)bestOfRunChromoMap.rawFitness);
         }
+        //END OF RUNS
 
         //We now have a population
         //we need to measure fitness, produce report on this generation
@@ -225,7 +230,7 @@ public class TSPMatrixSearch extends FitnessFunction{
             System.out.println("\n");
         }
         
-        TSPMatrixCross.cross(population.get(0),population.get(1), matrix1);
+        
         
     }
     

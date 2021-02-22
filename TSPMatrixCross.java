@@ -61,6 +61,36 @@ public class TSPMatrixCross {
             System.out.println("\n");
         //}
     }
+
+    public static void crossO (double crossRate, List<TSPMatrixPathway> population, double[][] dataMatrix) {
+        Random rand = new Random();
+        List<TSPMatrixPathway> newPop = new ArrayList<>();
+        //TODO elitism, put best of pop into newpop
+
+        while(newPop.size() < population.size()){
+            int parent1 = rand.nextInt(population.size()); // get first parent
+            int parent2 = rand.nextInt(population.size());// get second parent
+            // make sure parents are unique
+            if(parent1 == parent2) {
+                parent2 = parent2++ % population.size();
+            }
+            if(isCrossing(crossRate)){
+                cross(population.get(parent1), population.get(parent2), dataMatrix); //TODO need to send new pop to cross
+            }
+            else {
+                //TODO put parents into newpop
+            }
+
+        }
+
+
+    }
+
+    public static boolean isCrossing(double crossRate){
+        Random rand = new Random();
+        int chance = rand.nextInt(100);
+        return chance < (crossRate * 100); 
+    }
   
     // public static int findFirst(int[][] matrix) {
     //     int i;
