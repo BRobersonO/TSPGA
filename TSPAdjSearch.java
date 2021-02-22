@@ -85,7 +85,7 @@ public class TSPAdjSearch{
 
 		Calendar dateAndTime = Calendar.getInstance();
 		Date startTime = dateAndTime.getTime();
-		coords = new CityAdjData(new String("berlin52.tsp"));
+		coords = new CityAdjData(new String(Parameters.dataInputFileName));
 
 		//		Set up Fitness Statistics matrix
 		fitnessStats = new double[2][Parameters.generations];
@@ -390,7 +390,7 @@ public class TSPAdjSearch{
 				}
 
 			}// end of generation
-			
+
 			Hwrite.left(bestOfRunR, 4, summaryOutput);
 			Hwrite.right(bestOfRunG, 4, summaryOutput);
 
@@ -406,8 +406,6 @@ public class TSPAdjSearch{
 		}//end of run
 
 
-		
-		
 		//grab the standard Deviations while the average variables are still sums
 		stdevBestGen = Math.sqrt(
 				Math.abs(sumOfSquaresBestFitGen -
@@ -478,13 +476,6 @@ public class TSPAdjSearch{
 		dateAndTime = Calendar.getInstance();
 		Date endTime = dateAndTime.getTime();
 		System.out.println("End  :  " + endTime);
-
-
-
-		//CityBinData test = new CityBinData(new String("berlin52.tsp"));
-		//problem.doRawFitness(bestOverAllChromo, test);
-
-		System.out.println("it works?");
 	}
 
 	public static void BinaryMain(CityAdjData Coords){

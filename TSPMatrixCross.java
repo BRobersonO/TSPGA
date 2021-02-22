@@ -5,29 +5,29 @@ import java.text.*;
 public class TSPMatrixCross {
     public static void cross(TSPMatrixPathway p1, TSPMatrixPathway p2, double[][] dataMatrix) {
         //take starting cities, make sure not the same city
-        int city1 = findFirst(p1.path);
-        int city2 = findFirst(p2.path);
-        if(city1 == -1) {
-            System.out.println("city1error");
-        }
-       if(city2 == -1) {
-            System.out.println("city2error");
-        }
+        int city1 = p1.firstCity;
+        int city2 = p2.firstCity;
+    //     if(city1 == -1) {
+    //         System.out.println("city1error");
+    //     }
+    //    if(city2 == -1) {
+    //         System.out.println("city2error");
+    //     }
         
         if(city1 == city2) {
-            city2 = findSecond(p2.path);
+            city2 = p2.firstCity++ % dataMatrix.length;
         }
-       if(city2 == -1) {
-            System.out.println("city2errorfindsecond");
-        }
+    //    if(city2 == -1) {
+    //         System.out.println("city2errorfindsecond");
+    //     }
         
         List<TSPMatrixPathway> population = new ArrayList<>();
         List<Integer> visited = new ArrayList<>(dataMatrix.length);
         
         int k;
-        for(k = 0; k < 1/*POP SIZE*/; k++) {
-            Random rand = new Random();
-            int x = rand.nextInt(dataMatrix.length); //our randomly selected start city
+        // for(k = 0; k < 1/*POP SIZE*/; k++) {
+        //     Random rand = new Random();
+        //     int x = rand.nextInt(dataMatrix.length); //our randomly selected start city
             //initialize path to 0's
             int j, jj;
             int[][] path = new int[dataMatrix.length][dataMatrix.length];
@@ -43,15 +43,15 @@ public class TSPMatrixCross {
             fitness += dataMatrix[city1][city2];
             
             
-            TSPMatrixPathway newWay = new TSPMatrixPathway(path, fitness);
+            TSPMatrixPathway newWay = new TSPMatrixPathway(path, fitness, city1);
             
 
             
             visited.add(city1);
         
             TSPMatrixSearch.step(dataMatrix, city2, visited, population, newWay);
-        }
-        int h;
+        //}
+        //int h;
         //for (h = 0; h < population.size(); h++) {
             TSPMatrixPathway element = population.get(0);
             
@@ -61,25 +61,55 @@ public class TSPMatrixCross {
             System.out.println("\n");
         //}
     }
+
+    public static void crossO (double crossRate, List<TSPMatrixPathway> population, double[][] dataMatrix) {
+        Random rand = new Random();
+        List<TSPMatrixPathway> newPop = new ArrayList<>();
+        //TODO elitism, put best of pop into newpop
+
+        while(newPop.size() < population.size()){
+            int parent1 = rand.nextInt(population.size()); // get first parent
+            int parent2 = rand.nextInt(population.size());// get second parent
+            // make sure parents are unique
+            if(parent1 == parent2) {
+                parent2 = parent2++ % population.size();
+            }
+            if(isCrossing(crossRate)){
+                cross(population.get(parent1), population.get(parent2), dataMatrix); //TODO need to send new pop to cross
+            }
+            else {
+                //TODO put parents into newpop
+            }
+
+        }
+
+
+    }
+
+    public static boolean isCrossing(double crossRate){
+        Random rand = new Random();
+        int chance = rand.nextInt(100);
+        return chance < (crossRate * 100); 
+    }
   
-    public static int findFirst(int[][] matrix) {
-        int i;
-        for(i = 0; i < matrix.length; i++) {
-            if(matrix[i][0] == 1) {
-                return i;
-            }
-        }
-        return -1;
-    }
+    // public static int findFirst(int[][] matrix) {
+    //     int i;
+    //     for(i = 0; i < matrix.length; i++) {
+    //         if(matrix[i][0] == 1) {
+    //             return i;
+    //         }
+    //     }
+    //     return -1;
+    // }
     
-    public static int findSecond(int[][] matrix) {
-        int i;
-        for(i = 0; i < matrix.length; i++) {
-            if(matrix[i][1] == 1) {
-                return i;
-            }
-        }
-        return -1;
-    }
+    // public static int findSecond(int[][] matrix) {
+    //     int i;
+    //     for(i = 0; i < matrix.length; i++) {
+    //         if(matrix[i][1] == 1) {
+    //             return i;
+    //         }
+    //     }
+    //     return -1;
+    // }
     
 }
