@@ -25,22 +25,14 @@ public class ChromoMap
 	//Mutate a Chromosome Based on Mutation Type - Still needs work
 	public void doMutation()
 	{
-		switch (Parameters.mutationType)
-		{
-			case 1:     //  Replace with new random number
-				Random rand = new Random();
-				int x = rand.nextInt(this.chromo.size());
-				
-				int temp = this.chromo.get(x);
-				
-				int next = (x + 1) % this.chromo.size();
-				this.chromo.set(x, this.chromo.get(next));
-				this.chromo.set(next, temp);
-				break;
-				
-			default:
-				System.out.println("ERROR - No mutation method selected");
-		}
+		Random rand = new Random();
+		int x = rand.nextInt(this.chromo.size());
+		
+		int temp = this.chromo.get(x);
+		
+		int next = (x + 1) % this.chromo.size();
+		this.chromo.set(x, this.chromo.get(next));
+		this.chromo.set(next, temp);
 	}
 	
 	//Selection of a parent for crossover
