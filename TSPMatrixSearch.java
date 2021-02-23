@@ -7,42 +7,27 @@ public class TSPMatrixSearch extends FitnessFunction{
 
     public static FitnessFunction problem;
 
-	public static ChromoMap[] memberMap;
-	public static ChromoMap[] childMap;
+    public static double defaultF = 999999999;
 
-	public static ChromoMap bestOfGenChromoMap;
-	public static int bestOfGenR;
-	public static int bestOfGenG;
+	public static double bestOfGen = defaultF;
+	public static double bestOfRun = defaultF;
+	public static double bestOfAll = defaultF;
 
-	public static ChromoMap bestOfRunChromoMap;
-	public static int bestOfRunR;
-	public static int bestOfRunG;
+    public static TSPMatrixPathway bestOfGenM;
+	public static TSPMatrixPathway bestOfRunM;
+	public static TSPMatrixPathway bestOfAllM;
 
-	public static ChromoMap bestOverAllChromoMap;
-	public static int bestOverAllR;
-	public static int bestOverAllG;
+	public static double sumRawFitness = 0;
+	public static double sumRawFitness2 = 0;	// sum of squares of fitness
 
-	public static double sumRawFitness;
-	public static double sumRawFitness2;	// sum of squares of fitness
-	public static double sumSclFitness;
-	public static double sumProFitness;
-	public static double defaultBest;
-	public static double defaultWorst;
 
-	public static double averageRawFitness;
-	public static double stdevRawFitness;
+	public static double averageRawFitness = 0;
+	public static double stdevRawFitness = 0;
 	public static double ninetyFiveLow = 0;
 	public static double ninetyFiveHigh = 0;
 
 	public static int G;
 	public static int R;
-	public static Random r = new Random();
-	private static double randnum;
-
-	private static int memberIndex[];
-	private static double memberFitness[];
-	private static int TmemberIndex;
-	private static double TmemberFitness;
 
 	private static double fitnessStats[][];  // 0=Avg, 1=Best, 2=sum of squares of avgs, 3=sum of sqs of bests
 
@@ -59,6 +44,8 @@ public class TSPMatrixSearch extends FitnessFunction{
 	public static double conIntHigh = 0;
 
     public TSPMatrixSearch(FileWriter summaryOutput) throws java.io.IOException  { 
+        summaryOutput.write("\n");
+        System.out.println("\n");
 
 		Calendar dateAndTime = Calendar.getInstance(); 
 		Date startTime = dateAndTime.getTime();
@@ -68,20 +55,15 @@ public class TSPMatrixSearch extends FitnessFunction{
         new CityMatrixData(Parameters.dataInputFileName);
 
         double[][] matrix1 = CityMatrixData.citiesMatrix;
-        
-        System.out.println("\nOriginal Matrix");
-        //TSPMatrixPrinter.printMatrix(matrix1);
-
         //Set up Fitness Statistics matrix
 		fitnessStats = new double[4][Parameters.generations];
-		for (int i=0; i<Parameters.generations; i++)
+		for (int i=0; i<Parameters.generations; i++) // 0=Avg, 1=Best, 2=sum of squares of avgs, 3=sum of sqs of bests
 		{
 			fitnessStats[0][i] = 0;
 			fitnessStats[1][i] = 0;
 			fitnessStats[2][i] = 0;
 			fitnessStats[3][i] = 0;
 		}
-
         Parameters.numGenes = CityMatrixData.cities.size();
         
         List<Integer> visited = new ArrayList<>(matrix1.length);
@@ -89,30 +71,39 @@ public class TSPMatrixSearch extends FitnessFunction{
         //make a pop list
         List<TSPMatrixPathway> population = new ArrayList<>();
 
-        //Looping through the number of runs
+        //BEGIN RUNS
         for (R = 0; R < Parameters.numRuns; R++) 
         {
             visited.clear();
             population.clear();
+            bestOfRun = defaultF;
 
             InitialPopulation(matrix1, visited, population); //creates init pop
 
-            //Looping through the generations
-            //TODO: Get the best fit, Calculate the crossover and apply to the new generation
+            //BEGIN GENERATIONS
             for (G = 0; G < Parameters.generations; G++) 
             {
+                bestOfGen = defaultF;
+
                 //Crossover produces new modified population
                 TSPMatrixCross.crossO (Parameters.xoverRate, population, matrix1);
                 
-                //Get the best fit for the generation
-                //Get the best fit for the run
-                //Get the best fit for the overall
+                List<TSPMatrixPathway> sortedPop = population;
+                sortedPop.sort(new SortTheFitness());
+                bestOfGen = (sortedPop.get(0).fitness);
+                bestOfGenM = sortedPop.get(0);
+
+                for(int i = 0; i < population.size(); i++) {
+                    sumRawFitness += population.get(i).fitness;
+                    sumRawFitness2 += (population.get(i).fitness * population.get(i).fitness);
+                }
 
                 // Accumulate fitness statistics ****
+                // 0=Avg, 1=Best, 2=sum of squares of avgs, 3=sum of sqs of bests
 				fitnessStats[0][G] += sumRawFitness / Parameters.popSize;
-				fitnessStats[1][G] += bestOfGenChromoMap.rawFitness;
+				fitnessStats[1][G] += bestOfGen;
 				fitnessStats[2][G] += (sumRawFitness / Parameters.popSize) * (sumRawFitness / Parameters.popSize);
-				fitnessStats[3][G] += bestOfGenChromoMap.rawFitness * bestOfGenChromoMap.rawFitness;
+				fitnessStats[3][G] += bestOfGen * bestOfGen;
 
                 averageRawFitness = sumRawFitness / Parameters.popSize;
 				stdevRawFitness = Math.sqrt(
@@ -126,7 +117,7 @@ public class TSPMatrixSearch extends FitnessFunction{
 				ninetyFiveHigh = averageRawFitness + (stdevRawFitness / Math.sqrt(Parameters.popSize)) * 2;
 
 				// Output generation statistics to screen
-				System.out.println(R + "\t" + G +  "\t" + (int)bestOfGenChromoMap.rawFitness + "\t" + averageRawFitness + "\t" + stdevRawFitness);
+				System.out.println(R + "\t" + G +  "\t" + bestOfGen + "\t" + averageRawFitness + "\t" + stdevRawFitness);
 			
 				// Output generation statistics to summary file
 				summaryOutput.write(" R ");
@@ -134,7 +125,7 @@ public class TSPMatrixSearch extends FitnessFunction{
 				summaryOutput.write("\t\t G ");
 				Hwrite.right(G, 3, summaryOutput);
 				summaryOutput.write("\t\t BestInG ");
-				Hwrite.right((int)bestOfGenChromoMap.rawFitness, 7, summaryOutput);
+				Hwrite.right(bestOfGen, 11, 3, summaryOutput);
 				summaryOutput.write("\t\t AvgOfG ");
 				Hwrite.right(averageRawFitness, 11, 3, summaryOutput);
 				summaryOutput.write("\t\t StDv ");
@@ -144,44 +135,121 @@ public class TSPMatrixSearch extends FitnessFunction{
 				Hwrite.right(ninetyFiveHigh, 11, 3, summaryOutput);
 				summaryOutput.write("\n");
 
-			// *********************************************************************
-			// **************** SCALE FITNESS OF EACH MEMBER AND SUM ***************
-			// *********************************************************************
+                bestOfRun = bestOfRun < bestOfGen ? bestOfRun : bestOfGen;
+                bestOfRunM = bestOfRun < bestOfGen ? bestOfRunM : bestOfGenM;
 
-                // No change to raw fitness
-                for (int i=0; i<Parameters.popSize; i++)
-                {
-                    memberMap[i].sclFitness = memberMap[i].rawFitness + .000001;
-                    sumSclFitness += memberMap[i].sclFitness;
 
-                    // PROPORTIONALIZE SCALED FITNESS FOR EACH MEMBER AND SUM
-                    memberMap[i].proFitness = memberMap[i].sclFitness/sumSclFitness;
-					sumProFitness = sumProFitness + memberMap[i].proFitness;
-                }
             }//  Repeat the above loop for each generation
             //END OF GENERATIONS
+            Hwrite.left("Best of Run:", 8, summaryOutput);
+            
+            summaryOutput.write("\n");
+            Hwrite.left(bestOfRun, 4, summaryOutput);
+            summaryOutput.write("\n");
 
-            Hwrite.left(bestOfRunR, 4, summaryOutput);
-			Hwrite.right(bestOfRunG, 4, summaryOutput);
+			bestEaRunSum += bestOfRun;
+			bestEaRunSum2 += bestOfRun * bestOfRun;
 
-			bestEaRunSum += (int)bestOfRunChromoMap.rawFitness;
-			bestEaRunSum2 += (int)bestOfRunChromoMap.rawFitness * (int)bestOfRunChromoMap.rawFitness;
+            //PRINTS OUT FULL BINARY MATRIX
+			//TSPMatrixPrinter.printMatrix(bestOfRunM.path);
 
-			problem.doPrintGenes(bestOfRunChromoMap, summaryOutput);
-
-			System.out.println(R + "\t" + "B" + "\t"+ (int)bestOfRunChromoMap.rawFitness);
+			System.out.println("\n" + R + "\t" + "Best of Run" + "\t"+ bestOfRun + "\n");
+            bestOfAll = bestOfAll < bestOfRun ? bestOfAll : bestOfRun;
+            bestOfAllM = bestOfAll < bestOfRun ? bestOfAllM : bestOfRunM;
         }
         //END OF RUNS
 
-        //we need to measure fitness, produce report on this generation
-        
+        Hwrite.left("Best of All Runs", 8, summaryOutput);
+        summaryOutput.write("\n");
+        Hwrite.left(bestOfAll, 4, summaryOutput);
+        summaryOutput.write("\n");
+
+        //PRINTS OUT FULL BINARY MATRIX
+        //TSPMatrixPrinter.printMatrix(bestOfAllM.path);
+
+        System.out.println(R + "\t" + "Best of All" + "\t"+ bestOfAll);
+
+		//	Output Fitness Statistics matrix
+		summaryOutput.write("Gen            AvgOfAvgFit            AvgOfBestFit            StDvAvg            StDvAvgBst           95%ConfIntBst\n");
+		for (int i=0; i<Parameters.generations; i++){
+			Hwrite.left(i, 15, summaryOutput);
+			Hwrite.left(fitnessStats[0][i]/Parameters.numRuns, 20, 2, summaryOutput);
+			Hwrite.left(fitnessStats[1][i]/Parameters.numRuns, 20, 2, summaryOutput);
+
+			stDvA = Math.sqrt(
+					Math.abs(
+							fitnessStats[2][i] - fitnessStats[0][i] * fitnessStats[0][i] / Parameters.numRuns
+					)
+					/
+					Parameters.numRuns
+			);
+
+			stDvB = Math.sqrt(
+					Math.abs(
+							fitnessStats[3][i] - fitnessStats[1][i] * fitnessStats[1][i] / Parameters.numRuns
+					)
+							/
+							Parameters.numRuns
+			);
+
+			Hwrite.left(stDvA, 20, 2, summaryOutput);
+			Hwrite.left(stDvB, 20, 2, summaryOutput);
+
+			conIntLow =  (fitnessStats[1][i] / Parameters.numRuns) - (stDvB / Math.sqrt(Parameters.numRuns)) * 2;
+			conIntHigh =  (fitnessStats[1][i] / Parameters.numRuns) + (stDvB / Math.sqrt(Parameters.numRuns)) * 2;
+
+			Hwrite.left(conIntLow, 20, 2, summaryOutput);
+			Hwrite.left(conIntHigh, 20, 2, summaryOutput);
+
+			summaryOutput.write("\n");
+
+
+
+		}
+		//Best of Each Run Output
+		summaryOutput.write("\n");
+
+		bestEaRunAvg = bestEaRunSum / Parameters.numRuns;
+
+		stDvR = Math.sqrt(
+				Math.abs(
+						bestEaRunSum2 - bestEaRunSum * bestEaRunSum / Parameters.numRuns
+				)
+						/
+						Parameters.numRuns
+		);
+
+		bestEaLow = bestEaRunAvg - (stDvR / Math.sqrt(Parameters.numRuns)) * 2;
+		bestEaHigh = bestEaRunAvg + (stDvR / Math.sqrt(Parameters.numRuns)) * 2;
+
+		summaryOutput.write("Best Each Run: Average		");
+		Hwrite.left(bestEaRunAvg, 20, 2, summaryOutput);
+		summaryOutput.write("Best Each Run: StDv	");
+		Hwrite.left(stDvR, 20, 2, summaryOutput);
+		summaryOutput.write("Best Each Run: 95%ConInt	");
+		Hwrite.left(bestEaLow, 20, 2, summaryOutput);
+		Hwrite.left(bestEaHigh, 20, 2, summaryOutput);
+
+		summaryOutput.write("\n");
+		summaryOutput.close();
+
+		System.out.println();
+
+        //PRINT OUT BEST PATHWAY
+
+
+        System.out.println();
+		System.out.println("Start:  " + startTime);
+		dateAndTime = Calendar.getInstance(); 
+		Date endTime = dateAndTime.getTime();
+		System.out.println("End  :  " + endTime);
     }
-    
+    //*******************METHODS***********/
+    //*************************************/
     public static int step(double [][] matrix, int city, List<Integer> visited, List<TSPMatrixPathway> population, TSPMatrixPathway newWay) {
         if(visited.size() == matrix.length) {
             return 0;
         }
-        
         int minNotVisited = -1;
         int maxNotVisited = -1;
         boolean m = mutate(Parameters.mutationRate); //will have to feed mutation rate into here
@@ -203,39 +271,30 @@ public class TSPMatrixSearch extends FitnessFunction{
             }
         }
         visited.add(city);
-        //change to methods withn objects
         if(minNotVisited == -1 || maxNotVisited == -1) {
             //this is the last city
             if(m) {
                 newWay.addFitness(matrix[city][visited.get(0)]);
                 newWay.addPath(city, visited.get(0));
-                //add to pop list here, by calling method in pop object
                 population.add(newWay);
-                //recurse here
                 return 0;
-                //step(matrix, visited.get(0), visited, population, newWay);
             }
             else {
                 newWay.addFitness(matrix[city][visited.get(0)]);
                 newWay.addPath(city, visited.get(0));
-                //add to pop list here, by calling method in pop object
-                population.add(newWay);            
-                //recurse here
+                population.add(newWay);
                 return 0;
-                //step(matrix, visited.get(0), visited, population, newWay);
             }
         }
         else if(m) {
             newWay.addFitness(matrix[city][maxNotVisited]);
             newWay.addPath(city, maxNotVisited);
-
             //recurse here
             step(matrix, maxNotVisited, visited, population, newWay);
         }
         else {
             newWay.addFitness(matrix[city][minNotVisited]);
             newWay.addPath(city, minNotVisited);
-         
             //recurse here
             step(matrix, minNotVisited, visited, population, newWay);
         }
@@ -271,11 +330,8 @@ public class TSPMatrixSearch extends FitnessFunction{
             
             //clear the cities-visited list
             visited.clear();  
-            
-            int error = step(matrix1, x, visited, population, newWay);
-            if(error == 1) {
-                System.out.println("step had an error");
-            }
-        } // Population creation
+            //build the PathWay
+            step(matrix1, x, visited, population, newWay);
+        } 
     }
 }

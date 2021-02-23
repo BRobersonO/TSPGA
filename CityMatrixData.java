@@ -58,7 +58,7 @@ public class CityMatrixData
         {
             for (City city2 : cities) 
             {
-                citiesMatrix[city1.ID][city2.ID] = Position.GetDistance(city1.position, city2.position);
+                citiesMatrix[city1.ID - 1][city2.ID - 1] = Position.GetDistance(city1.position, city2.position);
             }
         }
 	}

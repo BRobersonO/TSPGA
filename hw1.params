@@ -1,15 +1,15 @@
 Experiment ID                :tsp
-Problem Type                 :TSPAdj
+Problem Type                 :TSPMatrix
 Data Input File Name         :berlin52.tsp
-Number of Runs               :50
-Generations per Run          :100
+Number of Runs               :5
+Generations per Run          :200
 Population Size              :1000
 Selection Method (1)         :1
 Fitness Scaling Type (2)     :0
 Crossover Type (3)           :3
-Crossover Rate (4)           :0.5
+Crossover Rate (4)           :1.0
 Mutation Type (5)            :1
-Mutation Rate (6)            :0.0001
+Mutation Rate (6)            :0.01
 Random Number Seed           :75982
 Number of Genes/Points (7)   :52
 Size of Genes (8)            :100
