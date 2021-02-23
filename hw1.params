@@ -23,7 +23,7 @@ Problem Type                 :TSPMatrix
 
 6)  Mutation Rates from 0 to 1, Use "0" to turn off mutation
 
-Random Seed not used
+Seed) not used
 
 
                  Brandon(HashMap Representation Params)
