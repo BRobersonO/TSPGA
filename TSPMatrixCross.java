@@ -61,7 +61,9 @@ public class TSPMatrixCross {
             }
 
         }
-        population = newPop;
+        population.clear();
+        population.addAll(newPop);
+        newPop.clear();
     }
 
     public static boolean isCrossing(double crossRate){
@@ -75,8 +77,7 @@ class SortTheFitness implements Comparator<TSPMatrixPathway>
 {
     // Sort a list ascending order by fitness
     public int compare(TSPMatrixPathway o1, TSPMatrixPathway o2) {
-        double x = o1.fitness - o2.fitness;
-        return x < 0 ? -1 : 1;
+        return Double.compare(o1.fitness, o2.fitness);
     }
 }
 

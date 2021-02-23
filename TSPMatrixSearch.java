@@ -84,6 +84,8 @@ public class TSPMatrixSearch extends FitnessFunction{
             for (G = 0; G < Parameters.generations; G++) 
             {
                 bestOfGen = defaultF;
+                sumRawFitness = 0;
+                sumRawFitness2 = 0;
 
                 //Crossover produces new modified population
                 TSPMatrixCross.crossO (Parameters.xoverRate, population, matrix1);
@@ -94,9 +96,13 @@ public class TSPMatrixSearch extends FitnessFunction{
                 bestOfGenM = sortedPop.get(0);
 
                 for(int i = 0; i < population.size(); i++) {
+                    //System.out.println("Fitnesses: " + population.get(i).fitness);
                     sumRawFitness += population.get(i).fitness;
                     sumRawFitness2 += (population.get(i).fitness * population.get(i).fitness);
                 }
+
+                //System.out.println("SumRawFitness: " + sumRawFitness);
+
 
                 // Accumulate fitness statistics ****
                 // 0=Avg, 1=Best, 2=sum of squares of avgs, 3=sum of sqs of bests
@@ -270,6 +276,7 @@ public class TSPMatrixSearch extends FitnessFunction{
                 maxNotVisited = i;
             }
         }
+
         visited.add(city);
         if(minNotVisited == -1 || maxNotVisited == -1) {
             //this is the last city
