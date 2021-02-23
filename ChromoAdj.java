@@ -123,36 +123,60 @@ public class ChromoAdj
 
 	public void doMutation(){
 		//check if mutating
-		if (randnum < Parameters.mutationRate){
+		randnumDouble = TSPAdjSearch.r.nextDouble();
+		if (randnumDouble < Parameters.mutationRate){
 			//create needed structures
+			int[] swapped = this.chromo.clone();
+			int[] finalForm = new int[Parameters.numGenes];
 			int[] verify = new int[Parameters.numGenes];
-			int[] mutChromo = new int[Parameters.numGenes];
-			Arrays.fill(verify, 0);
-			//verify[0] = used;
-			int newCity;
-			
-			//loop through the chromosome building a mutated chromo
-			for(int i = 0; i < Parameters.numGenes; i++) {
-				//get current traveling destination and adjust it to the mutated destination
-				if(this.chromo[i]+1 > Array_Bound) {
-					newCity = 0;
-				}else {
-					newCity = this.chromo[i]+1;
-				}
-				//check new destination to prevent premature loops
-				while(verify[newCity] == 1 || newCity == i) {
-					newCity++;
-					if(newCity > Array_Bound) {
-						newCity = 0;
-						System.out.println("am Stuck?");
-					}
-				}
+			verify[0] = used;
+			int temp;
+			int cityAt = 0;
+			int cityToBeAdded = 0;
 
-				//now insert new destination.
-				mutChromo[i] = newCity;
-				verify[newCity] = 1;
+
+			int city1 = TSPAdjSearch.r.nextInt(Parameters.numGenes);
+			while(this.chromo[city1] == 0) {city1 = TSPAdjSearch.r.nextInt(Parameters.numGenes);}
+			verify[this.chromo[city1]] = used;
+
+			int city2 = TSPAdjSearch.r.nextInt(Parameters.numGenes);
+			while(city2 == city1 || this.chromo[city2] == 0 || this.chromo[city1] == city2 || this.chromo[city2] == city1) {city2 = TSPAdjSearch.r.nextInt(Parameters.numGenes);}
+			verify[this.chromo[city2]] = used;
+
+			temp = swapped[city1];
+			swapped[city1] = swapped[city2];
+			swapped[city2] = temp;
+			cityToBeAdded = swapped[cityAt];
+
+			for(int i = 0; i < Array_Bound; i++) {
+				//checks if the city to be added is already in the final path
+				if(verify[cityToBeAdded] == 1) {
+					//checks if the city we are at had its path swapped
+					if(cityAt == city1 || cityAt == city2) {
+						//if both are true then the collision was intentional
+						finalForm[cityAt] = cityToBeAdded;
+					} else {
+						//if it was not a city whose path was swapped, this collision was not intentional
+						//while loop finds a city to add that is not already used
+						while(verify[cityToBeAdded] == 1){
+							if(cityToBeAdded == Array_Bound) {
+								cityToBeAdded = 1;
+								continue;
+							}
+							cityToBeAdded++;
+						}
+						finalForm[cityAt] = cityToBeAdded;
+						verify[cityToBeAdded] = used;
+					}
+				} else {
+					// no collision, no problem.
+					finalForm[cityAt] = cityToBeAdded;
+					verify[cityToBeAdded] = used;
+				}
+				cityAt = cityToBeAdded;
+				cityToBeAdded = swapped[cityAt];
 			}
-			this.chromo = mutChromo;
+			this.chromo = finalForm;
 		}
 
 	}
@@ -227,6 +251,7 @@ public class ChromoAdj
 		int parent2End;
 		double distance1 = 0;
 		double distance2 = 0;
+		Arrays.fill(child.chromo, 0);
 
 		//perform the crossover
 		for(int i = 0; i < Array_Bound; i++) {
